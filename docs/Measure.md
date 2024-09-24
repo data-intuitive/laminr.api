@@ -1,4 +1,4 @@
-# openapi::Measure
+# laminr.api::Measure
 
 
 ## Properties

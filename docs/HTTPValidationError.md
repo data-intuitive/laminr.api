@@ -1,4 +1,4 @@
-# openapi::HTTPValidationError
+# laminr.api::HTTPValidationError
 
 
 ## Properties

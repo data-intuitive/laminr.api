@@ -1,4 +1,4 @@
 library(testthat)
-library(openapi)
+library(laminr.api)
 
-test_check("openapi")
+test_check("laminr.api")

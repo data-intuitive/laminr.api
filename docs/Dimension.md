@@ -1,4 +1,4 @@
-# openapi::Dimension
+# laminr.api::Dimension
 
 
 ## Properties

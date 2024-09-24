@@ -1,4 +1,4 @@
-# openapi::GroupByRequestBody
+# laminr.api::GroupByRequestBody
 
 
 ## Properties

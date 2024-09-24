@@ -1,4 +1,4 @@
-# openapi::S3PermissionsRequest
+# laminr.api::S3PermissionsRequest
 
 
 ## Properties

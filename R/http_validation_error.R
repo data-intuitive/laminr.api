@@ -56,7 +56,7 @@ HTTPValidationError <- R6::R6Class(
     fromJSON = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       if (!is.null(this_object$`detail`)) {
-        self$`detail` <- ApiClient$new()$deserializeObj(this_object$`detail`, "array[ValidationError]", loadNamespace("openapi"))
+        self$`detail` <- ApiClient$new()$deserializeObj(this_object$`detail`, "array[ValidationError]", loadNamespace("laminr.api"))
       }
       self
     },
@@ -91,7 +91,7 @@ HTTPValidationError <- R6::R6Class(
     #' @export
     fromJSONString = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
-      self$`detail` <- ApiClient$new()$deserializeObj(this_object$`detail`, "array[ValidationError]", loadNamespace("openapi"))
+      self$`detail` <- ApiClient$new()$deserializeObj(this_object$`detail`, "array[ValidationError]", loadNamespace("laminr.api"))
       self
     },
     #' Validate JSON input with respect to HTTPValidationError

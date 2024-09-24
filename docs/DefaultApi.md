@@ -33,7 +33,7 @@ Add Collaborator
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Add Collaborator
 #
@@ -45,10 +45,6 @@ var_role <- "read" # character |  (Optional)
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut(var_instance_id, var_account_id, var_schema_id, role = var_role, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut(var_instance_id, var_account_id, var_schema_id, role = var_role, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters
@@ -87,7 +83,7 @@ Create Instance
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Create Instance
 #
@@ -100,10 +96,6 @@ var_db_server_url <- "db_server_url_example" # character |  (Optional)
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$CreateInstanceInstancesPut(var_name, storage = var_storage, schema_str = var_schema_str, db_server_key = var_db_server_key, db_server_url = var_db_server_url, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$CreateInstanceInstancesPut(var_name, storage = var_storage, schema_str = var_schema_str, db_server_key = var_db_server_key, db_server_url = var_db_server_url, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters
@@ -143,7 +135,7 @@ Create Record
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Create Record
 #
@@ -156,10 +148,6 @@ var_body <- TODO # AnyType |
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut(var_instance_id, var_module_name, var_model_name, var_schema_id, var_body, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut(var_instance_id, var_module_name, var_model_name, var_schema_id, var_body, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters
@@ -199,7 +187,7 @@ Delete Collaborator
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Delete Collaborator
 #
@@ -209,10 +197,6 @@ var_account_id <- "account_id_example" # character |
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete(var_instance_id, var_account_id, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete(var_instance_id, var_account_id, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters
@@ -249,7 +233,7 @@ Delete Instance
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Delete Instance
 #
@@ -259,10 +243,6 @@ var_instance_name <- "instance_name_example" # character |
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$DeleteInstanceInstancesInstanceIdDelete(var_instance_id, var_instance_name, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$DeleteInstanceInstancesInstanceIdDelete(var_instance_id, var_instance_name, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters
@@ -299,7 +279,7 @@ Delete Record
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Delete Record
 #
@@ -312,10 +292,6 @@ var_schema_id <- "schema_id_example" # character |
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete(var_instance_id, var_module_name, var_model_name, var_uid, var_schema_id, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete(var_instance_id, var_module_name, var_model_name, var_uid, var_schema_id, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters
@@ -355,7 +331,7 @@ Generate Password
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Generate Password
 #
@@ -364,10 +340,6 @@ var_instance_id <- "instance_id_example" # character |
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$GeneratePasswordInstancesInstanceIdDbPasswordGet(var_instance_id, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$GeneratePasswordInstancesInstanceIdDbPasswordGet(var_instance_id, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters
@@ -403,7 +375,7 @@ Generate Url
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Generate Url
 #
@@ -412,10 +384,6 @@ var_instance_id <- "instance_id_example" # character |
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$GenerateUrlInstancesInstanceIdDbUrlGet(var_instance_id, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$GenerateUrlInstancesInstanceIdDbUrlGet(var_instance_id, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters
@@ -451,7 +419,7 @@ Get Instance Statistics
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Get Instance Statistics
 #
@@ -462,10 +430,6 @@ var_q <- c("inner_example") # array[character] | In ${module}.${model} format (c
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$GetInstanceStatisticsInstancesInstanceIdStatisticsGet(var_instance_id, var_schema_id, q = var_q, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$GetInstanceStatisticsInstancesInstanceIdStatisticsGet(var_instance_id, var_schema_id, q = var_q, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters
@@ -503,7 +467,7 @@ Get Non Empty Tables
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Get Non Empty Tables
 #
@@ -513,10 +477,6 @@ var_schema_id <- "schema_id_example" # character |
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet(var_instance_id, var_schema_id, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet(var_instance_id, var_schema_id, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters
@@ -553,7 +513,7 @@ Get Record
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Get Record
 #
@@ -569,10 +529,6 @@ var_authorization <- "authorization_example" # character |  (Optional)
 var_get_record_request_body <- GetRecordRequestBody$new(c("select_example")) # GetRecordRequestBody |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost(var_instance_id, var_module_name, var_model_name, var_id_or_uid, var_schema_id, limit_to_many = var_limit_to_many, include_foreign_keys = var_include_foreign_keys, authorization = var_authorization, get_record_request_body = var_get_record_request_bodydata_file = "result.txt")
-result <- api_instance$GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost(var_instance_id, var_module_name, var_model_name, var_id_or_uid, var_schema_id, limit_to_many = var_limit_to_many, include_foreign_keys = var_include_foreign_keys, authorization = var_authorization, get_record_request_body = var_get_record_request_body)
-dput(result)
 ```
 
 ### Parameters
@@ -615,7 +571,7 @@ Get Records
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Get Records
 #
@@ -632,10 +588,6 @@ var_authorization <- "authorization_example" # character |  (Optional)
 var_get_records_request_body <- GetRecordsRequestBody$new(c("select_example"), 123, c(OrderByColumn$new("field_example", "descending_example")), "search_example") # GetRecordsRequestBody |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost(var_instance_id, var_module_name, var_model_name, var_schema_id, limit = var_limit, offset = var_offset, limit_to_many = var_limit_to_many, include_foreign_keys = var_include_foreign_keys, authorization = var_authorization, get_records_request_body = var_get_records_request_bodydata_file = "result.txt")
-result <- api_instance$GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost(var_instance_id, var_module_name, var_model_name, var_schema_id, limit = var_limit, offset = var_offset, limit_to_many = var_limit_to_many, include_foreign_keys = var_include_foreign_keys, authorization = var_authorization, get_records_request_body = var_get_records_request_body)
-dput(result)
 ```
 
 ### Parameters
@@ -679,7 +631,7 @@ Get Relations
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Get Relations
 #
@@ -690,10 +642,6 @@ var_instance_id <- "instance_id_example" # character |
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet(var_module_name, var_model_name, var_instance_id, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet(var_module_name, var_model_name, var_instance_id, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters
@@ -731,7 +679,7 @@ Get Schema
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Get Schema
 #
@@ -740,10 +688,6 @@ var_instance_id <- "instance_id_example" # character |
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$GetSchemaInstancesInstanceIdSchemaGet(var_instance_id, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$GetSchemaInstancesInstanceIdSchemaGet(var_instance_id, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters
@@ -779,7 +723,7 @@ Get Values
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Get Values
 #
@@ -795,10 +739,6 @@ var_authorization <- "authorization_example" # character |  (Optional)
 var_get_values_request_body <- GetValuesRequestBody$new(123, c(OrderByColumn$new("field_example", "descending_example")), "search_example") # GetValuesRequestBody |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost(var_instance_id, var_module_name, var_model_name, var_field_path, var_schema_id, limit = var_limit, offset = var_offset, authorization = var_authorization, get_values_request_body = var_get_values_request_bodydata_file = "result.txt")
-result <- api_instance$GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost(var_instance_id, var_module_name, var_model_name, var_field_path, var_schema_id, limit = var_limit, offset = var_offset, authorization = var_authorization, get_values_request_body = var_get_values_request_body)
-dput(result)
 ```
 
 ### Parameters
@@ -841,7 +781,7 @@ Grant S3 Permissions
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Grant S3 Permissions
 #
@@ -853,10 +793,6 @@ var_aws_user_name <- "lamin-manager" # character |  (Optional)
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$GrantS3PermissionsStoragesS3BucketNamePermissionsPut(var_bucket_name, var_s3_permissions_request, aws_account_id = var_aws_account_id, aws_user_name = var_aws_user_name, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$GrantS3PermissionsStoragesS3BucketNamePermissionsPut(var_bucket_name, var_s3_permissions_request, aws_account_id = var_aws_account_id, aws_user_name = var_aws_user_name, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters
@@ -895,7 +831,7 @@ Group By
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Group By
 #
@@ -908,10 +844,6 @@ var_group_by_request_body <- GroupByRequestBody$new(c(Dimension$new("field_name_
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost(var_instance_id, var_module_name, var_model_name, var_schema_id, var_group_by_request_body, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost(var_instance_id, var_module_name, var_model_name, var_schema_id, var_group_by_request_body, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters
@@ -951,7 +883,7 @@ Transfer Ownership
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Transfer Ownership
 #
@@ -962,10 +894,6 @@ var_schema_id <- "schema_id_example" # character |
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$TransferOwnershipInstancesInstanceIdOwnerHandlePatch(var_instance_id, var_handle, var_schema_id, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$TransferOwnershipInstancesInstanceIdOwnerHandlePatch(var_instance_id, var_handle, var_schema_id, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters
@@ -1003,7 +931,7 @@ Update Collaborator
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Update Collaborator
 #
@@ -1014,10 +942,6 @@ var_role <- "role_example" # character |
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch(var_instance_id, var_account_id, var_role, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch(var_instance_id, var_account_id, var_role, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters
@@ -1055,7 +979,7 @@ Update Record
 
 ### Example
 ```R
-library(openapi)
+library(laminr.api)
 
 # Update Record
 #
@@ -1069,10 +993,6 @@ var_body <- TODO # AnyType |
 var_authorization <- "authorization_example" # character |  (Optional)
 
 api_instance <- DefaultApi$new()
-# to save the result into a file, simply add the optional `data_file` parameter, e.g.
-# result <- api_instance$UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatch(var_instance_id, var_module_name, var_model_name, var_uid, var_schema_id, var_body, authorization = var_authorizationdata_file = "result.txt")
-result <- api_instance$UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatch(var_instance_id, var_module_name, var_model_name, var_uid, var_schema_id, var_body, authorization = var_authorization)
-dput(result)
 ```
 
 ### Parameters

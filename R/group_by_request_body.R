@@ -78,10 +78,10 @@ GroupByRequestBody <- R6::R6Class(
     fromJSON = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       if (!is.null(this_object$`dimensions`)) {
-        self$`dimensions` <- ApiClient$new()$deserializeObj(this_object$`dimensions`, "array[Dimension]", loadNamespace("openapi"))
+        self$`dimensions` <- ApiClient$new()$deserializeObj(this_object$`dimensions`, "array[Dimension]", loadNamespace("laminr.api"))
       }
       if (!is.null(this_object$`measures`)) {
-        self$`measures` <- ApiClient$new()$deserializeObj(this_object$`measures`, "array[Measure]", loadNamespace("openapi"))
+        self$`measures` <- ApiClient$new()$deserializeObj(this_object$`measures`, "array[Measure]", loadNamespace("laminr.api"))
       }
       if (!is.null(this_object$`filter`)) {
         self$`filter` <- this_object$`filter`
@@ -135,8 +135,8 @@ GroupByRequestBody <- R6::R6Class(
     #' @export
     fromJSONString = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
-      self$`dimensions` <- ApiClient$new()$deserializeObj(this_object$`dimensions`, "array[Dimension]", loadNamespace("openapi"))
-      self$`measures` <- ApiClient$new()$deserializeObj(this_object$`measures`, "array[Measure]", loadNamespace("openapi"))
+      self$`dimensions` <- ApiClient$new()$deserializeObj(this_object$`dimensions`, "array[Dimension]", loadNamespace("laminr.api"))
+      self$`measures` <- ApiClient$new()$deserializeObj(this_object$`measures`, "array[Measure]", loadNamespace("laminr.api"))
       self$`filter` <- this_object$`filter`
       self
     },

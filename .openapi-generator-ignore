@@ -25,5 +25,8 @@
 # Generate these with`devtools::document()`
 DESCRIPTION
 
+# Don't generate this so it can be customized
+.Rbuildignore
+
 # Don't need Travis CI
 .travis.yml

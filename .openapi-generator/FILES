@@ -2,7 +2,6 @@
 .github/workflows/r-client.yaml
 .gitignore
 .lintr
-.travis.yml
 NAMESPACE
 R/api_client.R
 R/api_exception.R

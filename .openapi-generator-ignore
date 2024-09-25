@@ -24,3 +24,6 @@
 
 # Generate these with`devtools::document()`
 DESCRIPTION
+
+# Don't need Travis CI
+.travis.yml

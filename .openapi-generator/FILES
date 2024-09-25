@@ -1,4 +1,3 @@
-.gitignore
 .lintr
 NAMESPACE
 R/api_client.R

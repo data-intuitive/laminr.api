@@ -58,17 +58,17 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
-- [Dimension](docs/Dimension.md)
-- [GetRecordRequestBody](docs/GetRecordRequestBody.md)
-- [GetRecordsRequestBody](docs/GetRecordsRequestBody.md)
-- [GetValuesRequestBody](docs/GetValuesRequestBody.md)
-- [GroupByRequestBody](docs/GroupByRequestBody.md)
-- [HTTPValidationError](docs/HTTPValidationError.md)
-- [Measure](docs/Measure.md)
-- [OrderByColumn](docs/OrderByColumn.md)
-- [S3PermissionsRequest](docs/S3PermissionsRequest.md)
-- [ValidationError](docs/ValidationError.md)
-- [ValidationErrorLocInner](docs/ValidationErrorLocInner.md)
+ - [Dimension](docs/Dimension.md)
+ - [GetRecordRequestBody](docs/GetRecordRequestBody.md)
+ - [GetRecordsRequestBody](docs/GetRecordsRequestBody.md)
+ - [GetValuesRequestBody](docs/GetValuesRequestBody.md)
+ - [GroupByRequestBody](docs/GroupByRequestBody.md)
+ - [HTTPValidationError](docs/HTTPValidationError.md)
+ - [Measure](docs/Measure.md)
+ - [OrderByColumn](docs/OrderByColumn.md)
+ - [S3PermissionsRequest](docs/S3PermissionsRequest.md)
+ - [ValidationError](docs/ValidationError.md)
+ - [ValidationErrorLocInner](docs/ValidationErrorLocInner.md)
 
 
 ## Documentation for Authorization

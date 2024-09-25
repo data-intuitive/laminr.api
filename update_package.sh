@@ -7,16 +7,20 @@ if [ -z "${GeneratorJar}" ]; then
     exit 1
 fi
 
+spec=https://us-west-2.api.lamin.ai/openapi.json
+pkgname=laminr.api
+pkgver=$(curl $spec | jq -r .info.version)
+
 echo "Generating R client package using OpenAI Generator..."
 java -Dcolor -jar $GeneratorJar generate \
     -g r \
-    --input-spec https://us-west-2.api.lamin.ai/openapi.json \
+    --input-spec $spec \
     --output . \
-    --package-name laminr.api \
-    --additional-properties=packageName=laminr.api,exceptionPackage=rlang \
+    --package-name $pkgname \
+    --additional-properties=packageName=$pkgname,exceptionPackage=rlang,packageVersion=$pkgver
 
 echo "Documenting package..."
-R -e "devtools::document()"
+Rscript -e "devtools::document()"
 # Hack to fix the auto-generated documentation so that checks pass
 sed -i 's/\\link{AnyType}/AnyType/g' man/DefaultApi.Rd
 

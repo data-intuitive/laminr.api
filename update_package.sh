@@ -17,6 +17,8 @@ java -Dcolor -jar $GeneratorJar generate \
 
 echo "Documenting package..."
 R -e "devtools::document()"
+# Hack to fix the auto-generated documentation so that checks pass
+sed -i 's/\\link{AnyType}/AnyType/g' man/DefaultApi.Rd
 
 echo
 echo "NEXT STEPS:"

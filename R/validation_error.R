@@ -82,7 +82,7 @@ ValidationError <- R6::R6Class(
     fromJSON = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       if (!is.null(this_object$`loc`)) {
-        self$`loc` <- ApiClient$new()$deserializeObj(this_object$`loc`, "array[ValidationErrorLocInner]", loadNamespace("openapi"))
+        self$`loc` <- ApiClient$new()$deserializeObj(this_object$`loc`, "array[ValidationErrorLocInner]", loadNamespace("laminr.api"))
       }
       if (!is.null(this_object$`msg`)) {
         self$`msg` <- this_object$`msg`
@@ -139,7 +139,7 @@ ValidationError <- R6::R6Class(
     #' @export
     fromJSONString = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
-      self$`loc` <- ApiClient$new()$deserializeObj(this_object$`loc`, "array[ValidationErrorLocInner]", loadNamespace("openapi"))
+      self$`loc` <- ApiClient$new()$deserializeObj(this_object$`loc`, "array[ValidationErrorLocInner]", loadNamespace("laminr.api"))
       self$`msg` <- this_object$`msg`
       self$`type` <- this_object$`type`
       self

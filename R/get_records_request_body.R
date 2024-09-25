@@ -91,13 +91,13 @@ GetRecordsRequestBody <- R6::R6Class(
     fromJSON = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       if (!is.null(this_object$`select`)) {
-        self$`select` <- ApiClient$new()$deserializeObj(this_object$`select`, "array[character]", loadNamespace("openapi"))
+        self$`select` <- ApiClient$new()$deserializeObj(this_object$`select`, "array[character]", loadNamespace("laminr.api"))
       }
       if (!is.null(this_object$`filter`)) {
         self$`filter` <- this_object$`filter`
       }
       if (!is.null(this_object$`order_by`)) {
-        self$`order_by` <- ApiClient$new()$deserializeObj(this_object$`order_by`, "array[OrderByColumn]", loadNamespace("openapi"))
+        self$`order_by` <- ApiClient$new()$deserializeObj(this_object$`order_by`, "array[OrderByColumn]", loadNamespace("laminr.api"))
       }
       if (!is.null(this_object$`search`)) {
         self$`search` <- this_object$`search`
@@ -159,9 +159,9 @@ GetRecordsRequestBody <- R6::R6Class(
     #' @export
     fromJSONString = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
-      self$`select` <- ApiClient$new()$deserializeObj(this_object$`select`, "array[character]", loadNamespace("openapi"))
+      self$`select` <- ApiClient$new()$deserializeObj(this_object$`select`, "array[character]", loadNamespace("laminr.api"))
       self$`filter` <- this_object$`filter`
-      self$`order_by` <- ApiClient$new()$deserializeObj(this_object$`order_by`, "array[OrderByColumn]", loadNamespace("openapi"))
+      self$`order_by` <- ApiClient$new()$deserializeObj(this_object$`order_by`, "array[OrderByColumn]", loadNamespace("laminr.api"))
       self$`search` <- this_object$`search`
       self
     },

@@ -1,4 +1,4 @@
-# openapi::OrderByColumn
+# laminr.api::OrderByColumn
 
 
 ## Properties

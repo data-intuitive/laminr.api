@@ -1,4 +1,4 @@
-# openapi::ValidationErrorLocInner
+# laminr.api::ValidationErrorLocInner
 
 
 ## Properties

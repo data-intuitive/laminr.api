@@ -1,18 +1,15 @@
-# R API client for laminr.api
+# R API client for the Lamin API
 
 
 ## Installation
 
-``` r
-install.packages("devtools")
-```
-
-To install directly from Github, use `devtools`:
+To install directly from Github, use `remotes`:
 
 ``` r
-install.packages("devtools")
-library(devtools)
-install_github("data-intuitive/laminr.api")
+if (!requireNamespace("remotes", quietly=TRUE)) {
+    install.packages("remotes")
+}
+remotes::install_github("data-intuitive/laminr.api")
 ```
 
 ### Usage

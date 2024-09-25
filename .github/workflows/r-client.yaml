@@ -26,8 +26,8 @@ jobs:
       - name: Lint
         run: lintr::lint_package()
         shell: Rscript {0}
-      - name: Roxygenize
-        run: |
-          roxygen2::roxygenize('.', roclets = c('rd', 'collate', 'namespace'))
-        shell: Rscript {0}
+      # - name: Roxygenize
+      #   run: |
+      #     roxygen2::roxygenize('.', roclets = c('rd', 'collate', 'namespace'))
+      #   shell: Rscript {0}
       - uses: r-lib/actions/check-r-package@v2

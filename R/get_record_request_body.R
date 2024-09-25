@@ -56,7 +56,7 @@ GetRecordRequestBody <- R6::R6Class(
     fromJSON = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       if (!is.null(this_object$`select`)) {
-        self$`select` <- ApiClient$new()$deserializeObj(this_object$`select`, "array[character]", loadNamespace("openapi"))
+        self$`select` <- ApiClient$new()$deserializeObj(this_object$`select`, "array[character]", loadNamespace("laminr.api"))
       }
       self
     },
@@ -91,7 +91,7 @@ GetRecordRequestBody <- R6::R6Class(
     #' @export
     fromJSONString = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
-      self$`select` <- ApiClient$new()$deserializeObj(this_object$`select`, "array[character]", loadNamespace("openapi"))
+      self$`select` <- ApiClient$new()$deserializeObj(this_object$`select`, "array[character]", loadNamespace("laminr.api"))
       self
     },
     #' Validate JSON input with respect to GetRecordRequestBody

@@ -1,4 +1,4 @@
-# openapi::GetValuesRequestBody
+# laminr.api::GetValuesRequestBody
 
 
 ## Properties

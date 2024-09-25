@@ -82,7 +82,7 @@ GetValuesRequestBody <- R6::R6Class(
         self$`filter` <- this_object$`filter`
       }
       if (!is.null(this_object$`order_by`)) {
-        self$`order_by` <- ApiClient$new()$deserializeObj(this_object$`order_by`, "array[OrderByColumn]", loadNamespace("openapi"))
+        self$`order_by` <- ApiClient$new()$deserializeObj(this_object$`order_by`, "array[OrderByColumn]", loadNamespace("laminr.api"))
       }
       if (!is.null(this_object$`search`)) {
         self$`search` <- this_object$`search`
@@ -137,7 +137,7 @@ GetValuesRequestBody <- R6::R6Class(
     fromJSONString = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       self$`filter` <- this_object$`filter`
-      self$`order_by` <- ApiClient$new()$deserializeObj(this_object$`order_by`, "array[OrderByColumn]", loadNamespace("openapi"))
+      self$`order_by` <- ApiClient$new()$deserializeObj(this_object$`order_by`, "array[OrderByColumn]", loadNamespace("laminr.api"))
       self$`search` <- this_object$`search`
       self
     },

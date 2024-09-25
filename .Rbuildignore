@@ -1,4 +1,5 @@
 ^.*\.Rproj$         # Designates the directory as an RStudio Project
+^laminr\.api\.Rproj$
 ^\.Rproj\.user$     # Used by RStudio for temporary files
 ^README\.Rmd$       # An Rmd file used to generate README.md
 ^LICENSE\.md$       # Full text of the license
@@ -16,5 +17,8 @@
 ^\.openapi-generator$
 ^docs$
 ^git_push\.sh$
-^openapi\.Rcheck$
+^update_package\.sh$
+^laminr.api\.Rcheck$
 ^\.\.Rcheck$
+^README\.qmd$
+^LICENSE\.md$

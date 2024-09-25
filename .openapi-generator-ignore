@@ -21,3 +21,14 @@
 #docs/*.md
 # Then explicitly reverse the ignore rule for a single file:
 #!docs/README.md
+
+# Generate these with`devtools::document()`
+DESCRIPTION
+
+# Don't generate these so they can be customized
+.gitignore
+.Rbuildignore
+.github/workflows/r-client.yaml
+
+# Don't need Travis CI
+.travis.yml

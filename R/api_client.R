@@ -32,6 +32,7 @@
 #' @field retry_status_codes vector of status codes to retry
 #' @field max_retry_attempts maximum number of retries for the status codes
 #' @importFrom httr add_headers accept timeout content
+#' @importFrom rlang abort
 #' @export
 ApiClient <- R6::R6Class(
   "ApiClient",
@@ -39,7 +40,7 @@ ApiClient <- R6::R6Class(
     # base path of all requests
     base_path = "http://localhost",
     # user agent in the HTTP request
-    user_agent = "OpenAPI-Generator/1.0.0/r",
+    user_agent = "OpenAPI-Generator/0.1.0/r",
     # default headers in the HTTP request
     default_headers = NULL,
     # username (HTTP basic authentication)
@@ -236,7 +237,9 @@ ApiClient <- R6::R6Class(
                        http_timeout, httr::user_agent(self$`user_agent`), write_stream(stream_callback), ...)
         } else {
           err_msg <- "Http method must be `GET`, `HEAD`, `OPTIONS`, `POST`, `PATCH`, `PUT` or `DELETE`."
-          stop(err_msg)
+          rlang::abort(message = err_msg,
+                       .subclass = "ApiException",
+                       ApiException = ApiException$new(status = 0, reason = err_msg))
         }
       } else { # no streaming
         if (method == "GET") {
@@ -262,7 +265,9 @@ ApiClient <- R6::R6Class(
                        http_timeout, httr::user_agent(self$`user_agent`), ...)
         } else {
           err_msg <- "Http method must be `GET`, `HEAD`, `OPTIONS`, `POST`, `PATCH`, `PUT` or `DELETE`."
-          stop(err_msg)
+          rlang::abort(message = err_msg,
+                       .subclass = "ApiException",
+                       ApiException = ApiException$new(status = 0, reason = err_msg))
         }
 
         # return ApiResponse

@@ -1,4 +1,4 @@
-# openapi::GetRecordRequestBody
+# laminr.api::GetRecordRequestBody
 
 
 ## Properties

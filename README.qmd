@@ -22,10 +22,36 @@ api_url <- getOption("lamindb_current_instance")$api_url
 instance_id <- getOption("lamindb_current_instance")$id
 schema_id <- getOption("lamindb_current_instance")$schema_id
 
-client <- ApiClient$new(api_url)
+api_client <- ApiClient$new(base_path = api_url)
 
-# client$Execute #?
-# client$CallApi #?
+api <- DefaultApi$new(api_client = api_client)
+```
+
+Show API object:
+
+```{r}
+api
+```
+
+Get schema:
+
+```{r}
+schema <- api$GetSchemaInstancesInstanceIdSchemaGet(instance_id)
+names(schema)
+names(schema$core)
+```
+
+Get record:
+
+```{r}
+api$GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost(
+  instance_id,
+  "core",
+  "artifact",
+  "KBW89Mf7IGcekja2hADu",
+  schema_id,
+  include_foreign_keys = TRUE
+)
 ```
 
 ## Documentation for API Endpoints

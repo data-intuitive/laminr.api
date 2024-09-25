@@ -21,3 +21,4 @@
 ^laminr.api\.Rcheck$
 ^\.\.Rcheck$
 ^README\.qmd$
+^LICENSE\.md$

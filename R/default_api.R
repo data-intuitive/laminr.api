@@ -21,7 +21,7 @@
 #' \item \emph{ @param } schema_id character
 #' \item \emph{ @param } role Enum < [admin, write, read] >
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -50,7 +50,7 @@
 #' \item \emph{ @param } db_server_key character
 #' \item \emph{ @param } db_server_url character
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -79,7 +79,7 @@
 #' \item \emph{ @param } schema_id character
 #' \item \emph{ @param } body AnyType
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -105,7 +105,7 @@
 #' \item \emph{ @param } instance_id character
 #' \item \emph{ @param } account_id character
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -131,7 +131,7 @@
 #' \item \emph{ @param } instance_id character
 #' \item \emph{ @param } instance_name character
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -160,7 +160,7 @@
 #' \item \emph{ @param } uid character
 #' \item \emph{ @param } schema_id character
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -185,7 +185,7 @@
 #' \itemize{
 #' \item \emph{ @param } instance_id character
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -210,7 +210,7 @@
 #' \itemize{
 #' \item \emph{ @param } instance_id character
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -237,7 +237,7 @@
 #' \item \emph{ @param } schema_id character
 #' \item \emph{ @param } q list( character )
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -263,7 +263,7 @@
 #' \item \emph{ @param } instance_id character
 #' \item \emph{ @param } schema_id character
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -295,7 +295,7 @@
 #' \item \emph{ @param } include_foreign_keys character
 #' \item \emph{ @param } authorization character
 #' \item \emph{ @param } get_record_request_body \link{GetRecordRequestBody}
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -328,7 +328,7 @@
 #' \item \emph{ @param } include_foreign_keys character
 #' \item \emph{ @param } authorization character
 #' \item \emph{ @param } get_records_request_body \link{GetRecordsRequestBody}
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -355,7 +355,7 @@
 #' \item \emph{ @param } model_name character
 #' \item \emph{ @param } instance_id character
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -380,7 +380,7 @@
 #' \itemize{
 #' \item \emph{ @param } instance_id character
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -412,7 +412,7 @@
 #' \item \emph{ @param } offset integer
 #' \item \emph{ @param } authorization character
 #' \item \emph{ @param } get_values_request_body \link{GetValuesRequestBody}
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -440,7 +440,7 @@
 #' \item \emph{ @param } aws_account_id character
 #' \item \emph{ @param } aws_user_name character
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -469,7 +469,7 @@
 #' \item \emph{ @param } schema_id character
 #' \item \emph{ @param } group_by_request_body \link{GroupByRequestBody}
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -496,7 +496,7 @@
 #' \item \emph{ @param } handle character
 #' \item \emph{ @param } schema_id character
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -523,7 +523,7 @@
 #' \item \emph{ @param } account_id character
 #' \item \emph{ @param } role Enum < [admin, write, read] >
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'
@@ -553,7 +553,7 @@
 #' \item \emph{ @param } schema_id character
 #' \item \emph{ @param } body AnyType
 #' \item \emph{ @param } authorization character
-#' \item \emph{ @returnType } \link{AnyType} \cr
+#' \item \emph{ @returnType } AnyType \cr
 #'
 #' \item On encountering errors, an error of subclass ApiException will be thrown.
 #'

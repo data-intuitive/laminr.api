@@ -2,8 +2,14 @@
 
 generator_jar=${OPENAI_GENERATOR_PATH:-}
 
-if [ -z "${generator_jar}" ]; then
-    echo "OPENAI_GENERATOR_PATH is not set. Please set it to the path of the openapi-generator-cli.jar file."
+# check whether 'openapi-generator-cli' is available
+if command -v openapi-generator-cli &> /dev/null; then
+    CMD=openapi-generator-cli
+elif [ ! -z "${generator_jar}" ]; then
+    CMD="java -Dcolor -jar $generator_jar"
+else
+    echo "openapi-generator-cli is not available!"
+    echo "Please install it or set OPENAI_GENERATOR_PATH to the path of the openapi-generator-cli.jar file."
     exit 1
 fi
 
@@ -16,17 +22,19 @@ echo "Generator JAR: $generator_jar"
 echo "API Spec: $api_spec"
 echo "Package Name: $pkg_name"
 echo "Package Version: $pkg_ver"
-java -Dcolor -jar $generator_jar generate \
+eval $CMD generate \
     -g r \
     --input-spec $api_spec \
     --output . \
     --package-name $pkg_name \
     --additional-properties=packageName=$pkg_name,packageVersion=$pkg_ver,exceptionPackage=rlang
 
+# Hack to fix the auto-generated documentation so that checks pass
+sed -i 's/\[\*\*AnyType\*\*\](AnyType\.md)/AnyType/g' docs/DefaultApi.md
+sed -i 's/\\link{AnyType}/AnyType/g' R/default_api.R
+
 echo "Documenting package..."
 Rscript -e "devtools::document()"
-# Hack to fix the auto-generated documentation so that checks pass
-sed -i 's/\\link{AnyType}/AnyType/g' man/DefaultApi.Rd
 
 echo
 echo "NEXT STEPS:"

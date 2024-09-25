@@ -19,3 +19,4 @@
 ^update_package\.sh$
 ^laminr.api\.Rcheck$
 ^\.\.Rcheck$
+^README\.qmd$

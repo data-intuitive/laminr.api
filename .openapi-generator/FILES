@@ -1,4 +1,3 @@
-.github/workflows/r-client.yaml
 .gitignore
 .lintr
 NAMESPACE

@@ -1,23 +1,27 @@
 #!/bin/sh
 
-GeneratorJar=${OPENAI_GENERATOR_PATH:-}
+generator_jar=${OPENAI_GENERATOR_PATH:-}
 
-if [ -z "${GeneratorJar}" ]; then
+if [ -z "${generator_jar}" ]; then
     echo "OPENAI_GENERATOR_PATH is not set. Please set it to the path of the openapi-generator-cli.jar file."
     exit 1
 fi
 
-spec=https://us-west-2.api.lamin.ai/openapi.json
-pkgname=laminr.api
-pkgver=$(curl $spec | jq -r .info.version)
+api_spec=https://us-west-2.api.lamin.ai/openapi.json
+pkg_name=laminr.api
+pkg_ver=$(curl $api_spec | jq -r '.info.version')
 
 echo "Generating R client package using OpenAI Generator..."
-java -Dcolor -jar $GeneratorJar generate \
+echo "Generator JAR: $generator_jar"
+echo "API Spec: $api_spec"
+echo "Package Name: $pkg_name"
+echo "Package Version: $pkg_ver"
+java -Dcolor -jar $generator_jar generate \
     -g r \
-    --input-spec $spec \
+    --input-spec $api_spec \
     --output . \
-    --package-name $pkgname \
-    --additional-properties=packageName=$pkgname,exceptionPackage=rlang,packageVersion=$pkgver
+    --package-name $pkg_name \
+    --additional-properties=packageName=$pkg_name,packageVersion=$pkg_ver,exceptionPackage=rlang
 
 echo "Documenting package..."
 Rscript -e "devtools::document()"

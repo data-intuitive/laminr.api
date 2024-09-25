@@ -3,7 +3,6 @@
 .gitignore
 .lintr
 .travis.yml
-DESCRIPTION
 NAMESPACE
 R/api_client.R
 R/api_exception.R

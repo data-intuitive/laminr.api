@@ -16,5 +16,6 @@
 ^\.openapi-generator$
 ^docs$
 ^git_push\.sh$
+^update_package\.sh$
 ^laminr.api\.Rcheck$
 ^\.\.Rcheck$

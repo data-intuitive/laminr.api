@@ -1,19 +1,16 @@
 ---
-title: R API client for laminr.api
+title: R API client for the Lamin API
 format: gfm
 ---
 
 ## Installation
 
+To install directly from Github, use `remotes`:
 ```R
-install.packages("devtools")
-```
-
-To install directly from Github, use `devtools`:
-```R
-install.packages("devtools")
-library(devtools)
-install_github("data-intuitive/laminr.api")
+if (!requireNamespace("remotes", quietly=TRUE)) {
+    install.packages("remotes")
+}
+remotes::install_github("data-intuitive/laminr.api")
 ```
 
 ### Usage
@@ -30,7 +27,6 @@ client <- ApiClient$new(api_url)
 # client$Execute #?
 # client$CallApi #?
 ```
-
 
 ## Documentation for API Endpoints
 
@@ -62,21 +58,19 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
- - [Dimension](docs/Dimension.md)
- - [GetRecordRequestBody](docs/GetRecordRequestBody.md)
- - [GetRecordsRequestBody](docs/GetRecordsRequestBody.md)
- - [GetValuesRequestBody](docs/GetValuesRequestBody.md)
- - [GroupByRequestBody](docs/GroupByRequestBody.md)
- - [HTTPValidationError](docs/HTTPValidationError.md)
- - [Measure](docs/Measure.md)
- - [OrderByColumn](docs/OrderByColumn.md)
- - [S3PermissionsRequest](docs/S3PermissionsRequest.md)
- - [ValidationError](docs/ValidationError.md)
- - [ValidationErrorLocInner](docs/ValidationErrorLocInner.md)
+- [Dimension](docs/Dimension.md)
+- [GetRecordRequestBody](docs/GetRecordRequestBody.md)
+- [GetRecordsRequestBody](docs/GetRecordsRequestBody.md)
+- [GetValuesRequestBody](docs/GetValuesRequestBody.md)
+- [GroupByRequestBody](docs/GroupByRequestBody.md)
+- [HTTPValidationError](docs/HTTPValidationError.md)
+- [Measure](docs/Measure.md)
+- [OrderByColumn](docs/OrderByColumn.md)
+- [S3PermissionsRequest](docs/S3PermissionsRequest.md)
+- [ValidationError](docs/ValidationError.md)
+- [ValidationErrorLocInner](docs/ValidationErrorLocInner.md)
 
 
 ## Documentation for Authorization
 
 Endpoints do not require authorization.
-
-

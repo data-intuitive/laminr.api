@@ -17,3 +17,7 @@ java -Dcolor -jar $GeneratorJar generate \
 
 echo "Documenting package..."
 R -e "devtools::document()"
+
+echo
+echo "NEXT STEPS:"
+echo "Copy updated documentation to 'README.qmd' and run 'quarto render README.qmd'"

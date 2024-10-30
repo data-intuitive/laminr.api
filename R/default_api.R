@@ -16,13 +16,13 @@
 #' ####################  AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
-#' var_account_id <- "account_id_example" # character | 
-#' var_schema_id <- "schema_id_example" # character | 
+#' var_instance_id <- "instance_id_example" # character |
+#' var_account_id <- "account_id_example" # character |
+#' var_schema_id <- "schema_id_example" # character |
 #' var_role <- "read" # character |  (Optional)
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Add Collaborator
+#' # Add Collaborator
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -30,14 +30,14 @@
 #' ####################  CreateInstanceInstancesPut  ####################
 #'
 #' library(laminr.api)
-#' var_name <- "name_example" # character | 
+#' var_name <- "name_example" # character |
 #' var_storage <- "create-s3" # character |  (Optional)
 #' var_schema_str <- "schema_str_example" # character |  (Optional)
 #' var_db_server_key <- "db_server_key_example" # character |  (Optional)
 #' var_db_server_url <- "db_server_url_example" # character |  (Optional)
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Create Instance
+#' # Create Instance
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -45,14 +45,14 @@
 #' ####################  CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
-#' var_module_name <- "module_name_example" # character | 
-#' var_model_name <- "model_name_example" # character | 
-#' var_schema_id <- "schema_id_example" # character | 
-#' var_body <- TODO # AnyType | 
+#' var_instance_id <- "instance_id_example" # character |
+#' var_module_name <- "module_name_example" # character |
+#' var_model_name <- "model_name_example" # character |
+#' var_schema_id <- "schema_id_example" # character |
+#' var_body <- TODO # AnyType |
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Create Record
+#' # Create Record
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -60,11 +60,11 @@
 #' ####################  DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
-#' var_account_id <- "account_id_example" # character | 
+#' var_instance_id <- "instance_id_example" # character |
+#' var_account_id <- "account_id_example" # character |
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Delete Collaborator
+#' # Delete Collaborator
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -72,11 +72,11 @@
 #' ####################  DeleteInstanceInstancesInstanceIdDelete  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
-#' var_instance_name <- "instance_name_example" # character | 
+#' var_instance_id <- "instance_id_example" # character |
+#' var_instance_name <- "instance_name_example" # character |
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Delete Instance
+#' # Delete Instance
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -84,14 +84,14 @@
 #' ####################  DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
-#' var_module_name <- "module_name_example" # character | 
-#' var_model_name <- "model_name_example" # character | 
-#' var_uid <- "uid_example" # character | 
-#' var_schema_id <- "schema_id_example" # character | 
+#' var_instance_id <- "instance_id_example" # character |
+#' var_module_name <- "module_name_example" # character |
+#' var_model_name <- "model_name_example" # character |
+#' var_uid <- "uid_example" # character |
+#' var_schema_id <- "schema_id_example" # character |
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Delete Record
+#' # Delete Record
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -99,10 +99,10 @@
 #' ####################  GeneratePasswordInstancesInstanceIdDbPasswordGet  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
+#' var_instance_id <- "instance_id_example" # character |
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Generate Password
+#' # Generate Password
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -110,10 +110,10 @@
 #' ####################  GenerateUrlInstancesInstanceIdDbUrlGet  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
+#' var_instance_id <- "instance_id_example" # character |
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Generate Url
+#' # Generate Url
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -121,12 +121,12 @@
 #' ####################  GetInstanceStatisticsInstancesInstanceIdStatisticsGet  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
-#' var_schema_id <- "schema_id_example" # character | 
-#' var_q <- c("inner_example") # array[character] | In ${module}.${model} format (case-sensitive) (Optional)
+#' var_instance_id <- "instance_id_example" # character |
+#' var_schema_id <- "schema_id_example" # character |
+#' var_q <- c("inner_example") # array[character] | In module + "." + model format (case-sensitive) (Optional)
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Get Instance Statistics
+#' # Get Instance Statistics
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -134,11 +134,11 @@
 #' ####################  GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
-#' var_schema_id <- "schema_id_example" # character | 
+#' var_instance_id <- "instance_id_example" # character |
+#' var_schema_id <- "schema_id_example" # character |
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Get Non Empty Tables
+#' # Get Non Empty Tables
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -146,17 +146,17 @@
 #' ####################  GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
-#' var_module_name <- "module_name_example" # character | 
-#' var_model_name <- "model_name_example" # character | 
-#' var_id_or_uid <- "id_or_uid_example" # character | 
-#' var_schema_id <- "schema_id_example" # character | 
+#' var_instance_id <- "instance_id_example" # character |
+#' var_module_name <- "module_name_example" # character |
+#' var_model_name <- "model_name_example" # character |
+#' var_id_or_uid <- "id_or_uid_example" # character |
+#' var_schema_id <- "schema_id_example" # character |
 #' var_limit_to_many <- 10 # integer |  (Optional)
 #' var_include_foreign_keys <- FALSE # character |  (Optional)
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #' var_get_record_request_body <- GetRecordRequestBody$new(c("select_example")) # GetRecordRequestBody |  (Optional)
 #'
-#' #Get Record
+#' # Get Record
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -164,10 +164,10 @@
 #' ####################  GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
-#' var_module_name <- "module_name_example" # character | 
-#' var_model_name <- "model_name_example" # character | 
-#' var_schema_id <- "schema_id_example" # character | 
+#' var_instance_id <- "instance_id_example" # character |
+#' var_module_name <- "module_name_example" # character |
+#' var_model_name <- "model_name_example" # character |
+#' var_schema_id <- "schema_id_example" # character |
 #' var_limit <- 50 # integer |  (Optional)
 #' var_offset <- 0 # integer |  (Optional)
 #' var_limit_to_many <- 10 # integer |  (Optional)
@@ -175,7 +175,7 @@
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #' var_get_records_request_body <- GetRecordsRequestBody$new(c("select_example"), 123, c(OrderByColumn$new("field_example", "descending_example")), "search_example") # GetRecordsRequestBody |  (Optional)
 #'
-#' #Get Records
+#' # Get Records
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -183,14 +183,14 @@
 #' ####################  GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGet  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
-#' var_module_name <- "module_name_example" # character | 
-#' var_model_name <- "model_name_example" # character | 
-#' var_id <- 56 # integer | 
-#' var_schema_id <- "schema_id_example" # character | 
+#' var_instance_id <- "instance_id_example" # character |
+#' var_module_name <- "module_name_example" # character |
+#' var_model_name <- "model_name_example" # character |
+#' var_id <- 56 # integer |
+#' var_schema_id <- "schema_id_example" # character |
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Get Relation Counts
+#' # Get Relation Counts
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -198,12 +198,12 @@
 #' ####################  GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet  ####################
 #'
 #' library(laminr.api)
-#' var_module_name <- "module_name_example" # character | 
-#' var_model_name <- "model_name_example" # character | 
-#' var_instance_id <- "instance_id_example" # character | 
+#' var_module_name <- "module_name_example" # character |
+#' var_model_name <- "model_name_example" # character |
+#' var_instance_id <- "instance_id_example" # character |
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Get Relations
+#' # Get Relations
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -211,10 +211,10 @@
 #' ####################  GetSchemaInstancesInstanceIdSchemaGet  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
+#' var_instance_id <- "instance_id_example" # character |
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Get Schema
+#' # Get Schema
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -222,17 +222,17 @@
 #' ####################  GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
-#' var_module_name <- "module_name_example" # character | 
-#' var_model_name <- "model_name_example" # character | 
-#' var_field_path <- "field_path_example" # character | 
-#' var_schema_id <- "schema_id_example" # character | 
+#' var_instance_id <- "instance_id_example" # character |
+#' var_module_name <- "module_name_example" # character |
+#' var_model_name <- "model_name_example" # character |
+#' var_field_path <- "field_path_example" # character |
+#' var_schema_id <- "schema_id_example" # character |
 #' var_limit <- 50 # integer |  (Optional)
 #' var_offset <- 0 # integer |  (Optional)
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #' var_get_values_request_body <- GetValuesRequestBody$new(123, c(OrderByColumn$new("field_example", "descending_example")), "search_example") # GetValuesRequestBody |  (Optional)
 #'
-#' #Get Values
+#' # Get Values
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -240,13 +240,13 @@
 #' ####################  GrantS3PermissionsStoragesS3BucketNamePermissionsPut  ####################
 #'
 #' library(laminr.api)
-#' var_bucket_name <- "bucket_name_example" # character | 
-#' var_s3_permissions_request <- S3PermissionsRequest$new("aws_access_key_id_example", "aws_secret_access_key_example", "region_example") # S3PermissionsRequest | 
+#' var_bucket_name <- "bucket_name_example" # character |
+#' var_s3_permissions_request <- S3PermissionsRequest$new("aws_access_key_id_example", "aws_secret_access_key_example", "region_example") # S3PermissionsRequest |
 #' var_aws_account_id <- "767398070972" # character |  (Optional)
 #' var_aws_user_name <- "lamin-manager" # character |  (Optional)
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Grant S3 Permissions
+#' # Grant S3 Permissions
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -254,14 +254,14 @@
 #' ####################  GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
-#' var_module_name <- "module_name_example" # character | 
-#' var_model_name <- "model_name_example" # character | 
-#' var_schema_id <- "schema_id_example" # character | 
-#' var_group_by_request_body <- GroupByRequestBody$new(c(Dimension$new("field_name_example", "count")), c(Measure$new("field_name_example", "count", "alias_example")), 123) # GroupByRequestBody | 
+#' var_instance_id <- "instance_id_example" # character |
+#' var_module_name <- "module_name_example" # character |
+#' var_model_name <- "model_name_example" # character |
+#' var_schema_id <- "schema_id_example" # character |
+#' var_group_by_request_body <- GroupByRequestBody$new(c(Dimension$new("field_name_example", "count")), c(Measure$new("field_name_example", "count", "alias_example")), 123) # GroupByRequestBody |
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Group By
+#' # Group By
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -269,12 +269,12 @@
 #' ####################  TransferOwnershipInstancesInstanceIdOwnerHandlePatch  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
-#' var_handle <- "handle_example" # character | 
-#' var_schema_id <- "schema_id_example" # character | 
+#' var_instance_id <- "instance_id_example" # character |
+#' var_handle <- "handle_example" # character |
+#' var_schema_id <- "schema_id_example" # character |
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Transfer Ownership
+#' # Transfer Ownership
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -282,12 +282,12 @@
 #' ####################  UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
-#' var_account_id <- "account_id_example" # character | 
-#' var_role <- "role_example" # character | 
+#' var_instance_id <- "instance_id_example" # character |
+#' var_account_id <- "account_id_example" # character |
+#' var_role <- "role_example" # character |
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Update Collaborator
+#' # Update Collaborator
 #' api_instance <- DefaultApi$new()
 #'
 #'
@@ -295,19 +295,16 @@
 #' ####################  UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatch  ####################
 #'
 #' library(laminr.api)
-#' var_instance_id <- "instance_id_example" # character | 
-#' var_module_name <- "module_name_example" # character | 
-#' var_model_name <- "model_name_example" # character | 
-#' var_uid <- "uid_example" # character | 
-#' var_schema_id <- "schema_id_example" # character | 
-#' var_body <- TODO # AnyType | 
+#' var_instance_id <- "instance_id_example" # character |
+#' var_module_name <- "module_name_example" # character |
+#' var_model_name <- "model_name_example" # character |
+#' var_uid <- "uid_example" # character |
+#' var_schema_id <- "schema_id_example" # character |
+#' var_body <- TODO # AnyType |
 #' var_authorization <- "authorization_example" # character |  (Optional)
 #'
-#' #Update Record
+#' # Update Record
 #' api_instance <- DefaultApi$new()
-#'
-#'
-#'
 #' }
 #' @importFrom R6 R6Class
 #' @importFrom base64enc base64encode
@@ -333,9 +330,9 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Add Collaborator
     #'
-    #' @param instance_id 
-    #' @param account_id 
-    #' @param schema_id 
+    #' @param instance_id
+    #' @param account_id
+    #' @param schema_id
     #' @param role (optional) No description (default value: "read")
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
@@ -358,9 +355,9 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Add Collaborator
     #'
-    #' @param instance_id 
-    #' @param account_id 
-    #' @param schema_id 
+    #' @param instance_id
+    #' @param account_id
+    #' @param schema_id
     #' @param role (optional) No description (default value: "read")
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
@@ -378,24 +375,36 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
       if (missing(`account_id`)) {
-        rlang::abort(message = "Missing required parameter `account_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `account_id`."))
+        rlang::abort(
+          message = "Missing required parameter `account_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `account_id`."
+          )
+        )
       }
 
       if (missing(`schema_id`)) {
-        rlang::abort(message = "Missing required parameter `schema_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `schema_id`."))
+        rlang::abort(
+          message = "Missing required parameter `schema_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `schema_id`."
+          )
+        )
       }
 
 
@@ -408,10 +417,14 @@ DefaultApi <- R6::R6Class(
       query_params[["schema_id"]] <- `schema_id`
 
       if (!is.null(`role`) && !(`role` %in% c("admin", "write", "read"))) {
-        rlang::abort(message = "Invalid value for `role` when calling DefaultApi$AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut. Must be [admin, write, read].",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Invalid value for `role` when calling DefaultApi$AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut. Must be [admin, write, read]."))
+        rlang::abort(
+          message = "Invalid value for `role` when calling DefaultApi$AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut. Must be [admin, write, read].",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Invalid value for `role` when calling DefaultApi$AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut. Must be [admin, write, read]."
+          )
+        )
       }
       query_params[["role"]] <- `role`
 
@@ -431,18 +444,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list()
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "PUT",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "PUT",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -453,9 +468,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -475,7 +492,7 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Create Instance
     #'
-    #' @param name 
+    #' @param name
     #' @param storage (optional) No description (default value: "create-s3")
     #' @param schema_str (optional) No description
     #' @param db_server_key (optional) No description
@@ -501,7 +518,7 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Create Instance
     #'
-    #' @param name 
+    #' @param name
     #' @param storage (optional) No description (default value: "create-s3")
     #' @param schema_str (optional) No description
     #' @param db_server_key (optional) No description
@@ -522,10 +539,14 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`name`)) {
-        rlang::abort(message = "Missing required parameter `name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `name`."))
+        rlang::abort(
+          message = "Missing required parameter `name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `name`."
+          )
+        )
       }
 
 
@@ -554,18 +575,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list()
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "PUT",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "PUT",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -576,9 +599,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -598,11 +623,11 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Create Record
     #'
-    #' @param instance_id 
-    #' @param module_name 
-    #' @param model_name 
-    #' @param schema_id 
-    #' @param body 
+    #' @param instance_id
+    #' @param module_name
+    #' @param model_name
+    #' @param schema_id
+    #' @param body
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -624,11 +649,11 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Create Record
     #'
-    #' @param instance_id 
-    #' @param module_name 
-    #' @param model_name 
-    #' @param schema_id 
-    #' @param body 
+    #' @param instance_id
+    #' @param module_name
+    #' @param model_name
+    #' @param schema_id
+    #' @param body
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -645,38 +670,58 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
       if (missing(`module_name`)) {
-        rlang::abort(message = "Missing required parameter `module_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `module_name`."))
+        rlang::abort(
+          message = "Missing required parameter `module_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `module_name`."
+          )
+        )
       }
 
       if (missing(`model_name`)) {
-        rlang::abort(message = "Missing required parameter `model_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `model_name`."))
+        rlang::abort(
+          message = "Missing required parameter `model_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `model_name`."
+          )
+        )
       }
 
       if (missing(`schema_id`)) {
-        rlang::abort(message = "Missing required parameter `schema_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `schema_id`."))
+        rlang::abort(
+          message = "Missing required parameter `schema_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `schema_id`."
+          )
+        )
       }
 
       if (missing(`body`)) {
-        rlang::abort(message = "Missing required parameter `body`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `body`."))
+        rlang::abort(
+          message = "Missing required parameter `body`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `body`."
+          )
+        )
       }
 
 
@@ -715,18 +760,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list("application/json")
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "PUT",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "PUT",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -737,9 +784,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -759,8 +808,8 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Delete Collaborator
     #'
-    #' @param instance_id 
-    #' @param account_id 
+    #' @param instance_id
+    #' @param account_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -782,8 +831,8 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Delete Collaborator
     #'
-    #' @param instance_id 
-    #' @param account_id 
+    #' @param instance_id
+    #' @param account_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -800,17 +849,25 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
       if (missing(`account_id`)) {
-        rlang::abort(message = "Missing required parameter `account_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `account_id`."))
+        rlang::abort(
+          message = "Missing required parameter `account_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `account_id`."
+          )
+        )
       }
 
 
@@ -834,18 +891,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list()
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "DELETE",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "DELETE",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -856,9 +915,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -878,8 +939,8 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Delete Instance
     #'
-    #' @param instance_id 
-    #' @param instance_name 
+    #' @param instance_id
+    #' @param instance_name
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -901,8 +962,8 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Delete Instance
     #'
-    #' @param instance_id 
-    #' @param instance_name 
+    #' @param instance_id
+    #' @param instance_name
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -919,17 +980,25 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
       if (missing(`instance_name`)) {
-        rlang::abort(message = "Missing required parameter `instance_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_name`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_name`."
+          )
+        )
       }
 
 
@@ -951,18 +1020,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list()
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "DELETE",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "DELETE",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -973,9 +1044,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -995,11 +1068,11 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Delete Record
     #'
-    #' @param instance_id 
-    #' @param module_name 
-    #' @param model_name 
-    #' @param uid 
-    #' @param schema_id 
+    #' @param instance_id
+    #' @param module_name
+    #' @param model_name
+    #' @param uid
+    #' @param schema_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -1021,11 +1094,11 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Delete Record
     #'
-    #' @param instance_id 
-    #' @param module_name 
-    #' @param model_name 
-    #' @param uid 
-    #' @param schema_id 
+    #' @param instance_id
+    #' @param module_name
+    #' @param model_name
+    #' @param uid
+    #' @param schema_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -1042,38 +1115,58 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
       if (missing(`module_name`)) {
-        rlang::abort(message = "Missing required parameter `module_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `module_name`."))
+        rlang::abort(
+          message = "Missing required parameter `module_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `module_name`."
+          )
+        )
       }
 
       if (missing(`model_name`)) {
-        rlang::abort(message = "Missing required parameter `model_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `model_name`."))
+        rlang::abort(
+          message = "Missing required parameter `model_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `model_name`."
+          )
+        )
       }
 
       if (missing(`uid`)) {
-        rlang::abort(message = "Missing required parameter `uid`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `uid`."))
+        rlang::abort(
+          message = "Missing required parameter `uid`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `uid`."
+          )
+        )
       }
 
       if (missing(`schema_id`)) {
-        rlang::abort(message = "Missing required parameter `schema_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `schema_id`."))
+        rlang::abort(
+          message = "Missing required parameter `schema_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `schema_id`."
+          )
+        )
       }
 
 
@@ -1110,18 +1203,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list()
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "DELETE",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "DELETE",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -1132,9 +1227,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -1154,7 +1251,7 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Generate Password
     #'
-    #' @param instance_id 
+    #' @param instance_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -1176,7 +1273,7 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Generate Password
     #'
-    #' @param instance_id 
+    #' @param instance_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -1193,10 +1290,14 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
 
@@ -1215,18 +1316,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list()
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "GET",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "GET",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -1237,9 +1340,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -1259,7 +1364,7 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Generate Url
     #'
-    #' @param instance_id 
+    #' @param instance_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -1281,7 +1386,7 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Generate Url
     #'
-    #' @param instance_id 
+    #' @param instance_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -1298,10 +1403,14 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
 
@@ -1320,18 +1429,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list()
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "GET",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "GET",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -1342,9 +1453,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -1364,9 +1477,9 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Get Instance Statistics
     #'
-    #' @param instance_id 
-    #' @param schema_id 
-    #' @param q (optional) In ${module}.${model} format (case-sensitive)
+    #' @param instance_id
+    #' @param schema_id
+    #' @param q (optional) In module + "." + model format (case-sensitive)
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -1388,9 +1501,9 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Get Instance Statistics
     #'
-    #' @param instance_id 
-    #' @param schema_id 
-    #' @param q (optional) In ${module}.${model} format (case-sensitive)
+    #' @param instance_id
+    #' @param schema_id
+    #' @param q (optional) In module + "." + model format (case-sensitive)
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -1407,17 +1520,25 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
       if (missing(`schema_id`)) {
-        rlang::abort(message = "Missing required parameter `schema_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `schema_id`."))
+        rlang::abort(
+          message = "Missing required parameter `schema_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `schema_id`."
+          )
+        )
       }
 
 
@@ -1445,18 +1566,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list()
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "GET",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "GET",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -1467,9 +1590,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -1489,8 +1614,8 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Get Non Empty Tables
     #'
-    #' @param instance_id 
-    #' @param schema_id 
+    #' @param instance_id
+    #' @param schema_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -1512,8 +1637,8 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Get Non Empty Tables
     #'
-    #' @param instance_id 
-    #' @param schema_id 
+    #' @param instance_id
+    #' @param schema_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -1530,17 +1655,25 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
       if (missing(`schema_id`)) {
-        rlang::abort(message = "Missing required parameter `schema_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `schema_id`."))
+        rlang::abort(
+          message = "Missing required parameter `schema_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `schema_id`."
+          )
+        )
       }
 
 
@@ -1562,18 +1695,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list()
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "GET",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "GET",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -1584,9 +1719,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -1606,11 +1743,11 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Get Record
     #'
-    #' @param instance_id 
-    #' @param module_name 
-    #' @param model_name 
-    #' @param id_or_uid 
-    #' @param schema_id 
+    #' @param instance_id
+    #' @param module_name
+    #' @param model_name
+    #' @param id_or_uid
+    #' @param schema_id
     #' @param limit_to_many (optional) No description (default value: 10)
     #' @param include_foreign_keys (optional) No description (default value: FALSE)
     #' @param authorization (optional) No description
@@ -1635,11 +1772,11 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Get Record
     #'
-    #' @param instance_id 
-    #' @param module_name 
-    #' @param model_name 
-    #' @param id_or_uid 
-    #' @param schema_id 
+    #' @param instance_id
+    #' @param module_name
+    #' @param model_name
+    #' @param id_or_uid
+    #' @param schema_id
     #' @param limit_to_many (optional) No description (default value: 10)
     #' @param include_foreign_keys (optional) No description (default value: FALSE)
     #' @param authorization (optional) No description
@@ -1659,38 +1796,58 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
       if (missing(`module_name`)) {
-        rlang::abort(message = "Missing required parameter `module_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `module_name`."))
+        rlang::abort(
+          message = "Missing required parameter `module_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `module_name`."
+          )
+        )
       }
 
       if (missing(`model_name`)) {
-        rlang::abort(message = "Missing required parameter `model_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `model_name`."))
+        rlang::abort(
+          message = "Missing required parameter `model_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `model_name`."
+          )
+        )
       }
 
       if (missing(`id_or_uid`)) {
-        rlang::abort(message = "Missing required parameter `id_or_uid`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `id_or_uid`."))
+        rlang::abort(
+          message = "Missing required parameter `id_or_uid`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `id_or_uid`."
+          )
+        )
       }
 
       if (missing(`schema_id`)) {
-        rlang::abort(message = "Missing required parameter `schema_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `schema_id`."))
+        rlang::abort(
+          message = "Missing required parameter `schema_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `schema_id`."
+          )
+        )
       }
 
 
@@ -1740,18 +1897,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list("application/json")
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "POST",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "POST",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -1762,9 +1921,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -1784,10 +1945,10 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Get Records
     #'
-    #' @param instance_id 
-    #' @param module_name 
-    #' @param model_name 
-    #' @param schema_id 
+    #' @param instance_id
+    #' @param module_name
+    #' @param model_name
+    #' @param schema_id
     #' @param limit (optional) No description (default value: 50)
     #' @param offset (optional) No description (default value: 0)
     #' @param limit_to_many (optional) No description (default value: 10)
@@ -1814,10 +1975,10 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Get Records
     #'
-    #' @param instance_id 
-    #' @param module_name 
-    #' @param model_name 
-    #' @param schema_id 
+    #' @param instance_id
+    #' @param module_name
+    #' @param model_name
+    #' @param schema_id
     #' @param limit (optional) No description (default value: 50)
     #' @param offset (optional) No description (default value: 0)
     #' @param limit_to_many (optional) No description (default value: 10)
@@ -1839,31 +2000,47 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
       if (missing(`module_name`)) {
-        rlang::abort(message = "Missing required parameter `module_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `module_name`."))
+        rlang::abort(
+          message = "Missing required parameter `module_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `module_name`."
+          )
+        )
       }
 
       if (missing(`model_name`)) {
-        rlang::abort(message = "Missing required parameter `model_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `model_name`."))
+        rlang::abort(
+          message = "Missing required parameter `model_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `model_name`."
+          )
+        )
       }
 
       if (missing(`schema_id`)) {
-        rlang::abort(message = "Missing required parameter `schema_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `schema_id`."))
+        rlang::abort(
+          message = "Missing required parameter `schema_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `schema_id`."
+          )
+        )
       }
 
 
@@ -1914,18 +2091,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list("application/json")
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "POST",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "POST",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -1936,9 +2115,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -1958,11 +2139,11 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Get Relation Counts
     #'
-    #' @param instance_id 
-    #' @param module_name 
-    #' @param model_name 
-    #' @param id 
-    #' @param schema_id 
+    #' @param instance_id
+    #' @param module_name
+    #' @param model_name
+    #' @param id
+    #' @param schema_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -1984,11 +2165,11 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Get Relation Counts
     #'
-    #' @param instance_id 
-    #' @param module_name 
-    #' @param model_name 
-    #' @param id 
-    #' @param schema_id 
+    #' @param instance_id
+    #' @param module_name
+    #' @param model_name
+    #' @param id
+    #' @param schema_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -2005,38 +2186,58 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
       if (missing(`module_name`)) {
-        rlang::abort(message = "Missing required parameter `module_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `module_name`."))
+        rlang::abort(
+          message = "Missing required parameter `module_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `module_name`."
+          )
+        )
       }
 
       if (missing(`model_name`)) {
-        rlang::abort(message = "Missing required parameter `model_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `model_name`."))
+        rlang::abort(
+          message = "Missing required parameter `model_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `model_name`."
+          )
+        )
       }
 
       if (missing(`id`)) {
-        rlang::abort(message = "Missing required parameter `id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `id`."))
+        rlang::abort(
+          message = "Missing required parameter `id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `id`."
+          )
+        )
       }
 
       if (missing(`schema_id`)) {
-        rlang::abort(message = "Missing required parameter `schema_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `schema_id`."))
+        rlang::abort(
+          message = "Missing required parameter `schema_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `schema_id`."
+          )
+        )
       }
 
 
@@ -2073,18 +2274,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list()
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "GET",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "GET",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -2095,9 +2298,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -2117,9 +2322,9 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Get Relations
     #'
-    #' @param module_name 
-    #' @param model_name 
-    #' @param instance_id 
+    #' @param module_name
+    #' @param model_name
+    #' @param instance_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -2141,9 +2346,9 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Get Relations
     #'
-    #' @param module_name 
-    #' @param model_name 
-    #' @param instance_id 
+    #' @param module_name
+    #' @param model_name
+    #' @param instance_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -2160,24 +2365,36 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`module_name`)) {
-        rlang::abort(message = "Missing required parameter `module_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `module_name`."))
+        rlang::abort(
+          message = "Missing required parameter `module_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `module_name`."
+          )
+        )
       }
 
       if (missing(`model_name`)) {
-        rlang::abort(message = "Missing required parameter `model_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `model_name`."))
+        rlang::abort(
+          message = "Missing required parameter `model_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `model_name`."
+          )
+        )
       }
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
 
@@ -2206,18 +2423,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list()
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "GET",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "GET",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -2228,9 +2447,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -2250,7 +2471,7 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Get Schema
     #'
-    #' @param instance_id 
+    #' @param instance_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -2272,7 +2493,7 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Get Schema
     #'
-    #' @param instance_id 
+    #' @param instance_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -2289,10 +2510,14 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
 
@@ -2311,18 +2536,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list()
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "GET",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "GET",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -2333,9 +2560,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -2355,11 +2584,11 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Get Values
     #'
-    #' @param instance_id 
-    #' @param module_name 
-    #' @param model_name 
-    #' @param field_path 
-    #' @param schema_id 
+    #' @param instance_id
+    #' @param module_name
+    #' @param model_name
+    #' @param field_path
+    #' @param schema_id
     #' @param limit (optional) No description (default value: 50)
     #' @param offset (optional) No description (default value: 0)
     #' @param authorization (optional) No description
@@ -2384,11 +2613,11 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Get Values
     #'
-    #' @param instance_id 
-    #' @param module_name 
-    #' @param model_name 
-    #' @param field_path 
-    #' @param schema_id 
+    #' @param instance_id
+    #' @param module_name
+    #' @param model_name
+    #' @param field_path
+    #' @param schema_id
     #' @param limit (optional) No description (default value: 50)
     #' @param offset (optional) No description (default value: 0)
     #' @param authorization (optional) No description
@@ -2408,38 +2637,58 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
       if (missing(`module_name`)) {
-        rlang::abort(message = "Missing required parameter `module_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `module_name`."))
+        rlang::abort(
+          message = "Missing required parameter `module_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `module_name`."
+          )
+        )
       }
 
       if (missing(`model_name`)) {
-        rlang::abort(message = "Missing required parameter `model_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `model_name`."))
+        rlang::abort(
+          message = "Missing required parameter `model_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `model_name`."
+          )
+        )
       }
 
       if (missing(`field_path`)) {
-        rlang::abort(message = "Missing required parameter `field_path`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `field_path`."))
+        rlang::abort(
+          message = "Missing required parameter `field_path`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `field_path`."
+          )
+        )
       }
 
       if (missing(`schema_id`)) {
-        rlang::abort(message = "Missing required parameter `schema_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `schema_id`."))
+        rlang::abort(
+          message = "Missing required parameter `schema_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `schema_id`."
+          )
+        )
       }
 
 
@@ -2489,18 +2738,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list("application/json")
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "POST",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "POST",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -2511,9 +2762,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -2533,8 +2786,8 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Grant S3 Permissions
     #'
-    #' @param bucket_name 
-    #' @param s3_permissions_request 
+    #' @param bucket_name
+    #' @param s3_permissions_request
     #' @param aws_account_id (optional) No description (default value: "767398070972")
     #' @param aws_user_name (optional) No description (default value: "lamin-manager")
     #' @param authorization (optional) No description
@@ -2558,8 +2811,8 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Grant S3 Permissions
     #'
-    #' @param bucket_name 
-    #' @param s3_permissions_request 
+    #' @param bucket_name
+    #' @param s3_permissions_request
     #' @param aws_account_id (optional) No description (default value: "767398070972")
     #' @param aws_user_name (optional) No description (default value: "lamin-manager")
     #' @param authorization (optional) No description
@@ -2578,17 +2831,25 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`bucket_name`)) {
-        rlang::abort(message = "Missing required parameter `bucket_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `bucket_name`."))
+        rlang::abort(
+          message = "Missing required parameter `bucket_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `bucket_name`."
+          )
+        )
       }
 
       if (missing(`s3_permissions_request`)) {
-        rlang::abort(message = "Missing required parameter `s3_permissions_request`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `s3_permissions_request`."))
+        rlang::abort(
+          message = "Missing required parameter `s3_permissions_request`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `s3_permissions_request`."
+          )
+        )
       }
 
 
@@ -2620,18 +2881,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list("application/json")
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "PUT",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "PUT",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -2642,9 +2905,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -2664,11 +2929,11 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Group By
     #'
-    #' @param instance_id 
-    #' @param module_name 
-    #' @param model_name 
-    #' @param schema_id 
-    #' @param group_by_request_body 
+    #' @param instance_id
+    #' @param module_name
+    #' @param model_name
+    #' @param schema_id
+    #' @param group_by_request_body
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -2690,11 +2955,11 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Group By
     #'
-    #' @param instance_id 
-    #' @param module_name 
-    #' @param model_name 
-    #' @param schema_id 
-    #' @param group_by_request_body 
+    #' @param instance_id
+    #' @param module_name
+    #' @param model_name
+    #' @param schema_id
+    #' @param group_by_request_body
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -2711,38 +2976,58 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
       if (missing(`module_name`)) {
-        rlang::abort(message = "Missing required parameter `module_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `module_name`."))
+        rlang::abort(
+          message = "Missing required parameter `module_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `module_name`."
+          )
+        )
       }
 
       if (missing(`model_name`)) {
-        rlang::abort(message = "Missing required parameter `model_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `model_name`."))
+        rlang::abort(
+          message = "Missing required parameter `model_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `model_name`."
+          )
+        )
       }
 
       if (missing(`schema_id`)) {
-        rlang::abort(message = "Missing required parameter `schema_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `schema_id`."))
+        rlang::abort(
+          message = "Missing required parameter `schema_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `schema_id`."
+          )
+        )
       }
 
       if (missing(`group_by_request_body`)) {
-        rlang::abort(message = "Missing required parameter `group_by_request_body`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `group_by_request_body`."))
+        rlang::abort(
+          message = "Missing required parameter `group_by_request_body`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `group_by_request_body`."
+          )
+        )
       }
 
 
@@ -2781,18 +3066,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list("application/json")
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "POST",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "POST",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -2803,9 +3090,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -2825,9 +3114,9 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Transfer Ownership
     #'
-    #' @param instance_id 
-    #' @param handle 
-    #' @param schema_id 
+    #' @param instance_id
+    #' @param handle
+    #' @param schema_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -2849,9 +3138,9 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Transfer Ownership
     #'
-    #' @param instance_id 
-    #' @param handle 
-    #' @param schema_id 
+    #' @param instance_id
+    #' @param handle
+    #' @param schema_id
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -2868,24 +3157,36 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
       if (missing(`handle`)) {
-        rlang::abort(message = "Missing required parameter `handle`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `handle`."))
+        rlang::abort(
+          message = "Missing required parameter `handle`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `handle`."
+          )
+        )
       }
 
       if (missing(`schema_id`)) {
-        rlang::abort(message = "Missing required parameter `schema_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `schema_id`."))
+        rlang::abort(
+          message = "Missing required parameter `schema_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `schema_id`."
+          )
+        )
       }
 
 
@@ -2912,18 +3213,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list()
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "PATCH",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "PATCH",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -2934,9 +3237,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -2956,9 +3261,9 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Update Collaborator
     #'
-    #' @param instance_id 
-    #' @param account_id 
-    #' @param role 
+    #' @param instance_id
+    #' @param account_id
+    #' @param role
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -2980,9 +3285,9 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Update Collaborator
     #'
-    #' @param instance_id 
-    #' @param account_id 
-    #' @param role 
+    #' @param instance_id
+    #' @param account_id
+    #' @param role
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -2999,24 +3304,36 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
       if (missing(`account_id`)) {
-        rlang::abort(message = "Missing required parameter `account_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `account_id`."))
+        rlang::abort(
+          message = "Missing required parameter `account_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `account_id`."
+          )
+        )
       }
 
       if (missing(`role`)) {
-        rlang::abort(message = "Missing required parameter `role`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `role`."))
+        rlang::abort(
+          message = "Missing required parameter `role`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `role`."
+          )
+        )
       }
 
 
@@ -3026,10 +3343,14 @@ DefaultApi <- R6::R6Class(
       header_params["Authorization"] <- `authorization`
 
       if (!is.null(`role`) && !(`role` %in% c("admin", "write", "read"))) {
-        rlang::abort(message = "Invalid value for `role` when calling DefaultApi$UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch. Must be [admin, write, read].",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Invalid value for `role` when calling DefaultApi$UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch. Must be [admin, write, read]."))
+        rlang::abort(
+          message = "Invalid value for `role` when calling DefaultApi$UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch. Must be [admin, write, read].",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Invalid value for `role` when calling DefaultApi$UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch. Must be [admin, write, read]."
+          )
+        )
       }
       query_params[["role"]] <- `role`
 
@@ -3049,18 +3370,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list()
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "PATCH",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "PATCH",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -3071,9 +3394,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj
@@ -3093,12 +3418,12 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Update Record
     #'
-    #' @param instance_id 
-    #' @param module_name 
-    #' @param model_name 
-    #' @param uid 
-    #' @param schema_id 
-    #' @param body 
+    #' @param instance_id
+    #' @param module_name
+    #' @param model_name
+    #' @param uid
+    #' @param schema_id
+    #' @param body
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -3120,12 +3445,12 @@ DefaultApi <- R6::R6Class(
     #' @description
     #' Update Record
     #'
-    #' @param instance_id 
-    #' @param module_name 
-    #' @param model_name 
-    #' @param uid 
-    #' @param schema_id 
-    #' @param body 
+    #' @param instance_id
+    #' @param module_name
+    #' @param model_name
+    #' @param uid
+    #' @param schema_id
+    #' @param body
     #' @param authorization (optional) No description
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
@@ -3142,45 +3467,69 @@ DefaultApi <- R6::R6Class(
       is_oauth <- FALSE
 
       if (missing(`instance_id`)) {
-        rlang::abort(message = "Missing required parameter `instance_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `instance_id`."))
+        rlang::abort(
+          message = "Missing required parameter `instance_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `instance_id`."
+          )
+        )
       }
 
       if (missing(`module_name`)) {
-        rlang::abort(message = "Missing required parameter `module_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `module_name`."))
+        rlang::abort(
+          message = "Missing required parameter `module_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `module_name`."
+          )
+        )
       }
 
       if (missing(`model_name`)) {
-        rlang::abort(message = "Missing required parameter `model_name`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `model_name`."))
+        rlang::abort(
+          message = "Missing required parameter `model_name`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `model_name`."
+          )
+        )
       }
 
       if (missing(`uid`)) {
-        rlang::abort(message = "Missing required parameter `uid`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `uid`."))
+        rlang::abort(
+          message = "Missing required parameter `uid`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `uid`."
+          )
+        )
       }
 
       if (missing(`schema_id`)) {
-        rlang::abort(message = "Missing required parameter `schema_id`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `schema_id`."))
+        rlang::abort(
+          message = "Missing required parameter `schema_id`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `schema_id`."
+          )
+        )
       }
 
       if (missing(`body`)) {
-        rlang::abort(message = "Missing required parameter `body`.",
-                     .subclass = "ApiException",
-                     ApiException = ApiException$new(status = 0,
-                                                     reason = "Missing required parameter `body`."))
+        rlang::abort(
+          message = "Missing required parameter `body`.",
+          .subclass = "ApiException",
+          ApiException = ApiException$new(
+            status = 0,
+            reason = "Missing required parameter `body`."
+          )
+        )
       }
 
 
@@ -3224,18 +3573,20 @@ DefaultApi <- R6::R6Class(
       # The Content-Type representation header
       local_var_content_types <- list("application/json")
 
-      local_var_resp <- self$api_client$CallApi(url = paste0(self$api_client$base_path, local_var_url_path),
-                                 method = "PATCH",
-                                 query_params = query_params,
-                                 header_params = header_params,
-                                 form_params = form_params,
-                                 file_params = file_params,
-                                 accepts = local_var_accepts,
-                                 content_types = local_var_content_types,
-                                 body = local_var_body,
-                                 is_oauth = is_oauth,
-                                 oauth_scopes = oauth_scopes,
-                                 ...)
+      local_var_resp <- self$api_client$CallApi(
+        url = paste0(self$api_client$base_path, local_var_url_path),
+        method = "PATCH",
+        query_params = query_params,
+        header_params = header_params,
+        form_params = form_params,
+        file_params = file_params,
+        accepts = local_var_accepts,
+        content_types = local_var_content_types,
+        body = local_var_body,
+        is_oauth = is_oauth,
+        oauth_scopes = oauth_scopes,
+        ...
+      )
 
       if (local_var_resp$status_code >= 200 && local_var_resp$status_code <= 299) {
         # save response in a file
@@ -3246,9 +3597,11 @@ DefaultApi <- R6::R6Class(
         deserialized_resp_obj <- tryCatch(
           self$api_client$deserialize(local_var_resp$response_as_text(), "AnyType", loadNamespace("laminr.api")),
           error = function(e) {
-            rlang::abort(message = "Failed to deserialize response",
-                         .subclass = "ApiException",
-                         ApiException = ApiException$new(http_response = local_var_resp))
+            rlang::abort(
+              message = "Failed to deserialize response",
+              .subclass = "ApiException",
+              ApiException = ApiException$new(http_response = local_var_resp)
+            )
           }
         )
         local_var_resp$content <- deserialized_resp_obj

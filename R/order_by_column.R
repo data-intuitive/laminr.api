@@ -80,18 +80,18 @@ OrderByColumn <- R6::R6Class(
       jsoncontent <- c(
         if (!is.null(self$`field`)) {
           sprintf(
-          '"field":
+            '"field":
             "%s"
                     ',
-          self$`field`
+            self$`field`
           )
         },
         if (!is.null(self$`descending`)) {
           sprintf(
-          '"descending":
+            '"descending":
             %s
                     ',
-          tolower(self$`descending`)
+            tolower(self$`descending`)
           )
         }
       )
@@ -182,4 +182,3 @@ OrderByColumn <- R6::R6Class(
 # })
 ## Uncomment below to lock the class to prevent modifications to the method or field
 # OrderByColumn$lock()
-

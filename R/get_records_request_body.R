@@ -107,34 +107,34 @@ GetRecordsRequestBody <- R6::R6Class(
       jsoncontent <- c(
         if (!is.null(self$`select`)) {
           sprintf(
-          '"select":
+            '"select":
              [%s]
           ',
-          paste(unlist(lapply(self$`select`, function(x) paste0('"', x, '"'))), collapse = ",")
+            paste(unlist(lapply(self$`select`, function(x) paste0('"', x, '"'))), collapse = ",")
           )
         },
         if (!is.null(self$`filter`)) {
           sprintf(
-          '"filter":
+            '"filter":
             "%s"
                     ',
-          self$`filter`
+            self$`filter`
           )
         },
         if (!is.null(self$`order_by`)) {
           sprintf(
-          '"order_by":
+            '"order_by":
           [%s]
 ',
-          paste(sapply(self$`order_by`, function(x) jsonlite::toJSON(x$toJSON(), auto_unbox = TRUE, digits = NA)), collapse = ",")
+            paste(sapply(self$`order_by`, function(x) jsonlite::toJSON(x$toJSON(), auto_unbox = TRUE, digits = NA)), collapse = ",")
           )
         },
         if (!is.null(self$`search`)) {
           sprintf(
-          '"search":
+            '"search":
             "%s"
                     ',
-          self$`search`
+            self$`search`
           )
         }
       )
@@ -209,4 +209,3 @@ GetRecordsRequestBody <- R6::R6Class(
 # })
 ## Uncomment below to lock the class to prevent modifications to the method or field
 # GetRecordsRequestBody$lock()
-

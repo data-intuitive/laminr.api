@@ -9,19 +9,19 @@ test_that("loc", {
   # tests for the property `loc` (array[ValidationErrorLocInner])
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`loc`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`loc`, "EXPECTED_RESULT")
 })
 
 test_that("msg", {
   # tests for the property `msg` (character)
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`msg`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`msg`, "EXPECTED_RESULT")
 })
 
 test_that("type", {
   # tests for the property `type` (character)
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`type`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`type`, "EXPECTED_RESULT")
 })

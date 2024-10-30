@@ -9,12 +9,12 @@ test_that("field_name", {
   # tests for the property `field_name` (character)
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`field_name`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`field_name`, "EXPECTED_RESULT")
 })
 
 test_that("func", {
   # tests for the property `func` (character)
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`func`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`func`, "EXPECTED_RESULT")
 })

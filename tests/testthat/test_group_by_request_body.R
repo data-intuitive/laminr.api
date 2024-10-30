@@ -9,19 +9,19 @@ test_that("dimensions", {
   # tests for the property `dimensions` (array[Dimension])
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`dimensions`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`dimensions`, "EXPECTED_RESULT")
 })
 
 test_that("measures", {
   # tests for the property `measures` (array[Measure])
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`measures`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`measures`, "EXPECTED_RESULT")
 })
 
 test_that("filter", {
   # tests for the property `filter` (object)
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`filter`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`filter`, "EXPECTED_RESULT")
 })

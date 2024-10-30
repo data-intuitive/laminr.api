@@ -91,26 +91,26 @@ GroupByRequestBody <- R6::R6Class(
       jsoncontent <- c(
         if (!is.null(self$`dimensions`)) {
           sprintf(
-          '"dimensions":
+            '"dimensions":
           [%s]
 ',
-          paste(sapply(self$`dimensions`, function(x) jsonlite::toJSON(x$toJSON(), auto_unbox = TRUE, digits = NA)), collapse = ",")
+            paste(sapply(self$`dimensions`, function(x) jsonlite::toJSON(x$toJSON(), auto_unbox = TRUE, digits = NA)), collapse = ",")
           )
         },
         if (!is.null(self$`measures`)) {
           sprintf(
-          '"measures":
+            '"measures":
           [%s]
 ',
-          paste(sapply(self$`measures`, function(x) jsonlite::toJSON(x$toJSON(), auto_unbox = TRUE, digits = NA)), collapse = ",")
+            paste(sapply(self$`measures`, function(x) jsonlite::toJSON(x$toJSON(), auto_unbox = TRUE, digits = NA)), collapse = ",")
           )
         },
         if (!is.null(self$`filter`)) {
           sprintf(
-          '"filter":
+            '"filter":
             "%s"
                     ',
-          self$`filter`
+            self$`filter`
           )
         }
       )
@@ -218,4 +218,3 @@ GroupByRequestBody <- R6::R6Class(
 # })
 ## Uncomment below to lock the class to prevent modifications to the method or field
 # GroupByRequestBody$lock()
-

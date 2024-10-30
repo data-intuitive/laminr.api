@@ -95,26 +95,26 @@ ValidationError <- R6::R6Class(
       jsoncontent <- c(
         if (!is.null(self$`loc`)) {
           sprintf(
-          '"loc":
+            '"loc":
           [%s]
 ',
-          paste(sapply(self$`loc`, function(x) jsonlite::toJSON(x$toJSON(), auto_unbox = TRUE, digits = NA)), collapse = ",")
+            paste(sapply(self$`loc`, function(x) jsonlite::toJSON(x$toJSON(), auto_unbox = TRUE, digits = NA)), collapse = ",")
           )
         },
         if (!is.null(self$`msg`)) {
           sprintf(
-          '"msg":
+            '"msg":
             "%s"
                     ',
-          self$`msg`
+            self$`msg`
           )
         },
         if (!is.null(self$`type`)) {
           sprintf(
-          '"type":
+            '"type":
             "%s"
                     ',
-          self$`type`
+            self$`type`
           )
         }
       )
@@ -241,4 +241,3 @@ ValidationError <- R6::R6Class(
 # })
 ## Uncomment below to lock the class to prevent modifications to the method or field
 # ValidationError$lock()
-

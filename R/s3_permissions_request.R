@@ -96,26 +96,26 @@ S3PermissionsRequest <- R6::R6Class(
       jsoncontent <- c(
         if (!is.null(self$`aws_access_key_id`)) {
           sprintf(
-          '"aws_access_key_id":
+            '"aws_access_key_id":
             "%s"
                     ',
-          self$`aws_access_key_id`
+            self$`aws_access_key_id`
           )
         },
         if (!is.null(self$`aws_secret_access_key`)) {
           sprintf(
-          '"aws_secret_access_key":
+            '"aws_secret_access_key":
             "%s"
                     ',
-          self$`aws_secret_access_key`
+            self$`aws_secret_access_key`
           )
         },
         if (!is.null(self$`region`)) {
           sprintf(
-          '"region":
+            '"region":
             "%s"
                     ',
-          self$`region`
+            self$`region`
           )
         }
       )
@@ -243,4 +243,3 @@ S3PermissionsRequest <- R6::R6Class(
 # })
 ## Uncomment below to lock the class to prevent modifications to the method or field
 # S3PermissionsRequest$lock()
-

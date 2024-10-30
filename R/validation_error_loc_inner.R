@@ -25,15 +25,17 @@ ValidationErrorLocInner <- R6::R6Class(
     initialize = function(instance = NULL) {
       if (is.null(instance)) {
         # do nothing
-      } else if (get(class(instance)[[1]], pos = -1)$classname ==  "character") {
+      } else if (get(class(instance)[[1]], pos = -1)$classname == "character") {
         self$actual_instance <- instance
         self$actual_type <- "character"
-      } else if (get(class(instance)[[1]], pos = -1)$classname ==  "integer") {
+      } else if (get(class(instance)[[1]], pos = -1)$classname == "integer") {
         self$actual_instance <- instance
         self$actual_type <- "integer"
       } else {
-        stop(paste("Failed to initialize ValidationErrorLocInner with anyOf schemas character, integer. Provided class name: ",
-                   get(class(instance)[[1]], pos = -1)$classname))
+        stop(paste(
+          "Failed to initialize ValidationErrorLocInner with anyOf schemas character, integer. Provided class name: ",
+          get(class(instance)[[1]], pos = -1)$classname
+        ))
       }
     },
 
@@ -57,7 +59,8 @@ ValidationErrorLocInner <- R6::R6Class(
     fromJSON = function(input) {
       error_messages <- list()
 
-      `character_result` <- tryCatch({
+      `character_result` <- tryCatch(
+        {
           instance <- jsonlite::fromJSON(input, simplifyVector = FALSE)
           if (typeof(instance) != "character") {
             stop(sprintf("Data type doesn't match. Expected: %s. Actual: %s.", "character", typeof(instance)))
@@ -73,7 +76,8 @@ ValidationErrorLocInner <- R6::R6Class(
         error_messages <- append(error_messages, `character_result`["message"])
       }
 
-      `integer_result` <- tryCatch({
+      `integer_result` <- tryCatch(
+        {
           instance <- jsonlite::fromJSON(input, simplifyVector = FALSE)
           if (typeof(instance) != "integer") {
             stop(sprintf("Data type doesn't match. Expected: %s. Actual: %s.", "integer", typeof(instance)))
@@ -90,8 +94,10 @@ ValidationErrorLocInner <- R6::R6Class(
       }
 
       # no match
-      stop(paste("No match found when deserializing the input into ValidationErrorLocInner with anyOf schemas character, integer. Details: >>",
-                 paste(error_messages, collapse = " >> ")))
+      stop(paste(
+        "No match found when deserializing the input into ValidationErrorLocInner with anyOf schemas character, integer. Details: >>",
+        paste(error_messages, collapse = " >> ")
+      ))
     },
 
     #' @description
@@ -161,13 +167,12 @@ ValidationErrorLocInner <- R6::R6Class(
   lock_class = TRUE
 )
 ## Uncomment below to unlock the class to allow modifications of the method or field
-#ValidationErrorLocInner$unlock()
+# ValidationErrorLocInner$unlock()
 #
 ## Below is an example to define the print function
-#ValidationErrorLocInner$set("public", "print", function(...) {
+# ValidationErrorLocInner$set("public", "print", function(...) {
 #  print(jsonlite::prettify(self$toJSONString()))
 #  invisible(self)
-#})
+# })
 ## Uncomment below to lock the class to prevent modifications to the method or field
-#ValidationErrorLocInner$lock()
-
+# ValidationErrorLocInner$lock()

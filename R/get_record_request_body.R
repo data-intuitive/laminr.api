@@ -63,10 +63,10 @@ GetRecordRequestBody <- R6::R6Class(
       jsoncontent <- c(
         if (!is.null(self$`select`)) {
           sprintf(
-          '"select":
+            '"select":
              [%s]
           ',
-          paste(unlist(lapply(self$`select`, function(x) paste0('"', x, '"'))), collapse = ",")
+            paste(unlist(lapply(self$`select`, function(x) paste0('"', x, '"'))), collapse = ",")
           )
         }
       )
@@ -138,4 +138,3 @@ GetRecordRequestBody <- R6::R6Class(
 # })
 ## Uncomment below to lock the class to prevent modifications to the method or field
 # GetRecordRequestBody$lock()
-

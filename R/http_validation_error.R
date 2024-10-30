@@ -63,10 +63,10 @@ HTTPValidationError <- R6::R6Class(
       jsoncontent <- c(
         if (!is.null(self$`detail`)) {
           sprintf(
-          '"detail":
+            '"detail":
           [%s]
 ',
-          paste(sapply(self$`detail`, function(x) jsonlite::toJSON(x$toJSON(), auto_unbox = TRUE, digits = NA)), collapse = ",")
+            paste(sapply(self$`detail`, function(x) jsonlite::toJSON(x$toJSON(), auto_unbox = TRUE, digits = NA)), collapse = ",")
           )
         }
       )
@@ -138,4 +138,3 @@ HTTPValidationError <- R6::R6Class(
 # })
 ## Uncomment below to lock the class to prevent modifications to the method or field
 # HTTPValidationError$lock()
-

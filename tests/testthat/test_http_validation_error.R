@@ -9,5 +9,5 @@ test_that("detail", {
   # tests for the property `detail` (array[ValidationError])
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`detail`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`detail`, "EXPECTED_RESULT")
 })

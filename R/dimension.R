@@ -86,18 +86,18 @@ Dimension <- R6::R6Class(
       jsoncontent <- c(
         if (!is.null(self$`field_name`)) {
           sprintf(
-          '"field_name":
+            '"field_name":
             "%s"
                     ',
-          self$`field_name`
+            self$`field_name`
           )
         },
         if (!is.null(self$`func`)) {
           sprintf(
-          '"func":
+            '"func":
             "%s"
                     ',
-          self$`func`
+            self$`func`
           )
         }
       )
@@ -191,4 +191,3 @@ Dimension <- R6::R6Class(
 # })
 ## Uncomment below to lock the class to prevent modifications to the method or field
 # Dimension$lock()
-

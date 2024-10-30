@@ -9,19 +9,19 @@ test_that("aws_access_key_id", {
   # tests for the property `aws_access_key_id` (character)
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`aws_access_key_id`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`aws_access_key_id`, "EXPECTED_RESULT")
 })
 
 test_that("aws_secret_access_key", {
   # tests for the property `aws_secret_access_key` (character)
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`aws_secret_access_key`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`aws_secret_access_key`, "EXPECTED_RESULT")
 })
 
 test_that("region", {
   # tests for the property `region` (character)
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`region`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`region`, "EXPECTED_RESULT")
 })

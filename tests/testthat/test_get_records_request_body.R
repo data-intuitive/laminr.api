@@ -9,26 +9,26 @@ test_that("select", {
   # tests for the property `select` (array[character])
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`select`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`select`, "EXPECTED_RESULT")
 })
 
 test_that("filter", {
   # tests for the property `filter` (object)
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`filter`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`filter`, "EXPECTED_RESULT")
 })
 
 test_that("order_by", {
   # tests for the property `order_by` (array[OrderByColumn])
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`order_by`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`order_by`, "EXPECTED_RESULT")
 })
 
 test_that("search", {
   # tests for the property `search` (character)
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`search`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`search`, "EXPECTED_RESULT")
 })

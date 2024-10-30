@@ -19,8 +19,7 @@ GroupByRequestBody <- R6::R6Class(
     `dimensions` = NULL,
     `measures` = NULL,
     `filter` = NULL,
-    #' Initialize a new GroupByRequestBody class.
-    #'
+
     #' @description
     #' Initialize a new GroupByRequestBody class.
     #'
@@ -28,7 +27,6 @@ GroupByRequestBody <- R6::R6Class(
     #' @param measures measures
     #' @param filter filter
     #' @param ... Other optional arguments.
-    #' @export
     initialize = function(`dimensions`, `measures`, `filter` = NULL, ...) {
       if (!missing(`dimensions`)) {
         stopifnot(is.vector(`dimensions`), length(`dimensions`) != 0)
@@ -44,13 +42,11 @@ GroupByRequestBody <- R6::R6Class(
         self$`filter` <- `filter`
       }
     },
-    #' To JSON string
-    #'
+
     #' @description
     #' To JSON String
     #'
     #' @return GroupByRequestBody in JSON format
-    #' @export
     toJSON = function() {
       GroupByRequestBodyObject <- list()
       if (!is.null(self$`dimensions`)) {
@@ -67,14 +63,12 @@ GroupByRequestBody <- R6::R6Class(
       }
       GroupByRequestBodyObject
     },
-    #' Deserialize JSON string into an instance of GroupByRequestBody
-    #'
+
     #' @description
     #' Deserialize JSON string into an instance of GroupByRequestBody
     #'
     #' @param input_json the JSON input
     #' @return the instance of GroupByRequestBody
-    #' @export
     fromJSON = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       if (!is.null(this_object$`dimensions`)) {
@@ -88,13 +82,11 @@ GroupByRequestBody <- R6::R6Class(
       }
       self
     },
-    #' To JSON string
-    #'
+
     #' @description
     #' To JSON String
     #'
     #' @return GroupByRequestBody in JSON format
-    #' @export
     toJSONString = function() {
       jsoncontent <- c(
         if (!is.null(self$`dimensions`)) {
@@ -125,14 +117,12 @@ GroupByRequestBody <- R6::R6Class(
       jsoncontent <- paste(jsoncontent, collapse = ",")
       json_string <- as.character(jsonlite::minify(paste("{", jsoncontent, "}", sep = "")))
     },
-    #' Deserialize JSON string into an instance of GroupByRequestBody
-    #'
+
     #' @description
     #' Deserialize JSON string into an instance of GroupByRequestBody
     #'
     #' @param input_json the JSON input
     #' @return the instance of GroupByRequestBody
-    #' @export
     fromJSONString = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       self$`dimensions` <- ApiClient$new()$deserializeObj(this_object$`dimensions`, "array[Dimension]", loadNamespace("laminr.api"))
@@ -140,13 +130,11 @@ GroupByRequestBody <- R6::R6Class(
       self$`filter` <- this_object$`filter`
       self
     },
-    #' Validate JSON input with respect to GroupByRequestBody
-    #'
+
     #' @description
     #' Validate JSON input with respect to GroupByRequestBody and throw an exception if invalid
     #'
     #' @param input the JSON input
-    #' @export
     validateJSON = function(input) {
       input_json <- jsonlite::fromJSON(input)
       # check the required field `dimensions`
@@ -164,23 +152,19 @@ GroupByRequestBody <- R6::R6Class(
         stop(paste("The JSON input `", input, "` is invalid for GroupByRequestBody: the required field `measures` is missing."))
       }
     },
-    #' To string (JSON format)
-    #'
+
     #' @description
     #' To string (JSON format)
     #'
     #' @return String representation of GroupByRequestBody
-    #' @export
     toString = function() {
       self$toJSONString()
     },
-    #' Return true if the values in all fields are valid.
-    #'
+
     #' @description
     #' Return true if the values in all fields are valid.
     #'
     #' @return true if the values in all fields are valid.
-    #' @export
     isValid = function() {
       # check if the required `dimensions` is null
       if (is.null(self$`dimensions`)) {
@@ -194,13 +178,11 @@ GroupByRequestBody <- R6::R6Class(
 
       TRUE
     },
-    #' Return a list of invalid fields (if any).
-    #'
+
     #' @description
     #' Return a list of invalid fields (if any).
     #'
     #' @return A list of invalid fields (if any).
-    #' @export
     getInvalidFields = function() {
       invalid_fields <- list()
       # check if the required `dimensions` is null
@@ -215,12 +197,9 @@ GroupByRequestBody <- R6::R6Class(
 
       invalid_fields
     },
-    #' Print the object
-    #'
+
     #' @description
     #' Print the object
-    #'
-    #' @export
     print = function() {
       print(jsonlite::prettify(self$toJSONString()))
       invisible(self)

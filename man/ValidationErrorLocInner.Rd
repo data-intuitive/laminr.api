@@ -17,8 +17,7 @@ ValidationErrorLocInner Class
 
 \item{\code{actual_type}}{the type of the object stored in this instance.}
 
-\item{\code{any_of}}{a list of object types defined in the anyOf schema.
-Initialize a new ValidationErrorLocInner.}
+\item{\code{any_of}}{a list of object types defined in the anyOf schema.}
 }
 \if{html}{\out{</div>}}
 }

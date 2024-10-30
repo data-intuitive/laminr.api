@@ -17,15 +17,13 @@ Dimension <- R6::R6Class(
   public = list(
     `field_name` = NULL,
     `func` = NULL,
-    #' Initialize a new Dimension class.
-    #'
+
     #' @description
     #' Initialize a new Dimension class.
     #'
     #' @param field_name field_name
     #' @param func func
     #' @param ... Other optional arguments.
-    #' @export
     initialize = function(`field_name`, `func` = NULL, ...) {
       if (!missing(`field_name`)) {
         if (!(is.character(`field_name`) && length(`field_name`) == 1)) {
@@ -43,13 +41,11 @@ Dimension <- R6::R6Class(
         self$`func` <- `func`
       }
     },
-    #' To JSON string
-    #'
+
     #' @description
     #' To JSON String
     #'
     #' @return Dimension in JSON format
-    #' @export
     toJSON = function() {
       DimensionObject <- list()
       if (!is.null(self$`field_name`)) {
@@ -62,14 +58,12 @@ Dimension <- R6::R6Class(
       }
       DimensionObject
     },
-    #' Deserialize JSON string into an instance of Dimension
-    #'
+
     #' @description
     #' Deserialize JSON string into an instance of Dimension
     #'
     #' @param input_json the JSON input
     #' @return the instance of Dimension
-    #' @export
     fromJSON = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       if (!is.null(this_object$`field_name`)) {
@@ -83,13 +77,11 @@ Dimension <- R6::R6Class(
       }
       self
     },
-    #' To JSON string
-    #'
+
     #' @description
     #' To JSON String
     #'
     #' @return Dimension in JSON format
-    #' @export
     toJSONString = function() {
       jsoncontent <- c(
         if (!is.null(self$`field_name`)) {
@@ -112,14 +104,12 @@ Dimension <- R6::R6Class(
       jsoncontent <- paste(jsoncontent, collapse = ",")
       json_string <- as.character(jsonlite::minify(paste("{", jsoncontent, "}", sep = "")))
     },
-    #' Deserialize JSON string into an instance of Dimension
-    #'
+
     #' @description
     #' Deserialize JSON string into an instance of Dimension
     #'
     #' @param input_json the JSON input
     #' @return the instance of Dimension
-    #' @export
     fromJSONString = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       self$`field_name` <- this_object$`field_name`
@@ -129,13 +119,11 @@ Dimension <- R6::R6Class(
       self$`func` <- this_object$`func`
       self
     },
-    #' Validate JSON input with respect to Dimension
-    #'
+
     #' @description
     #' Validate JSON input with respect to Dimension and throw an exception if invalid
     #'
     #' @param input the JSON input
-    #' @export
     validateJSON = function(input) {
       input_json <- jsonlite::fromJSON(input)
       # check the required field `field_name`
@@ -147,23 +135,19 @@ Dimension <- R6::R6Class(
         stop(paste("The JSON input `", input, "` is invalid for Dimension: the required field `field_name` is missing."))
       }
     },
-    #' To string (JSON format)
-    #'
+
     #' @description
     #' To string (JSON format)
     #'
     #' @return String representation of Dimension
-    #' @export
     toString = function() {
       self$toJSONString()
     },
-    #' Return true if the values in all fields are valid.
-    #'
+
     #' @description
     #' Return true if the values in all fields are valid.
     #'
     #' @return true if the values in all fields are valid.
-    #' @export
     isValid = function() {
       # check if the required `field_name` is null
       if (is.null(self$`field_name`)) {
@@ -172,13 +156,11 @@ Dimension <- R6::R6Class(
 
       TRUE
     },
-    #' Return a list of invalid fields (if any).
-    #'
+
     #' @description
     #' Return a list of invalid fields (if any).
     #'
     #' @return A list of invalid fields (if any).
-    #' @export
     getInvalidFields = function() {
       invalid_fields <- list()
       # check if the required `field_name` is null
@@ -188,12 +170,9 @@ Dimension <- R6::R6Class(
 
       invalid_fields
     },
-    #' Print the object
-    #'
+
     #' @description
     #' Print the object
-    #'
-    #' @export
     print = function() {
       print(jsonlite::prettify(self$toJSONString()))
       invisible(self)

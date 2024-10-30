@@ -19,8 +19,7 @@ GetValuesRequestBody <- R6::R6Class(
     `filter` = NULL,
     `order_by` = NULL,
     `search` = NULL,
-    #' Initialize a new GetValuesRequestBody class.
-    #'
+
     #' @description
     #' Initialize a new GetValuesRequestBody class.
     #'
@@ -28,7 +27,6 @@ GetValuesRequestBody <- R6::R6Class(
     #' @param order_by order_by
     #' @param search search. Default to "".
     #' @param ... Other optional arguments.
-    #' @export
     initialize = function(`filter` = NULL, `order_by` = NULL, `search` = "", ...) {
       if (!is.null(`filter`)) {
         self$`filter` <- `filter`
@@ -45,13 +43,11 @@ GetValuesRequestBody <- R6::R6Class(
         self$`search` <- `search`
       }
     },
-    #' To JSON string
-    #'
+
     #' @description
     #' To JSON String
     #'
     #' @return GetValuesRequestBody in JSON format
-    #' @export
     toJSON = function() {
       GetValuesRequestBodyObject <- list()
       if (!is.null(self$`filter`)) {
@@ -68,14 +64,12 @@ GetValuesRequestBody <- R6::R6Class(
       }
       GetValuesRequestBodyObject
     },
-    #' Deserialize JSON string into an instance of GetValuesRequestBody
-    #'
+
     #' @description
     #' Deserialize JSON string into an instance of GetValuesRequestBody
     #'
     #' @param input_json the JSON input
     #' @return the instance of GetValuesRequestBody
-    #' @export
     fromJSON = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       if (!is.null(this_object$`filter`)) {
@@ -89,13 +83,11 @@ GetValuesRequestBody <- R6::R6Class(
       }
       self
     },
-    #' To JSON string
-    #'
+
     #' @description
     #' To JSON String
     #'
     #' @return GetValuesRequestBody in JSON format
-    #' @export
     toJSONString = function() {
       jsoncontent <- c(
         if (!is.null(self$`filter`)) {
@@ -126,14 +118,12 @@ GetValuesRequestBody <- R6::R6Class(
       jsoncontent <- paste(jsoncontent, collapse = ",")
       json_string <- as.character(jsonlite::minify(paste("{", jsoncontent, "}", sep = "")))
     },
-    #' Deserialize JSON string into an instance of GetValuesRequestBody
-    #'
+
     #' @description
     #' Deserialize JSON string into an instance of GetValuesRequestBody
     #'
     #' @param input_json the JSON input
     #' @return the instance of GetValuesRequestBody
-    #' @export
     fromJSONString = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       self$`filter` <- this_object$`filter`
@@ -141,53 +131,42 @@ GetValuesRequestBody <- R6::R6Class(
       self$`search` <- this_object$`search`
       self
     },
-    #' Validate JSON input with respect to GetValuesRequestBody
-    #'
+
     #' @description
     #' Validate JSON input with respect to GetValuesRequestBody and throw an exception if invalid
     #'
     #' @param input the JSON input
-    #' @export
     validateJSON = function(input) {
       input_json <- jsonlite::fromJSON(input)
     },
-    #' To string (JSON format)
-    #'
+
     #' @description
     #' To string (JSON format)
     #'
     #' @return String representation of GetValuesRequestBody
-    #' @export
     toString = function() {
       self$toJSONString()
     },
-    #' Return true if the values in all fields are valid.
-    #'
+
     #' @description
     #' Return true if the values in all fields are valid.
     #'
     #' @return true if the values in all fields are valid.
-    #' @export
     isValid = function() {
       TRUE
     },
-    #' Return a list of invalid fields (if any).
-    #'
+
     #' @description
     #' Return a list of invalid fields (if any).
     #'
     #' @return A list of invalid fields (if any).
-    #' @export
     getInvalidFields = function() {
       invalid_fields <- list()
       invalid_fields
     },
-    #' Print the object
-    #'
+
     #' @description
     #' Print the object
-    #'
-    #' @export
     print = function() {
       print(jsonlite::prettify(self$toJSONString()))
       invisible(self)

@@ -21,15 +21,13 @@ ApiException <- R6::R6Class(
     reason = NULL,
     body = NULL,
     headers = NULL,
-    #' Initialize a new ApiException class.
-    #'
+
     #' @description
-    #' Initialize a new ApiExceptino class.
+    #' Initialize a new ApiException class.
     #'
     #' @param status HTTP status.
     #' @param reason Reason of the ApiException.
     #' @param http_response HTTP response object.
-    #' @export
     initialize = function(status = NULL, reason = NULL, http_response = NULL) {
       if (!is.null(http_response)) {
         self$status <- http_response$status_code
@@ -47,13 +45,11 @@ ApiException <- R6::R6Class(
         self$headers <- NULL
       }
     },
-    #' Returns the string format of ApiException.
-    #'
+
     #' @description
     #' Returns the string format of ApiException.
     #'
     #' @return the string format of ApiException.
-    #' @export
     toString = function() {
       errorMsg <- ""
       errorMsg <- paste("status : ", self$status, "\n", sep = "")

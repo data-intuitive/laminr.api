@@ -19,8 +19,7 @@ ValidationError <- R6::R6Class(
     `loc` = NULL,
     `msg` = NULL,
     `type` = NULL,
-    #' Initialize a new ValidationError class.
-    #'
+
     #' @description
     #' Initialize a new ValidationError class.
     #'
@@ -28,7 +27,6 @@ ValidationError <- R6::R6Class(
     #' @param msg msg
     #' @param type type
     #' @param ... Other optional arguments.
-    #' @export
     initialize = function(`loc`, `msg`, `type`, ...) {
       if (!missing(`loc`)) {
         stopifnot(is.vector(`loc`), length(`loc`) != 0)
@@ -48,13 +46,11 @@ ValidationError <- R6::R6Class(
         self$`type` <- `type`
       }
     },
-    #' To JSON string
-    #'
+
     #' @description
     #' To JSON String
     #'
     #' @return ValidationError in JSON format
-    #' @export
     toJSON = function() {
       ValidationErrorObject <- list()
       if (!is.null(self$`loc`)) {
@@ -71,14 +67,12 @@ ValidationError <- R6::R6Class(
       }
       ValidationErrorObject
     },
-    #' Deserialize JSON string into an instance of ValidationError
-    #'
+
     #' @description
     #' Deserialize JSON string into an instance of ValidationError
     #'
     #' @param input_json the JSON input
     #' @return the instance of ValidationError
-    #' @export
     fromJSON = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       if (!is.null(this_object$`loc`)) {
@@ -92,13 +86,11 @@ ValidationError <- R6::R6Class(
       }
       self
     },
-    #' To JSON string
-    #'
+
     #' @description
     #' To JSON String
     #'
     #' @return ValidationError in JSON format
-    #' @export
     toJSONString = function() {
       jsoncontent <- c(
         if (!is.null(self$`loc`)) {
@@ -129,14 +121,12 @@ ValidationError <- R6::R6Class(
       jsoncontent <- paste(jsoncontent, collapse = ",")
       json_string <- as.character(jsonlite::minify(paste("{", jsoncontent, "}", sep = "")))
     },
-    #' Deserialize JSON string into an instance of ValidationError
-    #'
+
     #' @description
     #' Deserialize JSON string into an instance of ValidationError
     #'
     #' @param input_json the JSON input
     #' @return the instance of ValidationError
-    #' @export
     fromJSONString = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       self$`loc` <- ApiClient$new()$deserializeObj(this_object$`loc`, "array[ValidationErrorLocInner]", loadNamespace("laminr.api"))
@@ -144,13 +134,11 @@ ValidationError <- R6::R6Class(
       self$`type` <- this_object$`type`
       self
     },
-    #' Validate JSON input with respect to ValidationError
-    #'
+
     #' @description
     #' Validate JSON input with respect to ValidationError and throw an exception if invalid
     #'
     #' @param input the JSON input
-    #' @export
     validateJSON = function(input) {
       input_json <- jsonlite::fromJSON(input)
       # check the required field `loc`
@@ -177,23 +165,19 @@ ValidationError <- R6::R6Class(
         stop(paste("The JSON input `", input, "` is invalid for ValidationError: the required field `type` is missing."))
       }
     },
-    #' To string (JSON format)
-    #'
+
     #' @description
     #' To string (JSON format)
     #'
     #' @return String representation of ValidationError
-    #' @export
     toString = function() {
       self$toJSONString()
     },
-    #' Return true if the values in all fields are valid.
-    #'
+
     #' @description
     #' Return true if the values in all fields are valid.
     #'
     #' @return true if the values in all fields are valid.
-    #' @export
     isValid = function() {
       # check if the required `loc` is null
       if (is.null(self$`loc`)) {
@@ -212,13 +196,11 @@ ValidationError <- R6::R6Class(
 
       TRUE
     },
-    #' Return a list of invalid fields (if any).
-    #'
+
     #' @description
     #' Return a list of invalid fields (if any).
     #'
     #' @return A list of invalid fields (if any).
-    #' @export
     getInvalidFields = function() {
       invalid_fields <- list()
       # check if the required `loc` is null
@@ -238,12 +220,9 @@ ValidationError <- R6::R6Class(
 
       invalid_fields
     },
-    #' Print the object
-    #'
+
     #' @description
     #' Print the object
-    #'
-    #' @export
     print = function() {
       print(jsonlite::prettify(self$toJSONString()))
       invisible(self)

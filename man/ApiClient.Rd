@@ -250,7 +250,8 @@ Deserialized object.
 \subsection{Method \code{deserializeObj()}}{
 Deserialize the response from jsonlite object based on the given type
 by handling complex and nested types by iterating recursively
-Example return_types will be like "array[integer]", "map(Pet)", "array[map(Tag)]", etc.,
+Example return_types will be like "array[integer]", "map(Pet)",
+"array[map(Tag)]", etc.,
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{ApiClient$deserializeObj(obj, return_type, pkg_env)}\if{html}{\out{</div>}}
 }

@@ -21,8 +21,7 @@ GetRecordsRequestBody <- R6::R6Class(
     `filter` = NULL,
     `order_by` = NULL,
     `search` = NULL,
-    #' Initialize a new GetRecordsRequestBody class.
-    #'
+
     #' @description
     #' Initialize a new GetRecordsRequestBody class.
     #'
@@ -31,7 +30,6 @@ GetRecordsRequestBody <- R6::R6Class(
     #' @param order_by order_by
     #' @param search search. Default to "".
     #' @param ... Other optional arguments.
-    #' @export
     initialize = function(`select` = NULL, `filter` = NULL, `order_by` = NULL, `search` = "", ...) {
       if (!is.null(`select`)) {
         stopifnot(is.vector(`select`), length(`select`) != 0)
@@ -53,13 +51,11 @@ GetRecordsRequestBody <- R6::R6Class(
         self$`search` <- `search`
       }
     },
-    #' To JSON string
-    #'
+
     #' @description
     #' To JSON String
     #'
     #' @return GetRecordsRequestBody in JSON format
-    #' @export
     toJSON = function() {
       GetRecordsRequestBodyObject <- list()
       if (!is.null(self$`select`)) {
@@ -80,14 +76,12 @@ GetRecordsRequestBody <- R6::R6Class(
       }
       GetRecordsRequestBodyObject
     },
-    #' Deserialize JSON string into an instance of GetRecordsRequestBody
-    #'
+
     #' @description
     #' Deserialize JSON string into an instance of GetRecordsRequestBody
     #'
     #' @param input_json the JSON input
     #' @return the instance of GetRecordsRequestBody
-    #' @export
     fromJSON = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       if (!is.null(this_object$`select`)) {
@@ -104,13 +98,11 @@ GetRecordsRequestBody <- R6::R6Class(
       }
       self
     },
-    #' To JSON string
-    #'
+
     #' @description
     #' To JSON String
     #'
     #' @return GetRecordsRequestBody in JSON format
-    #' @export
     toJSONString = function() {
       jsoncontent <- c(
         if (!is.null(self$`select`)) {
@@ -149,14 +141,12 @@ GetRecordsRequestBody <- R6::R6Class(
       jsoncontent <- paste(jsoncontent, collapse = ",")
       json_string <- as.character(jsonlite::minify(paste("{", jsoncontent, "}", sep = "")))
     },
-    #' Deserialize JSON string into an instance of GetRecordsRequestBody
-    #'
+
     #' @description
     #' Deserialize JSON string into an instance of GetRecordsRequestBody
     #'
     #' @param input_json the JSON input
     #' @return the instance of GetRecordsRequestBody
-    #' @export
     fromJSONString = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       self$`select` <- ApiClient$new()$deserializeObj(this_object$`select`, "array[character]", loadNamespace("laminr.api"))
@@ -165,53 +155,42 @@ GetRecordsRequestBody <- R6::R6Class(
       self$`search` <- this_object$`search`
       self
     },
-    #' Validate JSON input with respect to GetRecordsRequestBody
-    #'
+
     #' @description
     #' Validate JSON input with respect to GetRecordsRequestBody and throw an exception if invalid
     #'
     #' @param input the JSON input
-    #' @export
     validateJSON = function(input) {
       input_json <- jsonlite::fromJSON(input)
     },
-    #' To string (JSON format)
-    #'
+
     #' @description
     #' To string (JSON format)
     #'
     #' @return String representation of GetRecordsRequestBody
-    #' @export
     toString = function() {
       self$toJSONString()
     },
-    #' Return true if the values in all fields are valid.
-    #'
+
     #' @description
     #' Return true if the values in all fields are valid.
     #'
     #' @return true if the values in all fields are valid.
-    #' @export
     isValid = function() {
       TRUE
     },
-    #' Return a list of invalid fields (if any).
-    #'
+
     #' @description
     #' Return a list of invalid fields (if any).
     #'
     #' @return A list of invalid fields (if any).
-    #' @export
     getInvalidFields = function() {
       invalid_fields <- list()
       invalid_fields
     },
-    #' Print the object
-    #'
+
     #' @description
     #' Print the object
-    #'
-    #' @export
     print = function() {
       print(jsonlite::prettify(self$toJSONString()))
       invisible(self)

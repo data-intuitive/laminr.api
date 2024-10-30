@@ -16,6 +16,7 @@ Method | HTTP request | Description
 [**GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet**](DefaultApi.md#GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet) | **GET** /instances/{instance_id}/non_empty_tables | Get Non Empty Tables
 [**GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost**](DefaultApi.md#GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/{id_or_uid} | Get Record
 [**GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost**](DefaultApi.md#GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name} | Get Records
+[**GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGet**](DefaultApi.md#GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGet) | **GET** /instances/{instance_id}/modules/{module_name}/{model_name}/{id}/counts | Get Relation Counts
 [**GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet**](DefaultApi.md#GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet) | **GET** /instances/{instance_id}/schema/{module_name}/{model_name} | Get Relations
 [**GetSchemaInstancesInstanceIdSchemaGet**](DefaultApi.md#GetSchemaInstancesInstanceIdSchemaGet) | **GET** /instances/{instance_id}/schema | Get Schema
 [**GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost**](DefaultApi.md#GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/fields/{field_path} | Get Values
@@ -616,6 +617,58 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **422** | Validation Error |  -  |
+
+# **GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGet**
+> AnyType GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGet(instance_id, module_name, model_name, id, schema_id, authorization = var.authorization)
+
+Get Relation Counts
+
+### Example
+```R
+library(laminr.api)
+
+# Get Relation Counts
+#
+# prepare function argument(s)
+var_instance_id <- "instance_id_example" # character | 
+var_module_name <- "module_name_example" # character | 
+var_model_name <- "model_name_example" # character | 
+var_id <- 56 # integer | 
+var_schema_id <- "schema_id_example" # character | 
+var_authorization <- "authorization_example" # character |  (Optional)
+
+api_instance <- DefaultApi$new()
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **instance_id** | **character**|  | 
+ **module_name** | **character**|  | 
+ **model_name** | **character**|  | 
+ **id** | **integer**|  | 
+ **schema_id** | **character**|  | 
+ **authorization** | **character**|  | [optional] 
+
+### Return type
+
+AnyType
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

@@ -60,6 +60,8 @@ api
         GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPostWithHttpInfo: function (instance_id, module_name, model_name, id_or_uid, schema_id, 
         GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost: function (instance_id, module_name, model_name, schema_id, limit = 50, 
         GetRecordsInstancesInstanceIdModulesModuleNameModelNamePostWithHttpInfo: function (instance_id, module_name, model_name, schema_id, limit = 50, 
+        GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGet: function (instance_id, module_name, model_name, id, schema_id, 
+        GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGetWithHttpInfo: function (instance_id, module_name, model_name, id, schema_id, 
         GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet: function (module_name, model_name, instance_id, authorization = NULL, 
         GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGetWithHttpInfo: function (module_name, model_name, instance_id, authorization = NULL, 
         GetSchemaInstancesInstanceIdSchemaGet: function (instance_id, authorization = NULL, data_file = NULL, 
@@ -108,33 +110,6 @@ api$GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost(
 )
 ```
 
-    $`_key_is_virtual`
-    [1] FALSE
-
-    $is_latest
-    [1] TRUE
-
-    $`_hash_type`
-    [1] "md5-n"
-
-    $updated_at
-    [1] "2024-07-12T12:40:48.837026+00:00"
-
-    $visibility
-    [1] 1
-
-    $type
-    [1] "dataset"
-
-    $created_at
-    [1] "2024-07-12T12:34:10.345829+00:00"
-
-    $run_id
-    [1] 27
-
-    $suffix
-    [1] ".h5ad"
-
     $n_objects
     NULL
 
@@ -147,32 +122,59 @@ api$GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost(
     $hash
     [1] "SZ5tB0T4YKfiUuUkAL09ZA"
 
-    $transform_id
-    [1] 22
-
     $storage_id
     [1] 2
-
-    $version
-    [1] "2024-07-01"
-
-    $id
-    [1] 3659
 
     $`_accessor`
     [1] "AnnData"
 
+    $transform_id
+    [1] 22
+
+    $version
+    [1] "2024-07-01"
+
     $n_observations
     [1] 51552
+
+    $id
+    [1] 3659
 
     $created_by_id
     [1] 1
 
-    $key
-    [1] "cell-census/2024-07-01/h5ads/fe52003e-1460-4a65-a213-2bb1a508332f.h5ad"
+    $run_id
+    [1] 27
 
     $size
     [1] 691757462
+
+    $key
+    [1] "cell-census/2024-07-01/h5ads/fe52003e-1460-4a65-a213-2bb1a508332f.h5ad"
+
+    $`_hash_type`
+    [1] "md5-n"
+
+    $`_key_is_virtual`
+    [1] FALSE
+
+    $is_latest
+    [1] TRUE
+
+    $created_at
+    [1] "2024-07-12T12:34:10.345829+00:00"
+
+    $updated_at
+    [1] "2024-07-12T12:40:48.837026+00:00"
+
+    $type
+    [1] "dataset"
+
+    $visibility
+    [1] 1
+
+    $suffix
+    [1] ".h5ad"
 
 ## Documentation for API Endpoints
 

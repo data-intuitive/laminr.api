@@ -32,6 +32,10 @@ eval $CMD generate \
 # Hack to fix the auto-generated documentation so that checks pass
 sed -i 's/\[\*\*AnyType\*\*\](AnyType\.md)/AnyType/g' docs/DefaultApi.md
 sed -i 's/\\link{AnyType}/AnyType/g' R/default_api.R
+sed -i 's#${module}.\${model}#module + "." + model#g' R/default_api.R
+
+echo "Styling package..."
+Rscript -e "styler::style_pkg(include_roxygen_examples = TRUE)"
 
 echo "Documenting package..."
 Rscript -e "devtools::document()"

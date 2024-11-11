@@ -17,15 +17,13 @@ OrderByColumn <- R6::R6Class(
   public = list(
     `field` = NULL,
     `descending` = NULL,
-    #' Initialize a new OrderByColumn class.
-    #'
+
     #' @description
     #' Initialize a new OrderByColumn class.
     #'
     #' @param field field
     #' @param descending descending. Default to FALSE.
     #' @param ... Other optional arguments.
-    #' @export
     initialize = function(`field`, `descending` = FALSE, ...) {
       if (!missing(`field`)) {
         if (!(is.character(`field`) && length(`field`) == 1)) {
@@ -40,13 +38,11 @@ OrderByColumn <- R6::R6Class(
         self$`descending` <- `descending`
       }
     },
-    #' To JSON string
-    #'
+
     #' @description
     #' To JSON String
     #'
     #' @return OrderByColumn in JSON format
-    #' @export
     toJSON = function() {
       OrderByColumnObject <- list()
       if (!is.null(self$`field`)) {
@@ -59,14 +55,12 @@ OrderByColumn <- R6::R6Class(
       }
       OrderByColumnObject
     },
-    #' Deserialize JSON string into an instance of OrderByColumn
-    #'
+
     #' @description
     #' Deserialize JSON string into an instance of OrderByColumn
     #'
     #' @param input_json the JSON input
     #' @return the instance of OrderByColumn
-    #' @export
     fromJSON = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       if (!is.null(this_object$`field`)) {
@@ -77,56 +71,50 @@ OrderByColumn <- R6::R6Class(
       }
       self
     },
-    #' To JSON string
-    #'
+
     #' @description
     #' To JSON String
     #'
     #' @return OrderByColumn in JSON format
-    #' @export
     toJSONString = function() {
       jsoncontent <- c(
         if (!is.null(self$`field`)) {
           sprintf(
-          '"field":
+            '"field":
             "%s"
                     ',
-          self$`field`
+            self$`field`
           )
         },
         if (!is.null(self$`descending`)) {
           sprintf(
-          '"descending":
+            '"descending":
             %s
                     ',
-          tolower(self$`descending`)
+            tolower(self$`descending`)
           )
         }
       )
       jsoncontent <- paste(jsoncontent, collapse = ",")
       json_string <- as.character(jsonlite::minify(paste("{", jsoncontent, "}", sep = "")))
     },
-    #' Deserialize JSON string into an instance of OrderByColumn
-    #'
+
     #' @description
     #' Deserialize JSON string into an instance of OrderByColumn
     #'
     #' @param input_json the JSON input
     #' @return the instance of OrderByColumn
-    #' @export
     fromJSONString = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       self$`field` <- this_object$`field`
       self$`descending` <- this_object$`descending`
       self
     },
-    #' Validate JSON input with respect to OrderByColumn
-    #'
+
     #' @description
     #' Validate JSON input with respect to OrderByColumn and throw an exception if invalid
     #'
     #' @param input the JSON input
-    #' @export
     validateJSON = function(input) {
       input_json <- jsonlite::fromJSON(input)
       # check the required field `field`
@@ -138,23 +126,19 @@ OrderByColumn <- R6::R6Class(
         stop(paste("The JSON input `", input, "` is invalid for OrderByColumn: the required field `field` is missing."))
       }
     },
-    #' To string (JSON format)
-    #'
+
     #' @description
     #' To string (JSON format)
     #'
     #' @return String representation of OrderByColumn
-    #' @export
     toString = function() {
       self$toJSONString()
     },
-    #' Return true if the values in all fields are valid.
-    #'
+
     #' @description
     #' Return true if the values in all fields are valid.
     #'
     #' @return true if the values in all fields are valid.
-    #' @export
     isValid = function() {
       # check if the required `field` is null
       if (is.null(self$`field`)) {
@@ -163,13 +147,11 @@ OrderByColumn <- R6::R6Class(
 
       TRUE
     },
-    #' Return a list of invalid fields (if any).
-    #'
+
     #' @description
     #' Return a list of invalid fields (if any).
     #'
     #' @return A list of invalid fields (if any).
-    #' @export
     getInvalidFields = function() {
       invalid_fields <- list()
       # check if the required `field` is null
@@ -179,12 +161,9 @@ OrderByColumn <- R6::R6Class(
 
       invalid_fields
     },
-    #' Print the object
-    #'
+
     #' @description
     #' Print the object
-    #'
-    #' @export
     print = function() {
       print(jsonlite::prettify(self$toJSONString()))
       invisible(self)
@@ -203,4 +182,3 @@ OrderByColumn <- R6::R6Class(
 # })
 ## Uncomment below to lock the class to prevent modifications to the method or field
 # OrderByColumn$lock()
-

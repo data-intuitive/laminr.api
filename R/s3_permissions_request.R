@@ -19,8 +19,7 @@ S3PermissionsRequest <- R6::R6Class(
     `aws_access_key_id` = NULL,
     `aws_secret_access_key` = NULL,
     `region` = NULL,
-    #' Initialize a new S3PermissionsRequest class.
-    #'
+
     #' @description
     #' Initialize a new S3PermissionsRequest class.
     #'
@@ -28,7 +27,6 @@ S3PermissionsRequest <- R6::R6Class(
     #' @param aws_secret_access_key aws_secret_access_key
     #' @param region region
     #' @param ... Other optional arguments.
-    #' @export
     initialize = function(`aws_access_key_id`, `aws_secret_access_key`, `region`, ...) {
       if (!missing(`aws_access_key_id`)) {
         if (!(is.character(`aws_access_key_id`) && length(`aws_access_key_id`) == 1)) {
@@ -49,13 +47,11 @@ S3PermissionsRequest <- R6::R6Class(
         self$`region` <- `region`
       }
     },
-    #' To JSON string
-    #'
+
     #' @description
     #' To JSON String
     #'
     #' @return S3PermissionsRequest in JSON format
-    #' @export
     toJSON = function() {
       S3PermissionsRequestObject <- list()
       if (!is.null(self$`aws_access_key_id`)) {
@@ -72,14 +68,12 @@ S3PermissionsRequest <- R6::R6Class(
       }
       S3PermissionsRequestObject
     },
-    #' Deserialize JSON string into an instance of S3PermissionsRequest
-    #'
+
     #' @description
     #' Deserialize JSON string into an instance of S3PermissionsRequest
     #'
     #' @param input_json the JSON input
     #' @return the instance of S3PermissionsRequest
-    #' @export
     fromJSON = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       if (!is.null(this_object$`aws_access_key_id`)) {
@@ -93,51 +87,47 @@ S3PermissionsRequest <- R6::R6Class(
       }
       self
     },
-    #' To JSON string
-    #'
+
     #' @description
     #' To JSON String
     #'
     #' @return S3PermissionsRequest in JSON format
-    #' @export
     toJSONString = function() {
       jsoncontent <- c(
         if (!is.null(self$`aws_access_key_id`)) {
           sprintf(
-          '"aws_access_key_id":
+            '"aws_access_key_id":
             "%s"
                     ',
-          self$`aws_access_key_id`
+            self$`aws_access_key_id`
           )
         },
         if (!is.null(self$`aws_secret_access_key`)) {
           sprintf(
-          '"aws_secret_access_key":
+            '"aws_secret_access_key":
             "%s"
                     ',
-          self$`aws_secret_access_key`
+            self$`aws_secret_access_key`
           )
         },
         if (!is.null(self$`region`)) {
           sprintf(
-          '"region":
+            '"region":
             "%s"
                     ',
-          self$`region`
+            self$`region`
           )
         }
       )
       jsoncontent <- paste(jsoncontent, collapse = ",")
       json_string <- as.character(jsonlite::minify(paste("{", jsoncontent, "}", sep = "")))
     },
-    #' Deserialize JSON string into an instance of S3PermissionsRequest
-    #'
+
     #' @description
     #' Deserialize JSON string into an instance of S3PermissionsRequest
     #'
     #' @param input_json the JSON input
     #' @return the instance of S3PermissionsRequest
-    #' @export
     fromJSONString = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       self$`aws_access_key_id` <- this_object$`aws_access_key_id`
@@ -145,13 +135,11 @@ S3PermissionsRequest <- R6::R6Class(
       self$`region` <- this_object$`region`
       self
     },
-    #' Validate JSON input with respect to S3PermissionsRequest
-    #'
+
     #' @description
     #' Validate JSON input with respect to S3PermissionsRequest and throw an exception if invalid
     #'
     #' @param input the JSON input
-    #' @export
     validateJSON = function(input) {
       input_json <- jsonlite::fromJSON(input)
       # check the required field `aws_access_key_id`
@@ -179,23 +167,19 @@ S3PermissionsRequest <- R6::R6Class(
         stop(paste("The JSON input `", input, "` is invalid for S3PermissionsRequest: the required field `region` is missing."))
       }
     },
-    #' To string (JSON format)
-    #'
+
     #' @description
     #' To string (JSON format)
     #'
     #' @return String representation of S3PermissionsRequest
-    #' @export
     toString = function() {
       self$toJSONString()
     },
-    #' Return true if the values in all fields are valid.
-    #'
+
     #' @description
     #' Return true if the values in all fields are valid.
     #'
     #' @return true if the values in all fields are valid.
-    #' @export
     isValid = function() {
       # check if the required `aws_access_key_id` is null
       if (is.null(self$`aws_access_key_id`)) {
@@ -214,13 +198,11 @@ S3PermissionsRequest <- R6::R6Class(
 
       TRUE
     },
-    #' Return a list of invalid fields (if any).
-    #'
+
     #' @description
     #' Return a list of invalid fields (if any).
     #'
     #' @return A list of invalid fields (if any).
-    #' @export
     getInvalidFields = function() {
       invalid_fields <- list()
       # check if the required `aws_access_key_id` is null
@@ -240,12 +222,9 @@ S3PermissionsRequest <- R6::R6Class(
 
       invalid_fields
     },
-    #' Print the object
-    #'
+
     #' @description
     #' Print the object
-    #'
-    #' @export
     print = function() {
       print(jsonlite::prettify(self$toJSONString()))
       invisible(self)
@@ -264,4 +243,3 @@ S3PermissionsRequest <- R6::R6Class(
 # })
 ## Uncomment below to lock the class to prevent modifications to the method or field
 # S3PermissionsRequest$lock()
-

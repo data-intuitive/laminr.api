@@ -9,19 +9,19 @@ test_that("field_name", {
   # tests for the property `field_name` (character)
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`field_name`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`field_name`, "EXPECTED_RESULT")
 })
 
 test_that("agg_func", {
   # tests for the property `agg_func` (character)
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`agg_func`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`agg_func`, "EXPECTED_RESULT")
 })
 
 test_that("alias", {
   # tests for the property `alias` (character)
 
   # uncomment below to test the property
-  #expect_equal(model.instance$`alias`, "EXPECTED_RESULT")
+  # expect_equal(model.instance$`alias`, "EXPECTED_RESULT")
 })

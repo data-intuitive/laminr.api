@@ -19,8 +19,7 @@ Measure <- R6::R6Class(
     `field_name` = NULL,
     `agg_func` = NULL,
     `alias` = NULL,
-    #' Initialize a new Measure class.
-    #'
+
     #' @description
     #' Initialize a new Measure class.
     #'
@@ -28,7 +27,6 @@ Measure <- R6::R6Class(
     #' @param agg_func agg_func
     #' @param alias alias
     #' @param ... Other optional arguments.
-    #' @export
     initialize = function(`field_name`, `agg_func`, `alias` = NULL, ...) {
       if (!missing(`field_name`)) {
         if (!(is.character(`field_name`) && length(`field_name`) == 1)) {
@@ -52,13 +50,11 @@ Measure <- R6::R6Class(
         self$`alias` <- `alias`
       }
     },
-    #' To JSON string
-    #'
+
     #' @description
     #' To JSON String
     #'
     #' @return Measure in JSON format
-    #' @export
     toJSON = function() {
       MeasureObject <- list()
       if (!is.null(self$`field_name`)) {
@@ -75,14 +71,12 @@ Measure <- R6::R6Class(
       }
       MeasureObject
     },
-    #' Deserialize JSON string into an instance of Measure
-    #'
+
     #' @description
     #' Deserialize JSON string into an instance of Measure
     #'
     #' @param input_json the JSON input
     #' @return the instance of Measure
-    #' @export
     fromJSON = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       if (!is.null(this_object$`field_name`)) {
@@ -99,51 +93,47 @@ Measure <- R6::R6Class(
       }
       self
     },
-    #' To JSON string
-    #'
+
     #' @description
     #' To JSON String
     #'
     #' @return Measure in JSON format
-    #' @export
     toJSONString = function() {
       jsoncontent <- c(
         if (!is.null(self$`field_name`)) {
           sprintf(
-          '"field_name":
+            '"field_name":
             "%s"
                     ',
-          self$`field_name`
+            self$`field_name`
           )
         },
         if (!is.null(self$`agg_func`)) {
           sprintf(
-          '"agg_func":
+            '"agg_func":
             "%s"
                     ',
-          self$`agg_func`
+            self$`agg_func`
           )
         },
         if (!is.null(self$`alias`)) {
           sprintf(
-          '"alias":
+            '"alias":
             "%s"
                     ',
-          self$`alias`
+            self$`alias`
           )
         }
       )
       jsoncontent <- paste(jsoncontent, collapse = ",")
       json_string <- as.character(jsonlite::minify(paste("{", jsoncontent, "}", sep = "")))
     },
-    #' Deserialize JSON string into an instance of Measure
-    #'
+
     #' @description
     #' Deserialize JSON string into an instance of Measure
     #'
     #' @param input_json the JSON input
     #' @return the instance of Measure
-    #' @export
     fromJSONString = function(input_json) {
       this_object <- jsonlite::fromJSON(input_json)
       self$`field_name` <- this_object$`field_name`
@@ -154,13 +144,11 @@ Measure <- R6::R6Class(
       self$`alias` <- this_object$`alias`
       self
     },
-    #' Validate JSON input with respect to Measure
-    #'
+
     #' @description
     #' Validate JSON input with respect to Measure and throw an exception if invalid
     #'
     #' @param input the JSON input
-    #' @export
     validateJSON = function(input) {
       input_json <- jsonlite::fromJSON(input)
       # check the required field `field_name`
@@ -180,23 +168,19 @@ Measure <- R6::R6Class(
         stop(paste("The JSON input `", input, "` is invalid for Measure: the required field `agg_func` is missing."))
       }
     },
-    #' To string (JSON format)
-    #'
+
     #' @description
     #' To string (JSON format)
     #'
     #' @return String representation of Measure
-    #' @export
     toString = function() {
       self$toJSONString()
     },
-    #' Return true if the values in all fields are valid.
-    #'
+
     #' @description
     #' Return true if the values in all fields are valid.
     #'
     #' @return true if the values in all fields are valid.
-    #' @export
     isValid = function() {
       # check if the required `field_name` is null
       if (is.null(self$`field_name`)) {
@@ -210,13 +194,11 @@ Measure <- R6::R6Class(
 
       TRUE
     },
-    #' Return a list of invalid fields (if any).
-    #'
+
     #' @description
     #' Return a list of invalid fields (if any).
     #'
     #' @return A list of invalid fields (if any).
-    #' @export
     getInvalidFields = function() {
       invalid_fields <- list()
       # check if the required `field_name` is null
@@ -231,12 +213,9 @@ Measure <- R6::R6Class(
 
       invalid_fields
     },
-    #' Print the object
-    #'
+
     #' @description
     #' Print the object
-    #'
-    #' @export
     print = function() {
       print(jsonlite::prettify(self$toJSONString()))
       invisible(self)
@@ -255,4 +234,3 @@ Measure <- R6::R6Class(
 # })
 ## Uncomment below to lock the class to prevent modifications to the method or field
 # Measure$lock()
-

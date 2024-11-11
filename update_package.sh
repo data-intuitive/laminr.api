@@ -34,6 +34,9 @@ sed -i 's/\[\*\*AnyType\*\*\](AnyType\.md)/AnyType/g' docs/DefaultApi.md
 sed -i 's/\\link{AnyType}/AnyType/g' R/default_api.R
 sed -i 's#${module}.\${model}#module + "." + model#g' R/default_api.R
 
+find . -type f -exec sed -i 's/\(InstancesInstanceId\|StoragesS3BucketNamePermissions\)[A-Za-z]*\(Get\|Post\|Put\|Delete\|Patch\)/\2/g' {} \;
+find . -type f -exec sed -i 's/CreateInstance/CreateInstance/g' {} \;
+
 echo "Styling package..."
 Rscript -e "styler::style_pkg(include_roxygen_examples = TRUE)"
 

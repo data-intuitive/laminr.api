@@ -13,7 +13,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' ####################  AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut  ####################
+#' ####################  AddCollaboratorPut  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -42,7 +42,7 @@
 #'
 #'
 #'
-#' ####################  CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut  ####################
+#' ####################  CreateRecordPut  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -57,7 +57,7 @@
 #'
 #'
 #'
-#' ####################  DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete  ####################
+#' ####################  DeleteCollaboratorDelete  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -69,7 +69,7 @@
 #'
 #'
 #'
-#' ####################  DeleteInstanceInstancesInstanceIdDelete  ####################
+#' ####################  DeleteInstanceDelete  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -81,7 +81,7 @@
 #'
 #'
 #'
-#' ####################  DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete  ####################
+#' ####################  DeleteRecordDelete  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -96,7 +96,7 @@
 #'
 #'
 #'
-#' ####################  GeneratePasswordInstancesInstanceIdDbPasswordGet  ####################
+#' ####################  GeneratePasswordGet  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -107,7 +107,7 @@
 #'
 #'
 #'
-#' ####################  GenerateUrlInstancesInstanceIdDbUrlGet  ####################
+#' ####################  GenerateUrlGet  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -118,7 +118,7 @@
 #'
 #'
 #'
-#' ####################  GetInstanceStatisticsInstancesInstanceIdStatisticsGet  ####################
+#' ####################  GetInstanceStatisticsGet  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -131,7 +131,7 @@
 #'
 #'
 #'
-#' ####################  GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet  ####################
+#' ####################  GetNonEmptyTablesGet  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -143,7 +143,7 @@
 #'
 #'
 #'
-#' ####################  GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost  ####################
+#' ####################  GetRecordPost  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -161,7 +161,7 @@
 #'
 #'
 #'
-#' ####################  GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost  ####################
+#' ####################  GetRecordsPost  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -180,7 +180,7 @@
 #'
 #'
 #'
-#' ####################  GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGet  ####################
+#' ####################  GetRelationCountsGet  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -195,7 +195,7 @@
 #'
 #'
 #'
-#' ####################  GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet  ####################
+#' ####################  GetRelationsGet  ####################
 #'
 #' library(laminr.api)
 #' var_module_name <- "module_name_example" # character |
@@ -208,7 +208,7 @@
 #'
 #'
 #'
-#' ####################  GetSchemaInstancesInstanceIdSchemaGet  ####################
+#' ####################  GetSchemaGet  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -219,7 +219,7 @@
 #'
 #'
 #'
-#' ####################  GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost  ####################
+#' ####################  GetValuesPost  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -237,7 +237,7 @@
 #'
 #'
 #'
-#' ####################  GrantS3PermissionsStoragesS3BucketNamePermissionsPut  ####################
+#' ####################  GrantS3PermissionsPut  ####################
 #'
 #' library(laminr.api)
 #' var_bucket_name <- "bucket_name_example" # character |
@@ -251,7 +251,7 @@
 #'
 #'
 #'
-#' ####################  GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost  ####################
+#' ####################  GroupByPost  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -266,7 +266,7 @@
 #'
 #'
 #'
-#' ####################  TransferOwnershipInstancesInstanceIdOwnerHandlePatch  ####################
+#' ####################  TransferOwnershipPatch  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -279,7 +279,7 @@
 #'
 #'
 #'
-#' ####################  UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch  ####################
+#' ####################  UpdateCollaboratorPatch  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -292,7 +292,7 @@
 #'
 #'
 #'
-#' ####################  UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatch  ####################
+#' ####################  UpdateRecordPatch  ####################
 #'
 #' library(laminr.api)
 #' var_instance_id <- "instance_id_example" # character |
@@ -339,8 +339,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut = function(instance_id, account_id, schema_id, role = "read", authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPutWithHttpInfo(instance_id, account_id, schema_id, role, authorization, data_file = data_file, ...)
+    AddCollaboratorPut = function(instance_id, account_id, schema_id, role = "read", authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$AddCollaboratorPutWithHttpInfo(instance_id, account_id, schema_id, role, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -364,7 +364,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPutWithHttpInfo = function(instance_id, account_id, schema_id, role = "read", authorization = NULL, data_file = NULL, ...) {
+    AddCollaboratorPutWithHttpInfo = function(instance_id, account_id, schema_id, role = "read", authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -418,11 +418,11 @@ DefaultApi <- R6::R6Class(
 
       if (!is.null(`role`) && !(`role` %in% c("admin", "write", "read"))) {
         rlang::abort(
-          message = "Invalid value for `role` when calling DefaultApi$AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut. Must be [admin, write, read].",
+          message = "Invalid value for `role` when calling DefaultApi$AddCollaboratorPut. Must be [admin, write, read].",
           .subclass = "ApiException",
           ApiException = ApiException$new(
             status = 0,
-            reason = "Invalid value for `role` when calling DefaultApi$AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut. Must be [admin, write, read]."
+            reason = "Invalid value for `role` when calling DefaultApi$AddCollaboratorPut. Must be [admin, write, read]."
           )
         )
       }
@@ -633,8 +633,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut = function(instance_id, module_name, model_name, schema_id, body, authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$CreateRecordInstancesInstanceIdModulesModuleNameModelNamePutWithHttpInfo(instance_id, module_name, model_name, schema_id, body, authorization, data_file = data_file, ...)
+    CreateRecordPut = function(instance_id, module_name, model_name, schema_id, body, authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$CreateRecordPutWithHttpInfo(instance_id, module_name, model_name, schema_id, body, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -659,7 +659,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    CreateRecordInstancesInstanceIdModulesModuleNameModelNamePutWithHttpInfo = function(instance_id, module_name, model_name, schema_id, body, authorization = NULL, data_file = NULL, ...) {
+    CreateRecordPutWithHttpInfo = function(instance_id, module_name, model_name, schema_id, body, authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -815,8 +815,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete = function(instance_id, account_id, authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDeleteWithHttpInfo(instance_id, account_id, authorization, data_file = data_file, ...)
+    DeleteCollaboratorDelete = function(instance_id, account_id, authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$DeleteCollaboratorDeleteWithHttpInfo(instance_id, account_id, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -838,7 +838,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDeleteWithHttpInfo = function(instance_id, account_id, authorization = NULL, data_file = NULL, ...) {
+    DeleteCollaboratorDeleteWithHttpInfo = function(instance_id, account_id, authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -946,8 +946,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    DeleteInstanceInstancesInstanceIdDelete = function(instance_id, instance_name, authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$DeleteInstanceInstancesInstanceIdDeleteWithHttpInfo(instance_id, instance_name, authorization, data_file = data_file, ...)
+    DeleteInstanceDelete = function(instance_id, instance_name, authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$DeleteInstanceDeleteWithHttpInfo(instance_id, instance_name, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -969,7 +969,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    DeleteInstanceInstancesInstanceIdDeleteWithHttpInfo = function(instance_id, instance_name, authorization = NULL, data_file = NULL, ...) {
+    DeleteInstanceDeleteWithHttpInfo = function(instance_id, instance_name, authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -1078,8 +1078,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete = function(instance_id, module_name, model_name, uid, schema_id, authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDeleteWithHttpInfo(instance_id, module_name, model_name, uid, schema_id, authorization, data_file = data_file, ...)
+    DeleteRecordDelete = function(instance_id, module_name, model_name, uid, schema_id, authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$DeleteRecordDeleteWithHttpInfo(instance_id, module_name, model_name, uid, schema_id, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -1104,7 +1104,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDeleteWithHttpInfo = function(instance_id, module_name, model_name, uid, schema_id, authorization = NULL, data_file = NULL, ...) {
+    DeleteRecordDeleteWithHttpInfo = function(instance_id, module_name, model_name, uid, schema_id, authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -1257,8 +1257,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    GeneratePasswordInstancesInstanceIdDbPasswordGet = function(instance_id, authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$GeneratePasswordInstancesInstanceIdDbPasswordGetWithHttpInfo(instance_id, authorization, data_file = data_file, ...)
+    GeneratePasswordGet = function(instance_id, authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$GeneratePasswordGetWithHttpInfo(instance_id, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -1279,7 +1279,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    GeneratePasswordInstancesInstanceIdDbPasswordGetWithHttpInfo = function(instance_id, authorization = NULL, data_file = NULL, ...) {
+    GeneratePasswordGetWithHttpInfo = function(instance_id, authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -1370,8 +1370,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    GenerateUrlInstancesInstanceIdDbUrlGet = function(instance_id, authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$GenerateUrlInstancesInstanceIdDbUrlGetWithHttpInfo(instance_id, authorization, data_file = data_file, ...)
+    GenerateUrlGet = function(instance_id, authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$GenerateUrlGetWithHttpInfo(instance_id, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -1392,7 +1392,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    GenerateUrlInstancesInstanceIdDbUrlGetWithHttpInfo = function(instance_id, authorization = NULL, data_file = NULL, ...) {
+    GenerateUrlGetWithHttpInfo = function(instance_id, authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -1485,8 +1485,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    GetInstanceStatisticsInstancesInstanceIdStatisticsGet = function(instance_id, schema_id, q = NULL, authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$GetInstanceStatisticsInstancesInstanceIdStatisticsGetWithHttpInfo(instance_id, schema_id, q, authorization, data_file = data_file, ...)
+    GetInstanceStatisticsGet = function(instance_id, schema_id, q = NULL, authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$GetInstanceStatisticsGetWithHttpInfo(instance_id, schema_id, q, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -1509,7 +1509,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    GetInstanceStatisticsInstancesInstanceIdStatisticsGetWithHttpInfo = function(instance_id, schema_id, q = NULL, authorization = NULL, data_file = NULL, ...) {
+    GetInstanceStatisticsGetWithHttpInfo = function(instance_id, schema_id, q = NULL, authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -1621,8 +1621,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet = function(instance_id, schema_id, authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGetWithHttpInfo(instance_id, schema_id, authorization, data_file = data_file, ...)
+    GetNonEmptyTablesGet = function(instance_id, schema_id, authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$GetNonEmptyTablesGetWithHttpInfo(instance_id, schema_id, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -1644,7 +1644,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGetWithHttpInfo = function(instance_id, schema_id, authorization = NULL, data_file = NULL, ...) {
+    GetNonEmptyTablesGetWithHttpInfo = function(instance_id, schema_id, authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -1756,8 +1756,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost = function(instance_id, module_name, model_name, id_or_uid, schema_id, limit_to_many = 10, include_foreign_keys = FALSE, authorization = NULL, get_record_request_body = NULL, data_file = NULL, ...) {
-      local_var_response <- self$GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPostWithHttpInfo(instance_id, module_name, model_name, id_or_uid, schema_id, limit_to_many, include_foreign_keys, authorization, get_record_request_body, data_file = data_file, ...)
+    GetRecordPost = function(instance_id, module_name, model_name, id_or_uid, schema_id, limit_to_many = 10, include_foreign_keys = FALSE, authorization = NULL, get_record_request_body = NULL, data_file = NULL, ...) {
+      local_var_response <- self$GetRecordPostWithHttpInfo(instance_id, module_name, model_name, id_or_uid, schema_id, limit_to_many, include_foreign_keys, authorization, get_record_request_body, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -1785,7 +1785,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPostWithHttpInfo = function(instance_id, module_name, model_name, id_or_uid, schema_id, limit_to_many = 10, include_foreign_keys = FALSE, authorization = NULL, get_record_request_body = NULL, data_file = NULL, ...) {
+    GetRecordPostWithHttpInfo = function(instance_id, module_name, model_name, id_or_uid, schema_id, limit_to_many = 10, include_foreign_keys = FALSE, authorization = NULL, get_record_request_body = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -1959,8 +1959,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost = function(instance_id, module_name, model_name, schema_id, limit = 50, offset = 0, limit_to_many = 10, include_foreign_keys = FALSE, authorization = NULL, get_records_request_body = NULL, data_file = NULL, ...) {
-      local_var_response <- self$GetRecordsInstancesInstanceIdModulesModuleNameModelNamePostWithHttpInfo(instance_id, module_name, model_name, schema_id, limit, offset, limit_to_many, include_foreign_keys, authorization, get_records_request_body, data_file = data_file, ...)
+    GetRecordsPost = function(instance_id, module_name, model_name, schema_id, limit = 50, offset = 0, limit_to_many = 10, include_foreign_keys = FALSE, authorization = NULL, get_records_request_body = NULL, data_file = NULL, ...) {
+      local_var_response <- self$GetRecordsPostWithHttpInfo(instance_id, module_name, model_name, schema_id, limit, offset, limit_to_many, include_foreign_keys, authorization, get_records_request_body, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -1989,7 +1989,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    GetRecordsInstancesInstanceIdModulesModuleNameModelNamePostWithHttpInfo = function(instance_id, module_name, model_name, schema_id, limit = 50, offset = 0, limit_to_many = 10, include_foreign_keys = FALSE, authorization = NULL, get_records_request_body = NULL, data_file = NULL, ...) {
+    GetRecordsPostWithHttpInfo = function(instance_id, module_name, model_name, schema_id, limit = 50, offset = 0, limit_to_many = 10, include_foreign_keys = FALSE, authorization = NULL, get_records_request_body = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -2149,8 +2149,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGet = function(instance_id, module_name, model_name, id, schema_id, authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGetWithHttpInfo(instance_id, module_name, model_name, id, schema_id, authorization, data_file = data_file, ...)
+    GetRelationCountsGet = function(instance_id, module_name, model_name, id, schema_id, authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$GetRelationCountsGetWithHttpInfo(instance_id, module_name, model_name, id, schema_id, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -2175,7 +2175,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGetWithHttpInfo = function(instance_id, module_name, model_name, id, schema_id, authorization = NULL, data_file = NULL, ...) {
+    GetRelationCountsGetWithHttpInfo = function(instance_id, module_name, model_name, id, schema_id, authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -2330,8 +2330,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet = function(module_name, model_name, instance_id, authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGetWithHttpInfo(module_name, model_name, instance_id, authorization, data_file = data_file, ...)
+    GetRelationsGet = function(module_name, model_name, instance_id, authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$GetRelationsGetWithHttpInfo(module_name, model_name, instance_id, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -2354,7 +2354,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGetWithHttpInfo = function(module_name, model_name, instance_id, authorization = NULL, data_file = NULL, ...) {
+    GetRelationsGetWithHttpInfo = function(module_name, model_name, instance_id, authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -2477,8 +2477,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    GetSchemaInstancesInstanceIdSchemaGet = function(instance_id, authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$GetSchemaInstancesInstanceIdSchemaGetWithHttpInfo(instance_id, authorization, data_file = data_file, ...)
+    GetSchemaGet = function(instance_id, authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$GetSchemaGetWithHttpInfo(instance_id, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -2499,7 +2499,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    GetSchemaInstancesInstanceIdSchemaGetWithHttpInfo = function(instance_id, authorization = NULL, data_file = NULL, ...) {
+    GetSchemaGetWithHttpInfo = function(instance_id, authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -2597,8 +2597,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost = function(instance_id, module_name, model_name, field_path, schema_id, limit = 50, offset = 0, authorization = NULL, get_values_request_body = NULL, data_file = NULL, ...) {
-      local_var_response <- self$GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPostWithHttpInfo(instance_id, module_name, model_name, field_path, schema_id, limit, offset, authorization, get_values_request_body, data_file = data_file, ...)
+    GetValuesPost = function(instance_id, module_name, model_name, field_path, schema_id, limit = 50, offset = 0, authorization = NULL, get_values_request_body = NULL, data_file = NULL, ...) {
+      local_var_response <- self$GetValuesPostWithHttpInfo(instance_id, module_name, model_name, field_path, schema_id, limit, offset, authorization, get_values_request_body, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -2626,7 +2626,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPostWithHttpInfo = function(instance_id, module_name, model_name, field_path, schema_id, limit = 50, offset = 0, authorization = NULL, get_values_request_body = NULL, data_file = NULL, ...) {
+    GetValuesPostWithHttpInfo = function(instance_id, module_name, model_name, field_path, schema_id, limit = 50, offset = 0, authorization = NULL, get_values_request_body = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -2795,8 +2795,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    GrantS3PermissionsStoragesS3BucketNamePermissionsPut = function(bucket_name, s3_permissions_request, aws_account_id = "767398070972", aws_user_name = "lamin-manager", authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$GrantS3PermissionsStoragesS3BucketNamePermissionsPutWithHttpInfo(bucket_name, s3_permissions_request, aws_account_id, aws_user_name, authorization, data_file = data_file, ...)
+    GrantS3PermissionsPut = function(bucket_name, s3_permissions_request, aws_account_id = "767398070972", aws_user_name = "lamin-manager", authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$GrantS3PermissionsPutWithHttpInfo(bucket_name, s3_permissions_request, aws_account_id, aws_user_name, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -2820,7 +2820,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    GrantS3PermissionsStoragesS3BucketNamePermissionsPutWithHttpInfo = function(bucket_name, s3_permissions_request, aws_account_id = "767398070972", aws_user_name = "lamin-manager", authorization = NULL, data_file = NULL, ...) {
+    GrantS3PermissionsPutWithHttpInfo = function(bucket_name, s3_permissions_request, aws_account_id = "767398070972", aws_user_name = "lamin-manager", authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -2939,8 +2939,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost = function(instance_id, module_name, model_name, schema_id, group_by_request_body, authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPostWithHttpInfo(instance_id, module_name, model_name, schema_id, group_by_request_body, authorization, data_file = data_file, ...)
+    GroupByPost = function(instance_id, module_name, model_name, schema_id, group_by_request_body, authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$GroupByPostWithHttpInfo(instance_id, module_name, model_name, schema_id, group_by_request_body, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -2965,7 +2965,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPostWithHttpInfo = function(instance_id, module_name, model_name, schema_id, group_by_request_body, authorization = NULL, data_file = NULL, ...) {
+    GroupByPostWithHttpInfo = function(instance_id, module_name, model_name, schema_id, group_by_request_body, authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -3122,8 +3122,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    TransferOwnershipInstancesInstanceIdOwnerHandlePatch = function(instance_id, handle, schema_id, authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$TransferOwnershipInstancesInstanceIdOwnerHandlePatchWithHttpInfo(instance_id, handle, schema_id, authorization, data_file = data_file, ...)
+    TransferOwnershipPatch = function(instance_id, handle, schema_id, authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$TransferOwnershipPatchWithHttpInfo(instance_id, handle, schema_id, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -3146,7 +3146,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    TransferOwnershipInstancesInstanceIdOwnerHandlePatchWithHttpInfo = function(instance_id, handle, schema_id, authorization = NULL, data_file = NULL, ...) {
+    TransferOwnershipPatchWithHttpInfo = function(instance_id, handle, schema_id, authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -3269,8 +3269,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch = function(instance_id, account_id, role, authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatchWithHttpInfo(instance_id, account_id, role, authorization, data_file = data_file, ...)
+    UpdateCollaboratorPatch = function(instance_id, account_id, role, authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$UpdateCollaboratorPatchWithHttpInfo(instance_id, account_id, role, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -3293,7 +3293,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatchWithHttpInfo = function(instance_id, account_id, role, authorization = NULL, data_file = NULL, ...) {
+    UpdateCollaboratorPatchWithHttpInfo = function(instance_id, account_id, role, authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()
@@ -3344,11 +3344,11 @@ DefaultApi <- R6::R6Class(
 
       if (!is.null(`role`) && !(`role` %in% c("admin", "write", "read"))) {
         rlang::abort(
-          message = "Invalid value for `role` when calling DefaultApi$UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch. Must be [admin, write, read].",
+          message = "Invalid value for `role` when calling DefaultApi$UpdateCollaboratorPatch. Must be [admin, write, read].",
           .subclass = "ApiException",
           ApiException = ApiException$new(
             status = 0,
-            reason = "Invalid value for `role` when calling DefaultApi$UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch. Must be [admin, write, read]."
+            reason = "Invalid value for `role` when calling DefaultApi$UpdateCollaboratorPatch. Must be [admin, write, read]."
           )
         )
       }
@@ -3429,8 +3429,8 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return AnyType
-    UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatch = function(instance_id, module_name, model_name, uid, schema_id, body, authorization = NULL, data_file = NULL, ...) {
-      local_var_response <- self$UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatchWithHttpInfo(instance_id, module_name, model_name, uid, schema_id, body, authorization, data_file = data_file, ...)
+    UpdateRecordPatch = function(instance_id, module_name, model_name, uid, schema_id, body, authorization = NULL, data_file = NULL, ...) {
+      local_var_response <- self$UpdateRecordPatchWithHttpInfo(instance_id, module_name, model_name, uid, schema_id, body, authorization, data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
         local_var_response$content
       } else if (local_var_response$status_code >= 300 && local_var_response$status_code <= 399) {
@@ -3456,7 +3456,7 @@ DefaultApi <- R6::R6Class(
     #' @param ... Other optional arguments
     #'
     #' @return API response (AnyType) with additional information such as HTTP status code, headers
-    UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatchWithHttpInfo = function(instance_id, module_name, model_name, uid, schema_id, body, authorization = NULL, data_file = NULL, ...) {
+    UpdateRecordPatchWithHttpInfo = function(instance_id, module_name, model_name, uid, schema_id, body, authorization = NULL, data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()
       header_params <- c()

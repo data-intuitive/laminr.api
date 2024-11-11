@@ -46,56 +46,56 @@ api
 
     <DefaultApi>
       Public:
-        AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut: function (instance_id, account_id, schema_id, role = "read", 
-        AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPutWithHttpInfo: function (instance_id, account_id, schema_id, role = "read", 
+        AddCollaboratorPut: function (instance_id, account_id, schema_id, role = "read", 
+        AddCollaboratorPutWithHttpInfo: function (instance_id, account_id, schema_id, role = "read", 
         api_client: ApiClient, R6
         clone: function (deep = FALSE) 
         CreateInstanceInstancesPut: function (name, storage = "create-s3", schema_str = NULL, db_server_key = NULL, 
         CreateInstanceInstancesPutWithHttpInfo: function (name, storage = "create-s3", schema_str = NULL, db_server_key = NULL, 
-        CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut: function (instance_id, module_name, model_name, schema_id, body, 
-        CreateRecordInstancesInstanceIdModulesModuleNameModelNamePutWithHttpInfo: function (instance_id, module_name, model_name, schema_id, body, 
-        DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete: function (instance_id, account_id, authorization = NULL, data_file = NULL, 
-        DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDeleteWithHttpInfo: function (instance_id, account_id, authorization = NULL, data_file = NULL, 
-        DeleteInstanceInstancesInstanceIdDelete: function (instance_id, instance_name, authorization = NULL, data_file = NULL, 
-        DeleteInstanceInstancesInstanceIdDeleteWithHttpInfo: function (instance_id, instance_name, authorization = NULL, data_file = NULL, 
-        DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete: function (instance_id, module_name, model_name, uid, schema_id, 
-        DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDeleteWithHttpInfo: function (instance_id, module_name, model_name, uid, schema_id, 
-        GeneratePasswordInstancesInstanceIdDbPasswordGet: function (instance_id, authorization = NULL, data_file = NULL, 
-        GeneratePasswordInstancesInstanceIdDbPasswordGetWithHttpInfo: function (instance_id, authorization = NULL, data_file = NULL, 
-        GenerateUrlInstancesInstanceIdDbUrlGet: function (instance_id, authorization = NULL, data_file = NULL, 
-        GenerateUrlInstancesInstanceIdDbUrlGetWithHttpInfo: function (instance_id, authorization = NULL, data_file = NULL, 
-        GetInstanceStatisticsInstancesInstanceIdStatisticsGet: function (instance_id, schema_id, q = NULL, authorization = NULL, 
-        GetInstanceStatisticsInstancesInstanceIdStatisticsGetWithHttpInfo: function (instance_id, schema_id, q = NULL, authorization = NULL, 
-        GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet: function (instance_id, schema_id, authorization = NULL, data_file = NULL, 
-        GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGetWithHttpInfo: function (instance_id, schema_id, authorization = NULL, data_file = NULL, 
-        GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost: function (instance_id, module_name, model_name, id_or_uid, schema_id, 
-        GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPostWithHttpInfo: function (instance_id, module_name, model_name, id_or_uid, schema_id, 
-        GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost: function (instance_id, module_name, model_name, schema_id, limit = 50, 
-        GetRecordsInstancesInstanceIdModulesModuleNameModelNamePostWithHttpInfo: function (instance_id, module_name, model_name, schema_id, limit = 50, 
-        GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGet: function (instance_id, module_name, model_name, id, schema_id, 
-        GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGetWithHttpInfo: function (instance_id, module_name, model_name, id, schema_id, 
-        GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet: function (module_name, model_name, instance_id, authorization = NULL, 
-        GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGetWithHttpInfo: function (module_name, model_name, instance_id, authorization = NULL, 
-        GetSchemaInstancesInstanceIdSchemaGet: function (instance_id, authorization = NULL, data_file = NULL, 
-        GetSchemaInstancesInstanceIdSchemaGetWithHttpInfo: function (instance_id, authorization = NULL, data_file = NULL, 
-        GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost: function (instance_id, module_name, model_name, field_path, schema_id, 
-        GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPostWithHttpInfo: function (instance_id, module_name, model_name, field_path, schema_id, 
-        GrantS3PermissionsStoragesS3BucketNamePermissionsPut: function (bucket_name, s3_permissions_request, aws_account_id = "767398070972", 
-        GrantS3PermissionsStoragesS3BucketNamePermissionsPutWithHttpInfo: function (bucket_name, s3_permissions_request, aws_account_id = "767398070972", 
-        GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost: function (instance_id, module_name, model_name, schema_id, group_by_request_body, 
-        GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPostWithHttpInfo: function (instance_id, module_name, model_name, schema_id, group_by_request_body, 
+        CreateRecordPut: function (instance_id, module_name, model_name, schema_id, body, 
+        CreateRecordPutWithHttpInfo: function (instance_id, module_name, model_name, schema_id, body, 
+        DeleteCollaboratorDelete: function (instance_id, account_id, authorization = NULL, data_file = NULL, 
+        DeleteCollaboratorDeleteWithHttpInfo: function (instance_id, account_id, authorization = NULL, data_file = NULL, 
+        DeleteInstanceDelete: function (instance_id, instance_name, authorization = NULL, data_file = NULL, 
+        DeleteInstanceDeleteWithHttpInfo: function (instance_id, instance_name, authorization = NULL, data_file = NULL, 
+        DeleteRecordDelete: function (instance_id, module_name, model_name, uid, schema_id, 
+        DeleteRecordDeleteWithHttpInfo: function (instance_id, module_name, model_name, uid, schema_id, 
+        GeneratePasswordGet: function (instance_id, authorization = NULL, data_file = NULL, 
+        GeneratePasswordGetWithHttpInfo: function (instance_id, authorization = NULL, data_file = NULL, 
+        GenerateUrlGet: function (instance_id, authorization = NULL, data_file = NULL, 
+        GenerateUrlGetWithHttpInfo: function (instance_id, authorization = NULL, data_file = NULL, 
+        GetInstanceStatisticsGet: function (instance_id, schema_id, q = NULL, authorization = NULL, 
+        GetInstanceStatisticsGetWithHttpInfo: function (instance_id, schema_id, q = NULL, authorization = NULL, 
+        GetNonEmptyTablesGet: function (instance_id, schema_id, authorization = NULL, data_file = NULL, 
+        GetNonEmptyTablesGetWithHttpInfo: function (instance_id, schema_id, authorization = NULL, data_file = NULL, 
+        GetRecordPost: function (instance_id, module_name, model_name, id_or_uid, schema_id, 
+        GetRecordPostWithHttpInfo: function (instance_id, module_name, model_name, id_or_uid, schema_id, 
+        GetRecordsPost: function (instance_id, module_name, model_name, schema_id, limit = 50, 
+        GetRecordsPostWithHttpInfo: function (instance_id, module_name, model_name, schema_id, limit = 50, 
+        GetRelationCountsGet: function (instance_id, module_name, model_name, id, schema_id, 
+        GetRelationCountsGetWithHttpInfo: function (instance_id, module_name, model_name, id, schema_id, 
+        GetRelationsGet: function (module_name, model_name, instance_id, authorization = NULL, 
+        GetRelationsGetWithHttpInfo: function (module_name, model_name, instance_id, authorization = NULL, 
+        GetSchemaGet: function (instance_id, authorization = NULL, data_file = NULL, 
+        GetSchemaGetWithHttpInfo: function (instance_id, authorization = NULL, data_file = NULL, 
+        GetValuesPost: function (instance_id, module_name, model_name, field_path, schema_id, 
+        GetValuesPostWithHttpInfo: function (instance_id, module_name, model_name, field_path, schema_id, 
+        GrantS3PermissionsPut: function (bucket_name, s3_permissions_request, aws_account_id = "767398070972", 
+        GrantS3PermissionsPutWithHttpInfo: function (bucket_name, s3_permissions_request, aws_account_id = "767398070972", 
+        GroupByPost: function (instance_id, module_name, model_name, schema_id, group_by_request_body, 
+        GroupByPostWithHttpInfo: function (instance_id, module_name, model_name, schema_id, group_by_request_body, 
         initialize: function (api_client) 
-        TransferOwnershipInstancesInstanceIdOwnerHandlePatch: function (instance_id, handle, schema_id, authorization = NULL, 
-        TransferOwnershipInstancesInstanceIdOwnerHandlePatchWithHttpInfo: function (instance_id, handle, schema_id, authorization = NULL, 
-        UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch: function (instance_id, account_id, role, authorization = NULL, 
-        UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatchWithHttpInfo: function (instance_id, account_id, role, authorization = NULL, 
-        UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatch: function (instance_id, module_name, model_name, uid, schema_id, 
-        UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatchWithHttpInfo: function (instance_id, module_name, model_name, uid, schema_id, 
+        TransferOwnershipPatch: function (instance_id, handle, schema_id, authorization = NULL, 
+        TransferOwnershipPatchWithHttpInfo: function (instance_id, handle, schema_id, authorization = NULL, 
+        UpdateCollaboratorPatch: function (instance_id, account_id, role, authorization = NULL, 
+        UpdateCollaboratorPatchWithHttpInfo: function (instance_id, account_id, role, authorization = NULL, 
+        UpdateRecordPatch: function (instance_id, module_name, model_name, uid, schema_id, 
+        UpdateRecordPatchWithHttpInfo: function (instance_id, module_name, model_name, uid, schema_id, 
 
 Get schema:
 
 ``` r
-schema <- api$GetSchemaInstancesInstanceIdSchemaGet(instance_id)
+schema <- api$GetSchemaGet(instance_id)
 names(schema)
 ```
 
@@ -116,7 +116,7 @@ names(schema$core)
 Get record:
 
 ``` r
-api$GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost(
+api$GetRecordPost(
   instance_id,
   "core",
   "artifact",
@@ -198,26 +198,26 @@ All URIs are relative to *http://localhost*
 
 | Class | Method | HTTP request | Description |
 |----|----|----|----|
-| *DefaultApi* | [**AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut**](docs/DefaultApi.md#AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut) | **PUT** /instances/{instance_id}/collaborators/{account_id} | Add Collaborator |
+| *DefaultApi* | [**AddCollaboratorPut**](docs/DefaultApi.md#AddCollaboratorPut) | **PUT** /instances/{instance_id}/collaborators/{account_id} | Add Collaborator |
 | *DefaultApi* | [**CreateInstanceInstancesPut**](docs/DefaultApi.md#CreateInstanceInstancesPut) | **PUT** /instances | Create Instance |
-| *DefaultApi* | [**CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut**](docs/DefaultApi.md#CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut) | **PUT** /instances/{instance_id}/modules/{module_name}/{model_name} | Create Record |
-| *DefaultApi* | [**DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete**](docs/DefaultApi.md#DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete) | **DELETE** /instances/{instance_id}/collaborators/{account_id} | Delete Collaborator |
-| *DefaultApi* | [**DeleteInstanceInstancesInstanceIdDelete**](docs/DefaultApi.md#DeleteInstanceInstancesInstanceIdDelete) | **DELETE** /instances/{instance_id} | Delete Instance |
-| *DefaultApi* | [**DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete**](docs/DefaultApi.md#DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete) | **DELETE** /instances/{instance_id}/modules/{module_name}/{model_name}/{uid} | Delete Record |
-| *DefaultApi* | [**GeneratePasswordInstancesInstanceIdDbPasswordGet**](docs/DefaultApi.md#GeneratePasswordInstancesInstanceIdDbPasswordGet) | **GET** /instances/{instance_id}/db/password | Generate Password |
-| *DefaultApi* | [**GenerateUrlInstancesInstanceIdDbUrlGet**](docs/DefaultApi.md#GenerateUrlInstancesInstanceIdDbUrlGet) | **GET** /instances/{instance_id}/db/url | Generate Url |
-| *DefaultApi* | [**GetInstanceStatisticsInstancesInstanceIdStatisticsGet**](docs/DefaultApi.md#GetInstanceStatisticsInstancesInstanceIdStatisticsGet) | **GET** /instances/{instance_id}/statistics | Get Instance Statistics |
-| *DefaultApi* | [**GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet**](docs/DefaultApi.md#GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet) | **GET** /instances/{instance_id}/non_empty_tables | Get Non Empty Tables |
-| *DefaultApi* | [**GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost**](docs/DefaultApi.md#GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/{id_or_uid} | Get Record |
-| *DefaultApi* | [**GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost**](docs/DefaultApi.md#GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name} | Get Records |
-| *DefaultApi* | [**GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet**](docs/DefaultApi.md#GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet) | **GET** /instances/{instance_id}/schema/{module_name}/{model_name} | Get Relations |
-| *DefaultApi* | [**GetSchemaInstancesInstanceIdSchemaGet**](docs/DefaultApi.md#GetSchemaInstancesInstanceIdSchemaGet) | **GET** /instances/{instance_id}/schema | Get Schema |
-| *DefaultApi* | [**GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost**](docs/DefaultApi.md#GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/fields/{field_path} | Get Values |
-| *DefaultApi* | [**GrantS3PermissionsStoragesS3BucketNamePermissionsPut**](docs/DefaultApi.md#GrantS3PermissionsStoragesS3BucketNamePermissionsPut) | **PUT** /storages/s3/{bucket_name}/permissions | Grant S3 Permissions |
-| *DefaultApi* | [**GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost**](docs/DefaultApi.md#GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/group-by | Group By |
-| *DefaultApi* | [**TransferOwnershipInstancesInstanceIdOwnerHandlePatch**](docs/DefaultApi.md#TransferOwnershipInstancesInstanceIdOwnerHandlePatch) | **PATCH** /instances/{instance_id}/owner/{handle} | Transfer Ownership |
-| *DefaultApi* | [**UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch**](docs/DefaultApi.md#UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch) | **PATCH** /instances/{instance_id}/collaborators/{account_id} | Update Collaborator |
-| *DefaultApi* | [**UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatch**](docs/DefaultApi.md#UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatch) | **PATCH** /instances/{instance_id}/modules/{module_name}/{model_name}/{uid} | Update Record |
+| *DefaultApi* | [**CreateRecordPut**](docs/DefaultApi.md#CreateRecordPut) | **PUT** /instances/{instance_id}/modules/{module_name}/{model_name} | Create Record |
+| *DefaultApi* | [**DeleteCollaboratorDelete**](docs/DefaultApi.md#DeleteCollaboratorDelete) | **DELETE** /instances/{instance_id}/collaborators/{account_id} | Delete Collaborator |
+| *DefaultApi* | [**DeleteInstanceDelete**](docs/DefaultApi.md#DeleteInstanceDelete) | **DELETE** /instances/{instance_id} | Delete Instance |
+| *DefaultApi* | [**DeleteRecordDelete**](docs/DefaultApi.md#DeleteRecordDelete) | **DELETE** /instances/{instance_id}/modules/{module_name}/{model_name}/{uid} | Delete Record |
+| *DefaultApi* | [**GeneratePasswordGet**](docs/DefaultApi.md#GeneratePasswordGet) | **GET** /instances/{instance_id}/db/password | Generate Password |
+| *DefaultApi* | [**GenerateUrlGet**](docs/DefaultApi.md#GenerateUrlGet) | **GET** /instances/{instance_id}/db/url | Generate Url |
+| *DefaultApi* | [**GetInstanceStatisticsGet**](docs/DefaultApi.md#GetInstanceStatisticsGet) | **GET** /instances/{instance_id}/statistics | Get Instance Statistics |
+| *DefaultApi* | [**GetNonEmptyTablesGet**](docs/DefaultApi.md#GetNonEmptyTablesGet) | **GET** /instances/{instance_id}/non_empty_tables | Get Non Empty Tables |
+| *DefaultApi* | [**GetRecordPost**](docs/DefaultApi.md#GetRecordPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/{id_or_uid} | Get Record |
+| *DefaultApi* | [**GetRecordsPost**](docs/DefaultApi.md#GetRecordsPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name} | Get Records |
+| *DefaultApi* | [**GetRelationsGet**](docs/DefaultApi.md#GetRelationsGet) | **GET** /instances/{instance_id}/schema/{module_name}/{model_name} | Get Relations |
+| *DefaultApi* | [**GetSchemaGet**](docs/DefaultApi.md#GetSchemaGet) | **GET** /instances/{instance_id}/schema | Get Schema |
+| *DefaultApi* | [**GetValuesPost**](docs/DefaultApi.md#GetValuesPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/fields/{field_path} | Get Values |
+| *DefaultApi* | [**GrantS3PermissionsPut**](docs/DefaultApi.md#GrantS3PermissionsPut) | **PUT** /storages/s3/{bucket_name}/permissions | Grant S3 Permissions |
+| *DefaultApi* | [**GroupByPost**](docs/DefaultApi.md#GroupByPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/group-by | Group By |
+| *DefaultApi* | [**TransferOwnershipPatch**](docs/DefaultApi.md#TransferOwnershipPatch) | **PATCH** /instances/{instance_id}/owner/{handle} | Transfer Ownership |
+| *DefaultApi* | [**UpdateCollaboratorPatch**](docs/DefaultApi.md#UpdateCollaboratorPatch) | **PATCH** /instances/{instance_id}/collaborators/{account_id} | Update Collaborator |
+| *DefaultApi* | [**UpdateRecordPatch**](docs/DefaultApi.md#UpdateRecordPatch) | **PATCH** /instances/{instance_id}/modules/{module_name}/{model_name}/{uid} | Update Record |
 
 ## Documentation for Models
 

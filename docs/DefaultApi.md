@@ -4,31 +4,31 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut**](DefaultApi.md#AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut) | **PUT** /instances/{instance_id}/collaborators/{account_id} | Add Collaborator
+[**AddCollaboratorPut**](DefaultApi.md#AddCollaboratorPut) | **PUT** /instances/{instance_id}/collaborators/{account_id} | Add Collaborator
 [**CreateInstanceInstancesPut**](DefaultApi.md#CreateInstanceInstancesPut) | **PUT** /instances | Create Instance
-[**CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut**](DefaultApi.md#CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut) | **PUT** /instances/{instance_id}/modules/{module_name}/{model_name} | Create Record
-[**DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete**](DefaultApi.md#DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete) | **DELETE** /instances/{instance_id}/collaborators/{account_id} | Delete Collaborator
-[**DeleteInstanceInstancesInstanceIdDelete**](DefaultApi.md#DeleteInstanceInstancesInstanceIdDelete) | **DELETE** /instances/{instance_id} | Delete Instance
-[**DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete**](DefaultApi.md#DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete) | **DELETE** /instances/{instance_id}/modules/{module_name}/{model_name}/{uid} | Delete Record
-[**GeneratePasswordInstancesInstanceIdDbPasswordGet**](DefaultApi.md#GeneratePasswordInstancesInstanceIdDbPasswordGet) | **GET** /instances/{instance_id}/db/password | Generate Password
-[**GenerateUrlInstancesInstanceIdDbUrlGet**](DefaultApi.md#GenerateUrlInstancesInstanceIdDbUrlGet) | **GET** /instances/{instance_id}/db/url | Generate Url
-[**GetInstanceStatisticsInstancesInstanceIdStatisticsGet**](DefaultApi.md#GetInstanceStatisticsInstancesInstanceIdStatisticsGet) | **GET** /instances/{instance_id}/statistics | Get Instance Statistics
-[**GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet**](DefaultApi.md#GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet) | **GET** /instances/{instance_id}/non_empty_tables | Get Non Empty Tables
-[**GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost**](DefaultApi.md#GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/{id_or_uid} | Get Record
-[**GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost**](DefaultApi.md#GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name} | Get Records
-[**GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGet**](DefaultApi.md#GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGet) | **GET** /instances/{instance_id}/modules/{module_name}/{model_name}/{id}/counts | Get Relation Counts
-[**GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet**](DefaultApi.md#GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet) | **GET** /instances/{instance_id}/schema/{module_name}/{model_name} | Get Relations
-[**GetSchemaInstancesInstanceIdSchemaGet**](DefaultApi.md#GetSchemaInstancesInstanceIdSchemaGet) | **GET** /instances/{instance_id}/schema | Get Schema
-[**GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost**](DefaultApi.md#GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/fields/{field_path} | Get Values
-[**GrantS3PermissionsStoragesS3BucketNamePermissionsPut**](DefaultApi.md#GrantS3PermissionsStoragesS3BucketNamePermissionsPut) | **PUT** /storages/s3/{bucket_name}/permissions | Grant S3 Permissions
-[**GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost**](DefaultApi.md#GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/group-by | Group By
-[**TransferOwnershipInstancesInstanceIdOwnerHandlePatch**](DefaultApi.md#TransferOwnershipInstancesInstanceIdOwnerHandlePatch) | **PATCH** /instances/{instance_id}/owner/{handle} | Transfer Ownership
-[**UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch**](DefaultApi.md#UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch) | **PATCH** /instances/{instance_id}/collaborators/{account_id} | Update Collaborator
-[**UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatch**](DefaultApi.md#UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatch) | **PATCH** /instances/{instance_id}/modules/{module_name}/{model_name}/{uid} | Update Record
+[**CreateRecordPut**](DefaultApi.md#CreateRecordPut) | **PUT** /instances/{instance_id}/modules/{module_name}/{model_name} | Create Record
+[**DeleteCollaboratorDelete**](DefaultApi.md#DeleteCollaboratorDelete) | **DELETE** /instances/{instance_id}/collaborators/{account_id} | Delete Collaborator
+[**DeleteInstanceDelete**](DefaultApi.md#DeleteInstanceDelete) | **DELETE** /instances/{instance_id} | Delete Instance
+[**DeleteRecordDelete**](DefaultApi.md#DeleteRecordDelete) | **DELETE** /instances/{instance_id}/modules/{module_name}/{model_name}/{uid} | Delete Record
+[**GeneratePasswordGet**](DefaultApi.md#GeneratePasswordGet) | **GET** /instances/{instance_id}/db/password | Generate Password
+[**GenerateUrlGet**](DefaultApi.md#GenerateUrlGet) | **GET** /instances/{instance_id}/db/url | Generate Url
+[**GetInstanceStatisticsGet**](DefaultApi.md#GetInstanceStatisticsGet) | **GET** /instances/{instance_id}/statistics | Get Instance Statistics
+[**GetNonEmptyTablesGet**](DefaultApi.md#GetNonEmptyTablesGet) | **GET** /instances/{instance_id}/non_empty_tables | Get Non Empty Tables
+[**GetRecordPost**](DefaultApi.md#GetRecordPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/{id_or_uid} | Get Record
+[**GetRecordsPost**](DefaultApi.md#GetRecordsPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name} | Get Records
+[**GetRelationCountsGet**](DefaultApi.md#GetRelationCountsGet) | **GET** /instances/{instance_id}/modules/{module_name}/{model_name}/{id}/counts | Get Relation Counts
+[**GetRelationsGet**](DefaultApi.md#GetRelationsGet) | **GET** /instances/{instance_id}/schema/{module_name}/{model_name} | Get Relations
+[**GetSchemaGet**](DefaultApi.md#GetSchemaGet) | **GET** /instances/{instance_id}/schema | Get Schema
+[**GetValuesPost**](DefaultApi.md#GetValuesPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/fields/{field_path} | Get Values
+[**GrantS3PermissionsPut**](DefaultApi.md#GrantS3PermissionsPut) | **PUT** /storages/s3/{bucket_name}/permissions | Grant S3 Permissions
+[**GroupByPost**](DefaultApi.md#GroupByPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/group-by | Group By
+[**TransferOwnershipPatch**](DefaultApi.md#TransferOwnershipPatch) | **PATCH** /instances/{instance_id}/owner/{handle} | Transfer Ownership
+[**UpdateCollaboratorPatch**](DefaultApi.md#UpdateCollaboratorPatch) | **PATCH** /instances/{instance_id}/collaborators/{account_id} | Update Collaborator
+[**UpdateRecordPatch**](DefaultApi.md#UpdateRecordPatch) | **PATCH** /instances/{instance_id}/modules/{module_name}/{model_name}/{uid} | Update Record
 
 
-# **AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut**
-> AnyType AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut(instance_id, account_id, schema_id, role = "read", authorization = var.authorization)
+# **AddCollaboratorPut**
+> AnyType AddCollaboratorPut(instance_id, account_id, schema_id, role = "read", authorization = var.authorization)
 
 Add Collaborator
 
@@ -129,8 +129,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut**
-> AnyType CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut(instance_id, module_name, model_name, schema_id, body, authorization = var.authorization)
+# **CreateRecordPut**
+> AnyType CreateRecordPut(instance_id, module_name, model_name, schema_id, body, authorization = var.authorization)
 
 Create Record
 
@@ -181,8 +181,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete**
-> AnyType DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete(instance_id, account_id, authorization = var.authorization)
+# **DeleteCollaboratorDelete**
+> AnyType DeleteCollaboratorDelete(instance_id, account_id, authorization = var.authorization)
 
 Delete Collaborator
 
@@ -227,8 +227,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **DeleteInstanceInstancesInstanceIdDelete**
-> AnyType DeleteInstanceInstancesInstanceIdDelete(instance_id, instance_name, authorization = var.authorization)
+# **DeleteInstanceDelete**
+> AnyType DeleteInstanceDelete(instance_id, instance_name, authorization = var.authorization)
 
 Delete Instance
 
@@ -273,8 +273,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete**
-> AnyType DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete(instance_id, module_name, model_name, uid, schema_id, authorization = var.authorization)
+# **DeleteRecordDelete**
+> AnyType DeleteRecordDelete(instance_id, module_name, model_name, uid, schema_id, authorization = var.authorization)
 
 Delete Record
 
@@ -325,8 +325,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **GeneratePasswordInstancesInstanceIdDbPasswordGet**
-> AnyType GeneratePasswordInstancesInstanceIdDbPasswordGet(instance_id, authorization = var.authorization)
+# **GeneratePasswordGet**
+> AnyType GeneratePasswordGet(instance_id, authorization = var.authorization)
 
 Generate Password
 
@@ -369,8 +369,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **GenerateUrlInstancesInstanceIdDbUrlGet**
-> AnyType GenerateUrlInstancesInstanceIdDbUrlGet(instance_id, authorization = var.authorization)
+# **GenerateUrlGet**
+> AnyType GenerateUrlGet(instance_id, authorization = var.authorization)
 
 Generate Url
 
@@ -413,8 +413,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **GetInstanceStatisticsInstancesInstanceIdStatisticsGet**
-> AnyType GetInstanceStatisticsInstancesInstanceIdStatisticsGet(instance_id, schema_id, q = var.q, authorization = var.authorization)
+# **GetInstanceStatisticsGet**
+> AnyType GetInstanceStatisticsGet(instance_id, schema_id, q = var.q, authorization = var.authorization)
 
 Get Instance Statistics
 
@@ -461,8 +461,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet**
-> AnyType GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet(instance_id, schema_id, authorization = var.authorization)
+# **GetNonEmptyTablesGet**
+> AnyType GetNonEmptyTablesGet(instance_id, schema_id, authorization = var.authorization)
 
 Get Non Empty Tables
 
@@ -507,8 +507,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost**
-> AnyType GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost(instance_id, module_name, model_name, id_or_uid, schema_id, limit_to_many = 10, include_foreign_keys = FALSE, authorization = var.authorization, get_record_request_body = var.get_record_request_body)
+# **GetRecordPost**
+> AnyType GetRecordPost(instance_id, module_name, model_name, id_or_uid, schema_id, limit_to_many = 10, include_foreign_keys = FALSE, authorization = var.authorization, get_record_request_body = var.get_record_request_body)
 
 Get Record
 
@@ -565,8 +565,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost**
-> AnyType GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost(instance_id, module_name, model_name, schema_id, limit = 50, offset = 0, limit_to_many = 10, include_foreign_keys = FALSE, authorization = var.authorization, get_records_request_body = var.get_records_request_body)
+# **GetRecordsPost**
+> AnyType GetRecordsPost(instance_id, module_name, model_name, schema_id, limit = 50, offset = 0, limit_to_many = 10, include_foreign_keys = FALSE, authorization = var.authorization, get_records_request_body = var.get_records_request_body)
 
 Get Records
 
@@ -625,8 +625,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGet**
-> AnyType GetRelationCountsInstancesInstanceIdModulesModuleNameModelNameIdCountsGet(instance_id, module_name, model_name, id, schema_id, authorization = var.authorization)
+# **GetRelationCountsGet**
+> AnyType GetRelationCountsGet(instance_id, module_name, model_name, id, schema_id, authorization = var.authorization)
 
 Get Relation Counts
 
@@ -677,8 +677,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet**
-> AnyType GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet(module_name, model_name, instance_id, authorization = var.authorization)
+# **GetRelationsGet**
+> AnyType GetRelationsGet(module_name, model_name, instance_id, authorization = var.authorization)
 
 Get Relations
 
@@ -725,8 +725,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **GetSchemaInstancesInstanceIdSchemaGet**
-> AnyType GetSchemaInstancesInstanceIdSchemaGet(instance_id, authorization = var.authorization)
+# **GetSchemaGet**
+> AnyType GetSchemaGet(instance_id, authorization = var.authorization)
 
 Get Schema
 
@@ -769,8 +769,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost**
-> AnyType GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost(instance_id, module_name, model_name, field_path, schema_id, limit = 50, offset = 0, authorization = var.authorization, get_values_request_body = var.get_values_request_body)
+# **GetValuesPost**
+> AnyType GetValuesPost(instance_id, module_name, model_name, field_path, schema_id, limit = 50, offset = 0, authorization = var.authorization, get_values_request_body = var.get_values_request_body)
 
 Get Values
 
@@ -827,8 +827,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **GrantS3PermissionsStoragesS3BucketNamePermissionsPut**
-> AnyType GrantS3PermissionsStoragesS3BucketNamePermissionsPut(bucket_name, s3_permissions_request, aws_account_id = "767398070972", aws_user_name = "lamin-manager", authorization = var.authorization)
+# **GrantS3PermissionsPut**
+> AnyType GrantS3PermissionsPut(bucket_name, s3_permissions_request, aws_account_id = "767398070972", aws_user_name = "lamin-manager", authorization = var.authorization)
 
 Grant S3 Permissions
 
@@ -877,8 +877,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost**
-> AnyType GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost(instance_id, module_name, model_name, schema_id, group_by_request_body, authorization = var.authorization)
+# **GroupByPost**
+> AnyType GroupByPost(instance_id, module_name, model_name, schema_id, group_by_request_body, authorization = var.authorization)
 
 Group By
 
@@ -929,8 +929,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **TransferOwnershipInstancesInstanceIdOwnerHandlePatch**
-> AnyType TransferOwnershipInstancesInstanceIdOwnerHandlePatch(instance_id, handle, schema_id, authorization = var.authorization)
+# **TransferOwnershipPatch**
+> AnyType TransferOwnershipPatch(instance_id, handle, schema_id, authorization = var.authorization)
 
 Transfer Ownership
 
@@ -977,8 +977,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch**
-> AnyType UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch(instance_id, account_id, role, authorization = var.authorization)
+# **UpdateCollaboratorPatch**
+> AnyType UpdateCollaboratorPatch(instance_id, account_id, role, authorization = var.authorization)
 
 Update Collaborator
 
@@ -1025,8 +1025,8 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-# **UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatch**
-> AnyType UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatch(instance_id, module_name, model_name, uid, schema_id, body, authorization = var.authorization)
+# **UpdateRecordPatch**
+> AnyType UpdateRecordPatch(instance_id, module_name, model_name, uid, schema_id, body, authorization = var.authorization)
 
 Update Record
 

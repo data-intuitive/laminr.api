@@ -1,5 +1,15 @@
-# R API client for the Lamin API
+# **{laminr.api}**: R Interface to the LaminDB API
 
+
+## Overview
+
+The **{laminr.api}** package provides an low-level R interface to the
+LaminDB API. The package is not meant to be used directly by end-users,
+but is used by higher-level packages like **{laminr}**.
+
+This package is mostly auto-generated from the OpenAPI specification of
+the LaminDB API using the [OpenAPI
+Generator](https://www.npmjs.com/package/@openapitools/openapi-generator-cli).
 
 ## Installation
 
@@ -17,9 +27,11 @@ remotes::install_github("data-intuitive/laminr.api")
 ``` r
 library(laminr.api)
 
-api_url <- getOption("lamindb_current_instance")$api_url
-instance_id <- getOption("lamindb_current_instance")$id
-schema_id <- getOption("lamindb_current_instance")$schema_id
+# retrieve these values from ~/.lamin/current_instance.env
+# after running `lamin connect <instance_id>`
+api_url <- "https://us-east-1.api.lamin.ai/"
+instance_id <- "037ba1e08d804f91a90275a47735076a"
+schema_id <- "097186c3e91c01ced47aa3e01a3c1515"
 
 api_client <- ApiClient$new(base_path = api_url)
 
@@ -87,15 +99,19 @@ schema <- api$GetSchemaInstancesInstanceIdSchemaGet(instance_id)
 names(schema)
 ```
 
-    [1] "core"   "bionty"
+    [1] "core"   "bionty" "wetlab"
 
 ``` r
 names(schema$core)
 ```
 
-     [1] "run"                  "user"                 "param"                "ulabel"               "feature"              "storage"              "artifact"            
-     [8] "transform"            "collection"           "featureset"           "paramvalue"           "featurevalue"         "runparamvalue"        "artifactulabel"      
-    [15] "collectionulabel"     "featuresetfeature"    "artifactfeatureset"   "artifactparamvalue"   "collectionartifact"   "artifactfeaturevalue"
+     [1] "run"                  "user"                 "param"               
+     [4] "ulabel"               "feature"              "storage"             
+     [7] "artifact"             "transform"            "collection"          
+    [10] "featureset"           "paramvalue"           "featurevalue"        
+    [13] "runparamvalue"        "artifactulabel"       "collectionulabel"    
+    [16] "featuresetfeature"    "artifactfeatureset"   "artifactparamvalue"  
+    [19] "collectionartifact"   "artifactfeaturevalue"
 
 Get record:
 
@@ -104,7 +120,7 @@ api$GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost(
   instance_id,
   "core",
   "artifact",
-  "KBW89Mf7IGcekja2hADu",
+  "3TNCsZZcnIBv2WGb0001",
   schema_id,
   include_foreign_keys = TRUE
 )
@@ -113,65 +129,65 @@ api$GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost(
     $n_objects
     NULL
 
-    $description
-    [1] "Myeloid compartment"
-
     $uid
-    [1] "KBW89Mf7IGcekja2hADu"
+    [1] "3TNCsZZcnIBv2WGb0001"
 
     $hash
-    [1] "SZ5tB0T4YKfiUuUkAL09ZA"
+    [1] "iETHP3Lw-tVqZxYAuEC-SA"
 
     $storage_id
     [1] 2
+
+    $version
+    NULL
 
     $`_accessor`
     [1] "AnnData"
 
     $transform_id
-    [1] 22
-
-    $version
-    [1] "2024-07-01"
-
-    $n_observations
-    [1] 51552
+    [1] 163
 
     $id
-    [1] 3659
+    [1] 938
 
-    $created_by_id
-    [1] 1
+    $created_at
+    [1] "2024-10-18T21:46:55.467982+00:00"
 
-    $run_id
-    [1] 27
-
-    $size
-    [1] 691757462
-
-    $key
-    [1] "cell-census/2024-07-01/h5ads/fe52003e-1460-4a65-a213-2bb1a508332f.h5ad"
-
-    $`_hash_type`
-    [1] "md5-n"
+    $description
+    [1] "10x reference adata, trusted cell type annotation"
 
     $`_key_is_virtual`
-    [1] FALSE
+    [1] TRUE
+
+    $key
+    NULL
+
+    $updated_at
+    [1] "2024-10-18T21:58:06.010689+00:00"
+
+    $n_observations
+    [1] 70
+
+    $size
+    [1] 851664
+
+    $`_hash_type`
+    [1] "md5"
+
+    $created_by_id
+    [1] 9
 
     $is_latest
     [1] TRUE
 
-    $created_at
-    [1] "2024-07-12T12:34:10.345829+00:00"
-
-    $updated_at
-    [1] "2024-07-12T12:40:48.837026+00:00"
+    $visibility
+    [1] 1
 
     $type
     [1] "dataset"
 
-    $visibility
-    [1] 1
+    $run_id
+    [1] 305
 
     $suffix
     [1] ".h5ad"

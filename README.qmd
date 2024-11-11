@@ -1,7 +1,13 @@
 ---
-title: R API client for the Lamin API
+title: "**{laminr.api}**: R Interface to the LaminDB API"
 format: gfm
 ---
+
+## Overview
+
+The **{laminr.api}** package provides an low-level R interface to the LaminDB API. The package is not meant to be used directly by end-users, but is used by higher-level packages like **{laminr}**.
+
+This package is mostly auto-generated from the OpenAPI specification of the LaminDB API using the [OpenAPI Generator](https://www.npmjs.com/package/@openapitools/openapi-generator-cli).
 
 ## Installation
 
@@ -18,9 +24,11 @@ remotes::install_github("data-intuitive/laminr.api")
 ```{r}
 library(laminr.api)
 
-api_url <- getOption("lamindb_current_instance")$api_url
-instance_id <- getOption("lamindb_current_instance")$id
-schema_id <- getOption("lamindb_current_instance")$schema_id
+# retrieve these values from ~/.lamin/current_instance.env
+# after running `lamin connect <instance_id>`
+api_url <- "https://us-east-1.api.lamin.ai/"
+instance_id <- "037ba1e08d804f91a90275a47735076a"
+schema_id <- "097186c3e91c01ced47aa3e01a3c1515"
 
 api_client <- ApiClient$new(base_path = api_url)
 
@@ -48,7 +56,7 @@ api$GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost(
   instance_id,
   "core",
   "artifact",
-  "KBW89Mf7IGcekja2hADu",
+  "3TNCsZZcnIBv2WGb0001",
   schema_id,
   include_foreign_keys = TRUE
 )

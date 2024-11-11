@@ -105,13 +105,9 @@ names(schema)
 names(schema$core)
 ```
 
-     [1] "run"                  "user"                 "param"               
-     [4] "ulabel"               "feature"              "storage"             
-     [7] "artifact"             "transform"            "collection"          
-    [10] "featureset"           "paramvalue"           "featurevalue"        
-    [13] "runparamvalue"        "artifactulabel"       "collectionulabel"    
-    [16] "featuresetfeature"    "artifactfeatureset"   "artifactparamvalue"  
-    [19] "collectionartifact"   "artifactfeaturevalue"
+     [1] "run"                  "user"                 "param"                "ulabel"               "feature"              "storage"              "artifact"            
+     [8] "transform"            "collection"           "featureset"           "paramvalue"           "featurevalue"         "runparamvalue"        "artifactulabel"      
+    [15] "collectionulabel"     "featuresetfeature"    "artifactfeatureset"   "artifactparamvalue"   "collectionartifact"   "artifactfeaturevalue"
 
 Get record:
 
@@ -191,48 +187,3 @@ api$GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost(
 
     $suffix
     [1] ".h5ad"
-
-## Documentation for API Endpoints
-
-All URIs are relative to *http://localhost*
-
-| Class | Method | HTTP request | Description |
-|----|----|----|----|
-| *DefaultApi* | [**AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut**](docs/DefaultApi.md#AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut) | **PUT** /instances/{instance_id}/collaborators/{account_id} | Add Collaborator |
-| *DefaultApi* | [**CreateInstanceInstancesPut**](docs/DefaultApi.md#CreateInstanceInstancesPut) | **PUT** /instances | Create Instance |
-| *DefaultApi* | [**CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut**](docs/DefaultApi.md#CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut) | **PUT** /instances/{instance_id}/modules/{module_name}/{model_name} | Create Record |
-| *DefaultApi* | [**DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete**](docs/DefaultApi.md#DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete) | **DELETE** /instances/{instance_id}/collaborators/{account_id} | Delete Collaborator |
-| *DefaultApi* | [**DeleteInstanceInstancesInstanceIdDelete**](docs/DefaultApi.md#DeleteInstanceInstancesInstanceIdDelete) | **DELETE** /instances/{instance_id} | Delete Instance |
-| *DefaultApi* | [**DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete**](docs/DefaultApi.md#DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete) | **DELETE** /instances/{instance_id}/modules/{module_name}/{model_name}/{uid} | Delete Record |
-| *DefaultApi* | [**GeneratePasswordInstancesInstanceIdDbPasswordGet**](docs/DefaultApi.md#GeneratePasswordInstancesInstanceIdDbPasswordGet) | **GET** /instances/{instance_id}/db/password | Generate Password |
-| *DefaultApi* | [**GenerateUrlInstancesInstanceIdDbUrlGet**](docs/DefaultApi.md#GenerateUrlInstancesInstanceIdDbUrlGet) | **GET** /instances/{instance_id}/db/url | Generate Url |
-| *DefaultApi* | [**GetInstanceStatisticsInstancesInstanceIdStatisticsGet**](docs/DefaultApi.md#GetInstanceStatisticsInstancesInstanceIdStatisticsGet) | **GET** /instances/{instance_id}/statistics | Get Instance Statistics |
-| *DefaultApi* | [**GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet**](docs/DefaultApi.md#GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet) | **GET** /instances/{instance_id}/non_empty_tables | Get Non Empty Tables |
-| *DefaultApi* | [**GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost**](docs/DefaultApi.md#GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/{id_or_uid} | Get Record |
-| *DefaultApi* | [**GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost**](docs/DefaultApi.md#GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name} | Get Records |
-| *DefaultApi* | [**GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet**](docs/DefaultApi.md#GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet) | **GET** /instances/{instance_id}/schema/{module_name}/{model_name} | Get Relations |
-| *DefaultApi* | [**GetSchemaInstancesInstanceIdSchemaGet**](docs/DefaultApi.md#GetSchemaInstancesInstanceIdSchemaGet) | **GET** /instances/{instance_id}/schema | Get Schema |
-| *DefaultApi* | [**GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost**](docs/DefaultApi.md#GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/fields/{field_path} | Get Values |
-| *DefaultApi* | [**GrantS3PermissionsStoragesS3BucketNamePermissionsPut**](docs/DefaultApi.md#GrantS3PermissionsStoragesS3BucketNamePermissionsPut) | **PUT** /storages/s3/{bucket_name}/permissions | Grant S3 Permissions |
-| *DefaultApi* | [**GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost**](docs/DefaultApi.md#GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost) | **POST** /instances/{instance_id}/modules/{module_name}/{model_name}/group-by | Group By |
-| *DefaultApi* | [**TransferOwnershipInstancesInstanceIdOwnerHandlePatch**](docs/DefaultApi.md#TransferOwnershipInstancesInstanceIdOwnerHandlePatch) | **PATCH** /instances/{instance_id}/owner/{handle} | Transfer Ownership |
-| *DefaultApi* | [**UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch**](docs/DefaultApi.md#UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch) | **PATCH** /instances/{instance_id}/collaborators/{account_id} | Update Collaborator |
-| *DefaultApi* | [**UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatch**](docs/DefaultApi.md#UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatch) | **PATCH** /instances/{instance_id}/modules/{module_name}/{model_name}/{uid} | Update Record |
-
-## Documentation for Models
-
-- [Dimension](docs/Dimension.md)
-- [GetRecordRequestBody](docs/GetRecordRequestBody.md)
-- [GetRecordsRequestBody](docs/GetRecordsRequestBody.md)
-- [GetValuesRequestBody](docs/GetValuesRequestBody.md)
-- [GroupByRequestBody](docs/GroupByRequestBody.md)
-- [HTTPValidationError](docs/HTTPValidationError.md)
-- [Measure](docs/Measure.md)
-- [OrderByColumn](docs/OrderByColumn.md)
-- [S3PermissionsRequest](docs/S3PermissionsRequest.md)
-- [ValidationError](docs/ValidationError.md)
-- [ValidationErrorLocInner](docs/ValidationErrorLocInner.md)
-
-## Documentation for Authorization
-
-Endpoints do not require authorization.

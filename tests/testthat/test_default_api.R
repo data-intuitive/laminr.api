@@ -5,8 +5,8 @@ context("Test DefaultApi")
 
 api_instance <- DefaultApi$new()
 
-test_that("AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut", {
-  # tests for AddCollaboratorInstancesInstanceIdCollaboratorsAccountIdPut
+test_that("AddCollaboratorPut", {
+  # tests for AddCollaboratorPut
   # base path: http://localhost
   # Add Collaborator
   # @param instance_id character
@@ -36,8 +36,8 @@ test_that("CreateInstanceInstancesPut", {
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut", {
-  # tests for CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut
+test_that("CreateRecordPut", {
+  # tests for CreateRecordPut
   # base path: http://localhost
   # Create Record
   # @param instance_id character
@@ -52,8 +52,8 @@ test_that("CreateRecordInstancesInstanceIdModulesModuleNameModelNamePut", {
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete", {
-  # tests for DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete
+test_that("DeleteCollaboratorDelete", {
+  # tests for DeleteCollaboratorDelete
   # base path: http://localhost
   # Delete Collaborator
   # @param instance_id character
@@ -65,8 +65,8 @@ test_that("DeleteCollaboratorInstancesInstanceIdCollaboratorsAccountIdDelete", {
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("DeleteInstanceInstancesInstanceIdDelete", {
-  # tests for DeleteInstanceInstancesInstanceIdDelete
+test_that("DeleteInstanceDelete", {
+  # tests for DeleteInstanceDelete
   # base path: http://localhost
   # Delete Instance
   # @param instance_id character
@@ -78,8 +78,8 @@ test_that("DeleteInstanceInstancesInstanceIdDelete", {
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete", {
-  # tests for DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete
+test_that("DeleteRecordDelete", {
+  # tests for DeleteRecordDelete
   # base path: http://localhost
   # Delete Record
   # @param instance_id character
@@ -94,8 +94,8 @@ test_that("DeleteRecordInstancesInstanceIdModulesModuleNameModelNameUidDelete", 
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("GeneratePasswordInstancesInstanceIdDbPasswordGet", {
-  # tests for GeneratePasswordInstancesInstanceIdDbPasswordGet
+test_that("GeneratePasswordGet", {
+  # tests for GeneratePasswordGet
   # base path: http://localhost
   # Generate Password
   # @param instance_id character
@@ -106,8 +106,8 @@ test_that("GeneratePasswordInstancesInstanceIdDbPasswordGet", {
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("GenerateUrlInstancesInstanceIdDbUrlGet", {
-  # tests for GenerateUrlInstancesInstanceIdDbUrlGet
+test_that("GenerateUrlGet", {
+  # tests for GenerateUrlGet
   # base path: http://localhost
   # Generate Url
   # @param instance_id character
@@ -118,8 +118,8 @@ test_that("GenerateUrlInstancesInstanceIdDbUrlGet", {
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("GetInstanceStatisticsInstancesInstanceIdStatisticsGet", {
-  # tests for GetInstanceStatisticsInstancesInstanceIdStatisticsGet
+test_that("GetInstanceStatisticsGet", {
+  # tests for GetInstanceStatisticsGet
   # base path: http://localhost
   # Get Instance Statistics
   # @param instance_id character
@@ -132,8 +132,8 @@ test_that("GetInstanceStatisticsInstancesInstanceIdStatisticsGet", {
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet", {
-  # tests for GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet
+test_that("GetNonEmptyTablesGet", {
+  # tests for GetNonEmptyTablesGet
   # base path: http://localhost
   # Get Non Empty Tables
   # @param instance_id character
@@ -145,8 +145,8 @@ test_that("GetNonEmptyTablesInstancesInstanceIdNonEmptyTablesGet", {
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost", {
-  # tests for GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost
+test_that("GetRecordPost", {
+  # tests for GetRecordPost
   # base path: http://localhost
   # Get Record
   # @param instance_id character
@@ -164,8 +164,8 @@ test_that("GetRecordInstancesInstanceIdModulesModuleNameModelNameIdOrUidPost", {
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost", {
-  # tests for GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost
+test_that("GetRecordsPost", {
+  # tests for GetRecordsPost
   # base path: http://localhost
   # Get Records
   # @param instance_id character
@@ -184,8 +184,8 @@ test_that("GetRecordsInstancesInstanceIdModulesModuleNameModelNamePost", {
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet", {
-  # tests for GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet
+test_that("GetRelationsGet", {
+  # tests for GetRelationsGet
   # base path: http://localhost
   # Get Relations
   # @param module_name character
@@ -198,8 +198,8 @@ test_that("GetRelationsInstancesInstanceIdSchemaModuleNameModelNameGet", {
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("GetSchemaInstancesInstanceIdSchemaGet", {
-  # tests for GetSchemaInstancesInstanceIdSchemaGet
+test_that("GetSchemaGet", {
+  # tests for GetSchemaGet
   # base path: http://localhost
   # Get Schema
   # @param instance_id character
@@ -210,8 +210,8 @@ test_that("GetSchemaInstancesInstanceIdSchemaGet", {
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost", {
-  # tests for GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPathPost
+test_that("GetValuesPost", {
+  # tests for GetValuesPost
   # base path: http://localhost
   # Get Values
   # @param instance_id character
@@ -229,8 +229,8 @@ test_that("GetValuesInstancesInstanceIdModulesModuleNameModelNameFieldsFieldPath
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("GrantS3PermissionsStoragesS3BucketNamePermissionsPut", {
-  # tests for GrantS3PermissionsStoragesS3BucketNamePermissionsPut
+test_that("GrantS3PermissionsPut", {
+  # tests for GrantS3PermissionsPut
   # base path: http://localhost
   # Grant S3 Permissions
   # @param bucket_name character
@@ -244,8 +244,8 @@ test_that("GrantS3PermissionsStoragesS3BucketNamePermissionsPut", {
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost", {
-  # tests for GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost
+test_that("GroupByPost", {
+  # tests for GroupByPost
   # base path: http://localhost
   # Group By
   # @param instance_id character
@@ -260,8 +260,8 @@ test_that("GroupByInstancesInstanceIdModulesModuleNameModelNameGroupByPost", {
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("TransferOwnershipInstancesInstanceIdOwnerHandlePatch", {
-  # tests for TransferOwnershipInstancesInstanceIdOwnerHandlePatch
+test_that("TransferOwnershipPatch", {
+  # tests for TransferOwnershipPatch
   # base path: http://localhost
   # Transfer Ownership
   # @param instance_id character
@@ -274,8 +274,8 @@ test_that("TransferOwnershipInstancesInstanceIdOwnerHandlePatch", {
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch", {
-  # tests for UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch
+test_that("UpdateCollaboratorPatch", {
+  # tests for UpdateCollaboratorPatch
   # base path: http://localhost
   # Update Collaborator
   # @param instance_id character
@@ -288,8 +288,8 @@ test_that("UpdateCollaboratorInstancesInstanceIdCollaboratorsAccountIdPatch", {
   # expect_equal(result, "EXPECTED_RESULT")
 })
 
-test_that("UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatch", {
-  # tests for UpdateRecordInstancesInstanceIdModulesModuleNameModelNameUidPatch
+test_that("UpdateRecordPatch", {
+  # tests for UpdateRecordPatch
   # base path: http://localhost
   # Update Record
   # @param instance_id character

@@ -2,14 +2,12 @@ Package: laminr.api
 Title: Interface to the 'LaminDB' API
 Version: 0.1.0
 Authors@R:c(
-    person("Robrecht", "Cannoodt", email = "robrecht@data-intuitive.com", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0003-3641-729X", github = "rcannood")),
-    person("Luke", "Zappia", email = "luke@data-intuitive.com", role = "aut",
-           comment = c(ORCID = "0000-0001-7744-8565", github = "lazappi")),
+    person("Robrecht", "Cannoodt", email = "robrecht@data-intuitive.com", role = c("aut", "cre")),
+    person("Luke", "Zappia", email = "luke@data-intuitive.com", role = "aut"),
     person("Data Intuitive", email = "info@data-intuitive.com", role = "aut"),
     person("Lamin Labs", email = "open-source@lamin.ai", role = c("aut", "cph"))
   )
-Description: Client package for accessing the Lamin API.
+Description: A low-level interface to the 'LaminDB' API.
 License: Apache License (>= 2)
 URL: https://github.com/data-intuitive/laminr.api
 BugReports: https://github.com/data-intuitive/laminr.api/issues
